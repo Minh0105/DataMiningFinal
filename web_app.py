@@ -476,7 +476,7 @@ else:
     suitable_majors = find_suitable_majors(student_scores, priority, top_n=1000)
     
     # Các cột hiển thị (thêm cột percentile)
-    display_cols = ['Trường', 'Ngành', 'Tổ hợp', 'Điểm bạn', 'Bạn (%)', 'Yêu cầu (%)', 'Xác suất', 'ĐC 2026 (DB)', 'Dư/Thiếu', 'Khả năng', 'Tin cậy', 'Hệ']
+    display_cols = ['Trường', 'Ngành', 'Tổ hợp', 'Điểm bạn', 'Bạn (%)', 'Yêu cầu (%)', 'Xác suất', 'ĐC 2026 (DB)', 'Dư/Thiếu', 'ĐC 2025', 'Khả năng', 'Tin cậy', 'Hệ']
     
     if suitable_majors is not None and not suitable_majors.empty:
         high_chance = suitable_majors[suitable_majors['Khả năng'].str.contains('Rất cao|Cao')]
