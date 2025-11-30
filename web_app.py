@@ -12,6 +12,11 @@ LOOKUP_PATH = r'model_artifacts/score_distribution_2025.pkl'
 ANALYTICS_PATH = r'model_artifacts/model_analytics.pkl'
 INFO_PATH = 'diem_chuan_cleaned.csv'
 
+# Admission Probability Model paths
+PROB_MODEL_PATH = r'model_artifacts/admission_probability_model.pkl'
+PROB_ENCODERS_PATH = r'model_artifacts/admission_encoders.pkl'
+PROB_SCALER_PATH = r'model_artifacts/admission_scaler.pkl'
+
 # Định nghĩa tổ hợp môn Y Dược (không có Sử, Địa)
 BLOCK_MAP = {
     'A00': {'name': 'Toán - Lý - Hóa', 'subjects': ['toan', 'vat_ly', 'hoa_hoc']},
@@ -46,7 +51,21 @@ def load_resources():
         st.error(f"Lỗi load dữ liệu: {e}")
         return None, None, None, None, None
 
+@st.cache_resource
+def load_probability_model():
+    """Load Admission Probability Model"""
+    try:
+        if os.path.exists(PROB_MODEL_PATH):
+            prob_model = joblib.load(PROB_MODEL_PATH)
+            prob_encoders = joblib.load(PROB_ENCODERS_PATH)
+            prob_scaler = joblib.load(PROB_SCALER_PATH)
+            return prob_model, prob_encoders, prob_scaler
+        return None, None, None
+    except Exception as e:
+        return None, None, None
+
 model, lookup_2025, school_info, df_benchmark, analytics = load_resources()
+prob_model, prob_encoders, prob_scaler = load_probability_model()
 
 # Lấy confidence intervals từ analytics
 confidence_intervals = analytics.get('confidence_intervals', {}) if analytics else {}
@@ -64,6 +83,76 @@ def format_percentile(percentile):
         return f"Top {percentile:.1f}%"
     else:
         return f"Top {percentile:.0f}%"
+
+def percentile_to_score(percentile, block, lookup_dict):
+    """Chuyển đổi percentile ngược lại thành điểm (để tính điểm chuẩn dự báo 2026)
+    
+    Lookup table structure:
+    - score: tăng dần (4.05 -> 30.0)
+    - percentile: giảm dần (100% -> 0.002%)
+    - Top X% nhỏ = điểm cao
+    """
+    key = (2025, block)
+    if key not in lookup_dict:
+        return None
+    
+    table = lookup_dict[key]
+    
+    # Percentile trong table giảm dần, nên cần tìm ngược
+    # Ví dụ: Top 2% → tìm dòng có percentile <= 2 → lấy score tương ứng
+    # Dùng searchsorted trên mảng đảo ngược
+    percentile_values = table['percentile'].values[::-1]  # Đảo thành tăng dần
+    score_values = table['score'].values[::-1]  # Đảo tương ứng
+    
+    idx = np.searchsorted(percentile_values, percentile, side='left')
+    
+    if idx < len(score_values):
+        return score_values[idx]
+    else:
+        return score_values[-1]
+
+def predict_admission_probability(diem, block, university_id, ma_nganh, predicted_percentile=None):
+    """
+    Tính xác suất đậu dựa trên PERCENTILE (không dùng ML model bị overfit)
+    
+    Logic:
+    - So sánh percentile của thí sinh vs percentile yêu cầu của ngành
+    - Nếu student_pct < required_pct (Top nhỏ hơn = điểm cao hơn) → xác suất cao
+    - Dùng sigmoid function để smooth xác suất
+    """
+    try:
+        # Get percentile của thí sinh
+        pct_info = get_user_percentile_info(diem, block, lookup_2025)
+        if pct_info is None:
+            return None
+        student_percentile = pct_info['percentile']
+        
+        # Lấy percentile yêu cầu của ngành (từ model dự báo 2026)
+        if predicted_percentile is None:
+            key = (university_id, ma_nganh, block)
+            if key in model:
+                predicted_percentile = model[key]
+            else:
+                return None
+        
+        # Tính khoảng cách percentile
+        # Nếu student_pct < required_pct → dư điểm → gap dương
+        # Nếu student_pct > required_pct → thiếu điểm → gap âm
+        gap = predicted_percentile - student_percentile
+        
+        # Sigmoid function để smooth xác suất
+        # gap = 0 → 50%
+        # gap = 5 → ~88%
+        # gap = 10 → ~99%
+        # gap = -5 → ~12%
+        # gap = -10 → ~1%
+        import math
+        probability = 1 / (1 + math.exp(-gap * 0.5))
+        
+        return probability * 100
+        
+    except Exception as e:
+        return None
 
 def get_user_percentile_info(score, block, lookup_dict):
     """Quy đổi điểm thi user sang Top % với đầy đủ thông tin
@@ -254,10 +343,13 @@ def find_suitable_majors(student_scores, priority=0, top_n=1000):
         dc_2024 = history[history['nam'] == 2024]['diem_chuan'].values
         dc_2023 = history[history['nam'] == 2023]['diem_chuan'].values
         
-        # Tính chênh lệch điểm so với ĐC 2025
+        # Tính điểm chuẩn DỰ BÁO 2026 từ percentile
+        dc_2026_dubao = percentile_to_score(predicted_percentile, block, lookup_2025)
+        
+        # Tính chênh lệch điểm so với ĐC DỰ BÁO 2026 (thay vì 2025)
         dc_2025_val = dc_2025[0] if len(dc_2025) > 0 else None
-        if dc_2025_val is not None:
-            chenh_lech = diem_cua_ban - dc_2025_val
+        if dc_2026_dubao is not None:
+            chenh_lech = diem_cua_ban - dc_2026_dubao
             if chenh_lech >= 0:
                 chenh_lech_str = f"✅ +{chenh_lech:.1f}"
             else:
@@ -292,7 +384,10 @@ def find_suitable_majors(student_scores, priority=0, top_n=1000):
         
         # Format percentile yêu cầu của ngành
         req_pct_str = format_percentile(predicted_percentile)
-            
+          # Dự đoán xác suất đậu dựa trên percentile
+        admission_prob = predict_admission_probability(diem_cua_ban, block, university_id, ma_nganh, predicted_percentile)
+        prob_str = f"{admission_prob:.0f}%" if admission_prob is not None else "N/A"
+        
         results.append({
             'Trường': info['ten_truong'],
             'Ngành': info['ten_nganh'],
@@ -300,8 +395,10 @@ def find_suitable_majors(student_scores, priority=0, top_n=1000):
             'Điểm bạn': diem_cua_ban,
             'Bạn (%)': student_pct_info['formatted'],
             'Yêu cầu (%)': req_pct_str,
-            'ĐC 2025': dc_2025_val,
+            'Xác suất': prob_str,
+            'ĐC 2026 (DB)': round(dc_2026_dubao, 1) if dc_2026_dubao else None,
             'Dư/Thiếu': chenh_lech_str,
+            'ĐC 2025': dc_2025_val,
             'ĐC 2024': dc_2024[0] if len(dc_2024) > 0 else None,
             'ĐC 2023': dc_2023[0] if len(dc_2023) > 0 else None,
             'Khả năng': kha_nang,
@@ -379,7 +476,7 @@ else:
     suitable_majors = find_suitable_majors(student_scores, priority, top_n=1000)
     
     # Các cột hiển thị (thêm cột percentile)
-    display_cols = ['Trường', 'Ngành', 'Tổ hợp', 'Điểm bạn', 'Bạn (%)', 'Yêu cầu (%)', 'ĐC 2025', 'Dư/Thiếu', 'Khả năng', 'Tin cậy', 'Hệ']
+    display_cols = ['Trường', 'Ngành', 'Tổ hợp', 'Điểm bạn', 'Bạn (%)', 'Yêu cầu (%)', 'Xác suất', 'ĐC 2026 (DB)', 'Dư/Thiếu', 'Khả năng', 'Tin cậy', 'Hệ']
     
     if suitable_majors is not None and not suitable_majors.empty:
         high_chance = suitable_majors[suitable_majors['Khả năng'].str.contains('Rất cao|Cao')]
