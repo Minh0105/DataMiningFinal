@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Dự báo Điểm chuẩn Đại học Y Dược 2026</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+        
+        .slide {
+            width: 1200px;
+            min-height: 675px;
+            margin: 20px auto;
+            background: white;
+            padding: 40px 60px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            page-break-after: always;
+            position: relative;
+        }
+        
+        .slide-title {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px;
+            text-align: center;
+        }
+        
+        .slide-title h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        
+        .slide-title h2 {
+            font-size: 24px;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+        
+        .slide-title .emoji {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 32px;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h2 {
+            color: #764ba2;
+            font-size: 24px;
+            margin: 25px 0 15px 0;
+        }
+        
+        h3 {
+            color: #333;
+            font-size: 20px;
+            margin: 20px 0 10px 0;
+        }
+        
+        p, li {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        
+        ul {
+            margin-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%);
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .stat-card .number {
+            font-size: 36px;
+            font-weight: 700;
+        }
+        
+        .stat-card .label {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Consolas', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+        
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        .model-card {
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        
+        .model-card h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .pipeline {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px 0;
+        }
+        
+        .pipeline-step {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+        
+        .pipeline-arrow {
+            font-size: 24px;
+            color: #667eea;
+        }
+        
+        .emoji-large {
+            font-size: 48px;
+            margin-right: 15px;
+        }
+        
+        .flex-center {
+            display: flex;
+            align-items: center;
+        }
+        
+        .color-legend {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        
+        .green { background: #22c55e; }
+        .yellow { background: #eab308; }
+        .orange { background: #f97316; }
+        .red { background: #ef4444; }
+        
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            font-size: 12px;
+            color: #999;
+        }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+            font-size: 12px;
+            color: #999;
+        }
+        
+        @media print {
+            .slide {
+                box-shadow: none;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- SLIDE 1: Title -->
+<div class="slide slide-title">
+    <div class="emoji">🎓</div>
+    <h1>HỆ THỐNG DỰ BÁO ĐIỂM CHUẨN<br>ĐẠI HỌC Y DƯỢC 2026</h1>
+    <h2>Ứng dụng Machine Learning trong dự báo tuyển sinh</h2>
+    <br><br>
+    <p style="font-size: 18px; opacity: 0.8;">Nhóm: [Tên nhóm] | Ngày: 30/11/2025</p>
+</div>
+
+<!-- SLIDE 2: Mục lục -->
+<div class="slide">
+    <h1>📋 NỘI DUNG TRÌNH BÀY</h1>
+    
+    <div style="font-size: 22px; line-height: 2.5;">
+        <p><strong>1.</strong> 🎯 Giới thiệu đề tài</p>
+        <p><strong>2.</strong> 📊 Thu thập dữ liệu</p>
+        <p><strong>3.</strong> 🔧 Xử lý và làm sạch dữ liệu</p>
+        <p><strong>4.</strong> 📐 Quy đổi Percentile từ THPT</p>
+        <p><strong>5.</strong> 🤖 Phương pháp & Mô hình</p>
+        <p><strong>6.</strong> 📈 Kết quả Training</p>
+        <p><strong>7.</strong> 💻 Web Application Demo</p>
+        <p><strong>8.</strong> ✅ Kết luận</p>
+    </div>
+    
+    <div class="page-number">2</div>
+</div>
+
+<!-- SLIDE 3: Giới thiệu -->
+<div class="slide">
+    <h1>🎯 1. GIỚI THIỆU ĐỀ TÀI</h1>
+    
+    <h2>Bối cảnh & Vấn đề</h2>
+    <ul>
+        <li>Điểm chuẩn đại học Y Dược luôn <strong>cao và biến động</strong> qua các năm</li>
+        <li>Thí sinh gặp <strong>khó khăn</strong> trong việc lựa chọn ngành/trường phù hợp</li>
+        <li>Thiếu công cụ <strong>dự báo khoa học</strong> để hỗ trợ ra quyết định</li>
+    </ul>
+    
+    <h2>Mục tiêu</h2>
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="number">📥</div>
+            <div class="label">Thu thập dữ liệu<br>2018-2025</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">📊</div>
+            <div class="label">Phân tích<br>xu hướng</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">🤖</div>
+            <div class="label">Xây dựng<br>mô hình ML</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">💻</div>
+            <div class="label">Phát triển<br>Web App</div>
+        </div>
+    </div>
+    
+    <div class="page-number">3</div>
+</div>
+
+<!-- SLIDE 4: Thu thập dữ liệu -->
+<div class="slide">
+    <h1>📊 2. THU THẬP DỮ LIỆU</h1>
+    
+    <div class="two-col">
+        <div>
+            <h2>Nguồn dữ liệu</h2>
+            <h3>📰 Điểm chuẩn đại học</h3>
+            <ul>
+                <li><strong>Nguồn:</strong> VnExpress Education</li>
+                <li><strong>Phương pháp:</strong> Web Crawling</li>
+                <li><strong>Tools:</strong> Python, Requests, BeautifulSoup</li>
+            </ul>
+            
+            <h3>📄 Phân phối điểm thi THPT</h3>
+            <ul>
+                <li>Điểm thi THPT Quốc gia 2018-2025</li>
+                <li>~6.5 triệu thí sinh</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Thống kê</h2>
+            <div class="stat-card" style="margin: 10px 0;">
+                <div class="number">1,704</div>
+                <div class="label">Dòng dữ liệu</div>
+            </div>
+            <div class="stat-card" style="margin: 10px 0;">
+                <div class="number">17</div>
+                <div class="label">Trường Y Dược</div>
+            </div>
+            <div class="stat-card" style="margin: 10px 0;">
+                <div class="number">83</div>
+                <div class="label">Ngành học</div>
+            </div>
+            <div class="stat-card" style="margin: 10px 0;">
+                <div class="number">8</div>
+                <div class="label">Năm (2018-2025)</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page-number">4</div>
+</div>
+
+<!-- SLIDE 5: Tổ hợp môn -->
+<div class="slide">
+    <h1>📚 9 TỔ HỢP MÔN Y DƯỢC</h1>
+    
+    <table>
+        <tr>
+            <th>Mã</th>
+            <th>Tên tổ hợp</th>
+            <th>Các môn</th>
+        </tr>
+        <tr>
+            <td><strong>A00</strong></td>
+            <td>Toán - Lý - Hóa</td>
+            <td>toan, vat_ly, hoa_hoc</td>
+        </tr>
+        <tr>
+            <td><strong>A01</strong></td>
+            <td>Toán - Lý - Anh</td>
+            <td>toan, vat_ly, ngoai_ngu</td>
+        </tr>
+        <tr>
+            <td><strong>A02</strong></td>
+            <td>Toán - Lý - Sinh</td>
+            <td>toan, vat_ly, sinh_hoc</td>
+        </tr>
+        <tr>
+            <td><strong>B00</strong></td>
+            <td>Toán - Hóa - Sinh</td>
+            <td>toan, hoa_hoc, sinh_hoc</td>
+        </tr>
+        <tr>
+            <td><strong>B08</strong></td>
+            <td>Toán - Sinh - Anh</td>
+            <td>toan, sinh_hoc, ngoai_ngu</td>
+        </tr>
+        <tr>
+            <td><strong>D01</strong></td>
+            <td>Toán - Văn - Anh</td>
+            <td>toan, ngu_van, ngoai_ngu</td>
+        </tr>
+        <tr>
+            <td><strong>D07</strong></td>
+            <td>Toán - Hóa - Anh</td>
+            <td>toan, hoa_hoc, ngoai_ngu</td>
+        </tr>
+        <tr>
+            <td><strong>D08</strong></td>
+            <td>Toán - Sinh - Anh</td>
+            <td>toan, sinh_hoc, ngoai_ngu</td>
+        </tr>
+        <tr>
+            <td><strong>D13</strong></td>
+            <td>Toán - Văn - Sinh</td>
+            <td>toan, ngu_van, sinh_hoc</td>
+        </tr>
+    </table>
+    
+    <div class="page-number">5</div>
+</div>
+
+<!-- SLIDE 6: Xử lý dữ liệu -->
+<div class="slide">
+    <h1>🔧 3. XỬ LÝ DỮ LIỆU</h1>
+    
+    <h2>Quy trình xử lý</h2>
+    <div class="pipeline">
+        <div class="pipeline-step">Dữ liệu thô</div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">Làm sạch</div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">Chuẩn hóa</div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">Quy đổi Percentile</div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">Training Data</div>
+    </div>
+    
+    <div class="two-col">
+        <div>
+            <h3>Các bước xử lý:</h3>
+            <ul>
+                <li>Loại bỏ dữ liệu trùng lặp</li>
+                <li>Chuẩn hóa tên trường, tên ngành</li>
+                <li>Xử lý giá trị null/missing</li>
+                <li>Tách dòng có nhiều tổ hợp</li>
+                <li>Lọc ngành có dữ liệu 2025</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Kết quả:</h3>
+            <table>
+                <tr><th>Chỉ số</th><th>Trước</th><th>Sau</th></tr>
+                <tr><td>Số dòng</td><td>1,704</td><td>1,254</td></tr>
+                <tr><td>Số ngành train</td><td>-</td><td>329</td></tr>
+                <tr><td>Missing values</td><td>Có</td><td>0</td></tr>
+            </table>
+        </div>
+    </div>
+    
+    <div class="page-number">6</div>
+</div>
+
+<!-- SLIDE 7: Percentile -->
+<div class="slide">
+    <h1>📐 4. QUY ĐỔI PERCENTILE TỪ THPT</h1>
+    
+    <div class="highlight-box">
+        <h3>❓ Tại sao cần chuyển đổi?</h3>
+        <ul>
+            <li>Điểm chuẩn thay đổi do <strong>độ khó đề thi</strong> khác nhau mỗi năm</li>
+            <li>Percentile phản ánh <strong>vị trí tương đối</strong> của thí sinh (Top X%)</li>
+            <li>So sánh <strong>công bằng</strong> giữa các năm</li>
+        </ul>
+    </div>
+    
+    <h2>Dữ liệu THPT Quốc gia</h2>
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="number">6.5M+</div>
+            <div class="label">Thí sinh/năm</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">8</div>
+            <div class="label">Năm (2018-2025)</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">9</div>
+            <div class="label">Tổ hợp Y Dược</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">502</div>
+            <div class="label">Điểm/tổ hợp</div>
+        </div>
+    </div>
+    
+    <h2>Công thức</h2>
+    <div class="code-block">
+Percentile = (Số thí sinh có điểm cao hơn / Tổng số thí sinh) × 100
+Top X% = Bạn xếp hạng cao hơn (100-X)% thí sinh cả nước
+    </div>
+    
+    <div class="page-number">7</div>
+</div>
+
+<!-- SLIDE 7b: Percentile Example -->
+<div class="slide">
+    <h1>📊 VÍ DỤ QUY ĐỔI PERCENTILE</h1>
+    
+    <h2>Bảng tra điểm B00 (Toán-Hóa-Sinh) năm 2025</h2>
+    <table>
+        <tr>
+            <th>Điểm tổ hợp</th>
+            <th>Hạng (Rank)</th>
+            <th>Percentile</th>
+            <th>Ý nghĩa</th>
+        </tr>
+        <tr>
+            <td>30.0</td>
+            <td>1</td>
+            <td><strong>Top 0.002%</strong></td>
+            <td>Số 1 cả nước</td>
+        </tr>
+        <tr>
+            <td>28.0</td>
+            <td>205</td>
+            <td><strong>Top 0.46%</strong></td>
+            <td>Top 205 / ~45,000</td>
+        </tr>
+        <tr>
+            <td>26.0</td>
+            <td>2,048</td>
+            <td><strong>Top 4.55%</strong></td>
+            <td>Đủ điểm Y khoa top</td>
+        </tr>
+        <tr>
+            <td>24.0</td>
+            <td>5,432</td>
+            <td><strong>Top 12.1%</strong></td>
+            <td>Trung bình Y Dược</td>
+        </tr>
+        <tr>
+            <td>22.0</td>
+            <td>12,345</td>
+            <td><strong>Top 27.4%</strong></td>
+            <td>Ngưỡng thấp</td>
+        </tr>
+    </table>
+    
+    <div class="highlight-box">
+        <h3>💡 So sánh qua các năm</h3>
+        <p><strong>Cùng điểm 27.0 nhưng khác percentile:</strong></p>
+        <ul>
+            <li>Năm 2020 (đề khó): 27.0 = <strong>Top 0.5%</strong></li>
+            <li>Năm 2023 (đề dễ hơn): 27.0 = <strong>Top 1.2%</strong></li>
+        </ul>
+        <p>→ Percentile giúp so sánh công bằng!</p>
+    </div>
+    
+    <div class="page-number">8</div>
+</div>
+
+<!-- SLIDE 8: Mô hình -->
+<div class="slide">
+    <h1>🤖 5. PHƯƠNG PHÁP & MÔ HÌNH</h1>
+    
+    <h2>Kiến trúc Ensemble Learning</h2>
+    <div style="text-align: center; margin: 30px 0;">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='250'%3E%3Crect fill='%23667eea' x='10' y='10' width='180' height='80' rx='10'/%3E%3Ctext x='100' y='55' fill='white' text-anchor='middle' font-size='16' font-weight='bold'%3EWeighted Average%3C/text%3E%3Crect fill='%23764ba2' x='210' y='10' width='180' height='80' rx='10'/%3E%3Ctext x='300' y='55' fill='white' text-anchor='middle' font-size='16' font-weight='bold'%3EETS%3C/text%3E%3Crect fill='%23667eea' x='410' y='10' width='180' height='80' rx='10'/%3E%3Ctext x='500' y='55' fill='white' text-anchor='middle' font-size='16' font-weight='bold'%3EARIMA%3C/text%3E%3Crect fill='%23764ba2' x='610' y='10' width='180' height='80' rx='10'/%3E%3Ctext x='700' y='55' fill='white' text-anchor='middle' font-size='16' font-weight='bold'%3ELinear Regression%3C/text%3E%3Cpath d='M100 90 L400 130' stroke='%23667eea' stroke-width='2'/%3E%3Cpath d='M300 90 L400 130' stroke='%23764ba2' stroke-width='2'/%3E%3Cpath d='M500 90 L400 130' stroke='%23667eea' stroke-width='2'/%3E%3Cpath d='M700 90 L400 130' stroke='%23764ba2' stroke-width='2'/%3E%3Crect fill='%23333' x='300' y='130' width='200' height='50' rx='10'/%3E%3Ctext x='400' y='160' fill='white' text-anchor='middle' font-size='14' font-weight='bold'%3EEnsemble (weighted by CI)%3C/text%3E%3Cpath d='M400 180 L400 210' stroke='%23333' stroke-width='2'/%3E%3Crect fill='%2322c55e' x='300' y='210' width='200' height='40' rx='10'/%3E%3Ctext x='400' y='235' fill='white' text-anchor='middle' font-size='14' font-weight='bold'%3EPrediction 2026%3C/text%3E%3C/svg%3E" alt="Ensemble Architecture">
+    </div>
+    
+    <div class="stats-grid">
+        <div class="model-card">
+            <h4>WA - Weighted Average</h4>
+            <p>Năm gần nhất có trọng số cao hơn</p>
+        </div>
+        <div class="model-card">
+            <h4>ETS - Exponential Smoothing</h4>
+            <p>Bắt xu hướng tăng/giảm</p>
+        </div>
+        <div class="model-card">
+            <h4>ARIMA (1,1,1)</h4>
+            <p>Time series phức tạp</p>
+        </div>
+        <div class="model-card">
+            <h4>LR - Linear Regression</h4>
+            <p>Ngoại suy tuyến tính</p>
+        </div>
+    </div>
+      <div class="page-number">9</div>
+</div>
+
+<!-- SLIDE 10: Cross Validation -->
+<div class="slide">
+    <h1>📊 CROSS-VALIDATION & CONFIDENCE INTERVAL</h1>
+    
+    <h2>Time Series Cross-Validation (Expanding Window)</h2>
+    <div class="code-block" style="font-size: 16px;">
+Year:  2018  2019  2020  2021  2022  2023  2024  2025
+       ├──────────────────────┤ Train
+                               ├────┤ Test (2023)
+       ├─────────────────────────────┤ Train  
+                                     ├────┤ Test (2024)
+       ├────────────────────────────────────┤ Train
+                                            ├────┤ Test (2025)
+    </div>
+    
+    <h2>Confidence Interval (95%)</h2>
+    <div class="code-block">
+CI = 1.96 × std(residuals)
+    </div>
+    
+    <table>
+        <tr>
+            <th>CI</th>
+            <th>Độ tin cậy</th>
+            <th>Ý nghĩa</th>
+        </tr>
+        <tr>
+            <td>&lt; 5</td>
+            <td>⭐⭐⭐ Rất cao</td>
+            <td>Dữ liệu ổn định, dự báo chính xác</td>
+        </tr>
+        <tr>
+            <td>5 - 10</td>
+            <td>⭐⭐ Trung bình</td>
+            <td>Biến động vừa phải</td>
+        </tr>
+        <tr>
+            <td>&gt; 10</td>
+            <td>⭐ Thấp</td>
+            <td>Dữ liệu biến động lớn</td>
+        </tr>    </table>
+    
+    <div class="page-number">10</div>
+</div>
+
+<!-- SLIDE 11: Kết quả Training -->
+<div class="slide">
+    <h1>📈 6. KẾT QUẢ TRAINING</h1>
+    
+    <div class="two-col">
+        <div>
+            <h2>Model Selection</h2>
+            <table>
+                <tr>
+                    <th>Model</th>
+                    <th>Số lượng</th>
+                    <th>Tỷ lệ</th>
+                </tr>
+                <tr>
+                    <td><strong>WA</strong></td>
+                    <td>214</td>
+                    <td>65.0%</td>
+                </tr>
+                <tr>
+                    <td><strong>LR</strong></td>
+                    <td>90</td>
+                    <td>27.4%</td>
+                </tr>
+                <tr>
+                    <td><strong>ETS</strong></td>
+                    <td>25</td>
+                    <td>7.6%</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h2>Cross-Validation Error</h2>
+            <table>
+                <tr>
+                    <th>Model</th>
+                    <th>MAE ± Std</th>
+                </tr>
+                <tr style="background: #d4edda;">
+                    <td><strong>WA</strong> ✅</td>
+                    <td>11.64 ± 9.23</td>
+                </tr>
+                <tr>
+                    <td>ETS</td>
+                    <td>14.77 ± 14.04</td>
+                </tr>
+                <tr>
+                    <td>LR</td>
+                    <td>14.96 ± 14.28</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div class="highlight-box">
+        <h3>📊 Tổng kết</h3>
+        <ul>
+            <li><strong>329 nhóm ngành</strong> đã được train</li>
+            <li><strong>WA là model tốt nhất</strong> với MAE thấp nhất</li>
+            <li><strong>Mean Confidence Interval:</strong> 11.03 percentile points</li>
+        </ul>    </div>
+    
+    <div class="page-number">11</div>
+</div>
+
+<!-- SLIDE 12: Web App -->
+<div class="slide">
+    <h1>💻 7. WEB APPLICATION</h1>
+    
+    <div class="two-col">
+        <div>
+            <h2>Công nghệ</h2>
+            <ul>
+                <li><strong>Framework:</strong> Streamlit</li>
+                <li><strong>Backend:</strong> Python</li>
+                <li><strong>Libraries:</strong> Pandas, NumPy, Joblib</li>
+            </ul>
+            
+            <h2>Tính năng chính</h2>
+            <h3>🔍 Phần 1: Tìm ngành phù hợp</h3>
+            <ul>
+                <li>Nhập điểm 6 môn</li>
+                <li>Tự động tính 9 tổ hợp + percentile</li>
+                <li>Danh sách ngành theo khả năng đậu</li>
+            </ul>
+            
+            <h3>🎯 Phần 2: Phân tích tổ hợp</h3>
+            <ul>
+                <li>Chọn trường + ngành</li>
+                <li>So sánh các tổ hợp</li>
+                <li>Gợi ý tổ hợp tốt nhất</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Giao diện hiển thị</h2>
+            <table>
+                <tr><th>Cột</th><th>Ý nghĩa</th></tr>
+                <tr><td>Điểm bạn</td><td>Tổng 3 môn + ưu tiên</td></tr>
+                <tr><td><strong>Bạn (%)</strong></td><td>Top X% của bạn</td></tr>
+                <tr><td><strong>Yêu cầu (%)</strong></td><td>Top Y% ngành cần</td></tr>
+                <tr><td>ĐC 2025</td><td>Điểm chuẩn 2025</td></tr>
+                <tr><td>Dư/Thiếu</td><td>✅ +2.0 hoặc ❌ -3.5</td></tr>
+                <tr><td>Khả năng</td><td>🟢🟡🟠🔴</td></tr>
+                <tr><td>Tin cậy</td><td>⭐⭐⭐</td></tr>
+            </table>
+            
+            <h3>Ý nghĩa màu sắc</h3>
+            <p><span class="color-legend green"></span> Cao - Bạn (%) tốt hơn Yêu cầu (%)</p>
+            <p><span class="color-legend yellow"></span> Trung bình - Sát ngưỡng</p>
+            <p><span class="color-legend orange"></span> Thấp - Dưới ngưỡng</p>
+            <p><span class="color-legend red"></span> Rất thấp - Cách xa ngưỡng</p>
+        </div>
+    </div>
+    
+    <div class="page-number">12</div>
+</div>
+
+<!-- SLIDE 13: Percentile trong Web App -->
+<div class="slide">
+    <h1>📊 HIỂU VỀ PERCENTILE TRONG WEB APP</h1>
+    
+    <h2>Cách đọc kết quả</h2>
+    <table>
+        <tr>
+            <th>Cột</th>
+            <th>Ví dụ</th>
+            <th>Giải thích</th>
+        </tr>
+        <tr>
+            <td><strong>Bạn (%)</strong></td>
+            <td>Top 3.5%</td>
+            <td>Điểm của bạn cao hơn 96.5% thí sinh cả nước</td>
+        </tr>
+        <tr>
+            <td><strong>Yêu cầu (%)</strong></td>
+            <td>Top 2.0%</td>
+            <td>Để đậu, cần nằm trong Top 2% thí sinh</td>
+        </tr>
+    </table>
+    
+    <div class="two-col" style="margin-top: 30px;">
+        <div class="highlight-box" style="background: #dcfce7;">
+            <h3>✅ Ví dụ 1: ĐẬU</h3>
+            <p><strong>Bạn:</strong> Top 1.5%</p>
+            <p><strong>Yêu cầu:</strong> Top 2.0%</p>
+            <p>→ 1.5 < 2.0 → Bạn <strong>đủ điểm</strong></p>
+            <p><em>(Top 1.5% tốt hơn Top 2.0%)</em></p>
+        </div>
+        <div class="highlight-box" style="background: #fee2e2;">
+            <h3>❌ Ví dụ 2: TRƯỢT</h3>
+            <p><strong>Bạn:</strong> Top 3.5%</p>
+            <p><strong>Yêu cầu:</strong> Top 2.0%</p>
+            <p>→ 3.5 > 2.0 → Bạn <strong>thiếu điểm</strong></p>
+            <p><em>(Top 3.5% kém hơn Top 2.0%)</em></p>
+        </div>
+    </div>
+    
+    <div class="highlight-box" style="margin-top: 20px;">
+        <h3>💡 Nhớ: Top càng nhỏ = Điểm càng cao!</h3>
+        <p>Top 1% > Top 2% > Top 5% > Top 10%</p>
+    </div>
+    
+    <div class="page-number">13</div>
+</div>
+
+<!-- SLIDE 14: Demo -->
+<div class="slide">
+    <h1>🖥️ DEMO WEB APPLICATION</h1>
+    
+    <div style="text-align: center; padding: 40px;">
+        <div style="background: #f0f0f0; border-radius: 12px; padding: 40px; display: inline-block;">
+            <p style="font-size: 24px; margin-bottom: 20px;">🌐 Truy cập ứng dụng</p>
+            <div class="code-block" style="font-size: 20px;">
+streamlit run web_app.py
+            </div>
+            <p style="margin-top: 20px; font-size: 18px;">
+                URL: <strong>http://localhost:8501</strong>
+            </p>
+        </div>
+    </div>
+    
+    <div class="highlight-box">
+        <h3>📝 Ví dụ sử dụng</h3>
+        <p>Thí sinh có điểm: Toán 8.5, Lý 7.5, Hóa 8.0, Sinh 7.0, Văn 7.5, Anh 8.0</p>
+        <ul>
+            <li>Điểm tổ hợp B00 (Toán-Hóa-Sinh): <strong>23.5 điểm</strong> → <strong>Top 8.2%</strong></li>
+            <li>Y khoa Huế 2025 yêu cầu: <strong>Top 4.5%</strong></li>
+            <li>So sánh: 8.2% > 4.5% → <strong>Chưa đủ điểm</strong></li>
+            <li>Khả năng: <strong>🟠 Thấp</strong></li>
+        </ul>
+    </div>
+    
+    <div class="page-number">14</div>
+</div>
+
+<!-- SLIDE 15: Kết luận -->
+<div class="slide">
+    <h1>✅ 8. KẾT LUẬN</h1>
+      <h2>Kết quả đạt được</h2>
+    <ul>
+        <li>✅ Thu thập thành công <strong>1,704 dòng</strong> dữ liệu điểm chuẩn 2018-2025</li>
+        <li>✅ Xây dựng <strong>pipeline xử lý dữ liệu</strong> hoàn chỉnh</li>
+        <li>✅ Tích hợp dữ liệu <strong>THPT Quốc gia</strong> (~6.5 triệu thí sinh) để tính percentile</li>
+        <li>✅ Train <strong>329 nhóm ngành</strong> với 4 mô hình khác nhau</li>
+        <li>✅ <strong>Ensemble learning</strong> với auto model selection</li>
+        <li>✅ <strong>Web app</strong> hiển thị percentile trực quan, dễ hiểu</li>
+    </ul>
+    
+    <h2>Hạn chế</h2>
+    <ul>
+        <li>⚠️ Chỉ có dữ liệu 8 năm - chuỗi thời gian ngắn</li>
+        <li>⚠️ Một số ngành có dữ liệu không đầy đủ</li>
+        <li>⚠️ Chưa tính đến yếu tố bên ngoài (số lượng thí sinh, chính sách...)</li>
+    </ul>
+    
+    <h2>Hướng phát triển</h2>
+    <ul>
+        <li>🔮 Mở rộng sang các khối ngành khác</li>
+        <li>🔮 Tích hợp thêm dữ liệu (chỉ tiêu, số đăng ký...)</li>
+        <li>🔮 Phát triển mobile app</li>
+        <li>🔮 Export báo cáo PDF cá nhân hóa</li>
+    </ul>
+    
+    <div class="page-number">15</div>
+</div>
+
+<!-- SLIDE 16: Thank you -->
+<div class="slide slide-title">
+    <div class="emoji">🙏</div>
+    <h1>CẢM ƠN THẦY CÔ VÀ CÁC BẠN<br>ĐÃ LẮNG NGHE!</h1>
+    <br>
+    <h2>❓ Q&A</h2>
+    <br><br>
+    <div style="font-size: 18px; opacity: 0.8;">
+        <p>📧 Email: [email@example.com]</p>
+        <p>🌐 GitHub: [github.com/username/repo]</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1152 @@
+﻿nam,ten_truong,ma_nganh,ten_nganh,diem_chuan,to_hop_mon,ghi_chu,university_id
+2018,Đại học Y Hà Nội,7720301,Điều dưỡng,21.25,B00,"Thí sinh có cùng mức 21.25 điểm xét trúng tuyển theo tiêu chí: Điểm ngoại ngữ (tiếng Anh, tiếng Pháp) cao hơn và đăng kí nguyện vọng 1",432
+2018,Đại học Y Hà Nội,7720401,Dinh dưỡng,19.65,B00,"Thí sinh có cùng mức 19.65 điểm xét trúng tuyển theo tiêu chí: Điểm ngoại ngữ (tiếng Anh, tiếng Pháp) cao hơn và đăng kí nguyện vọng 1",432
+2018,Đại học Y Hà Nội,7720699,Khúc xạ nhãn khoa,21.6,B00,"Thí sinh có cùng mức 21.6 điểm xét trúng tuyển theo tiêu chí: Điểm ngoại ngữ (tiếng Anh, tiếng Pháp) cao hơn và đăng kí nguyện vọng 1",432
+2018,Đại học Y Hà Nội,7720601,Kỹ thuật xét nghiệm y học,21.55,B00,"Thí sinh có cùng mức 21.55 điểm xét trúng tuyển theo tiêu chí: Điểm ngoại ngữ (tiếng Anh, tiếng Pháp) cao hơn và đăng kí nguyện vọng 1",432
+2018,Đại học Y Hà Nội,7720501,Răng- Hàm -Mặt,24.3,B00,"Thí sinh có cùng mức 24.3 điểm xét trúng tuyển theo tiêu chí: Điểm ngoại ngữ (tiếng Anh, tiếng Pháp) cao hơn và đăng kí nguyện vọng 1",432
+2018,Đại học Y Hà Nội,7720101_YHT,Y Đa khoa phân hiệu Thanh Hóa,22.1,B00,"Thí sinh có cùng mức 22.1 điểm xét trúng tuyển theo tiêu chí: Điểm ngoại ngữ (tiếng Anh, tiếng Pháp) cao hơn và đăng kí nguyện vọng 1",432
+2018,Đại học Y Hà Nội,7720115,Y học cổ truyền,21.85,B00,"Thí sinh có cùng mức 21.85 điểm xét trúng tuyển theo tiêu chí: Điểm ngoại ngữ (tiếng Anh, tiếng Pháp) cao hơn và đăng kí nguyện vọng 1",432
+2018,Đại học Y Hà Nội,7720101,Y khoa,24.75,B00,"Thí sinh có cùng mức 24.75 điểm xét trúng tuyển theo tiêu chí: Điểm ngoại ngữ (tiếng Anh, tiếng Pháp) cao hơn và đăng kí nguyện vọng 1",432
+2018,Đại học Y Hà Nội,7720110,Y học dự phòng,20.0,B00,"Thí sinh có cùng mức 20.00 điểm xét trúng tuyển theo tiêu chí: Điểm ngoại ngữ (tiếng Anh, tiếng Pháp) cao hơn và đăng kí nguyện vọng 1",432
+2018,Đại học Y Hà Nội,7720701,Y tế công cộng,18.1,B00,"Thí sinh có cùng mức 18.1 điểm xét trúng tuyển theo tiêu chí: Điểm ngoại ngữ (tiếng Anh, tiếng Pháp) cao hơn và đăng kí nguyện vọng 1",432
+2019,Đại học Y Hà Nội,7720301,Điều dưỡng,22.7,B00,,432
+2019,Đại học Y Hà Nội,7720401,Dinh dưỡng,21.0,B00,,432
+2019,Đại học Y Hà Nội,7720699,Khúc xạ nhãn khoa,23.4,B00,,432
+2019,Đại học Y Hà Nội,7720601,Kỹ thuật xét nghiệm y học,23.2,B00,,432
+2019,Đại học Y Hà Nội,7720501,Răng- Hàm -Mặt,26.4,B00,,432
+2019,Đại học Y Hà Nội,7720110,Y học dự phòng,21.0,B00,,432
+2019,Đại học Y Hà Nội,7720701,Y tế công cộng,19.9,B00,,432
+2019,Đại học Y Hà Nội,7720101_YHT,Y Đa khoa phân hiệu Thanh Hóa,24.3,B00,,432
+2019,Đại học Y Hà Nội,7720115,Y học cổ truyền,23.3,B00,,432
+2019,Đại học Y Hà Nội,7720101,Y khoa,26.75,B00,,432
+2020,Đại học Y Hà Nội,7720301_YHT,Điều dưỡng phân hiệu Thanh Hóa,22.4,B00,TTNV<=1,432
+2020,Đại học Y Hà Nội,7720301,Điều dưỡng,25.8,B00,TTNV<=2,432
+2020,Đại học Y Hà Nội,7720401,Dinh dưỡng,24.7,B00,TTNV<=5,432
+2020,Đại học Y Hà Nội,7720699,Khúc xạ nhãn khoa,26.65,B00,TTNV<=3,432
+2020,Đại học Y Hà Nội,7720601,Kỹ thuật xét nghiệm y học,26.5,B00,TTNV<=5,432
+2020,Đại học Y Hà Nội,7720501,Răng- Hàm -Mặt,28.65,B00,TTNV<=2,432
+2020,Đại học Y Hà Nội,7720110,Y học dự phòng,24.25,B00,TTNV<=3,432
+2020,Đại học Y Hà Nội,7720115,Y học cổ truyền,26.5,B00,TTNV<=2,432
+2020,Đại học Y Hà Nội,7720101_YHT,Y Đa khoa phân hiệu Thanh Hóa,27.65,B00,TTNV<=4,432
+2020,Đại học Y Hà Nội,7720101,Y khoa,28.9,B00,TTNV<=1,432
+2020,Đại học Y Hà Nội,7720701,Y tế công cộng,22.4,B00,TTNV<=1,432
+2021,Đại học Y Hà Nội,7720301_YHT,Điều dưỡng phân hiệu Thanh Hóa,23.2,B00,TTNV<=3,432
+2021,Đại học Y Hà Nội,7720301,Điều dưỡng,25.6,B00,TTNV<=1,432
+2021,Đại học Y Hà Nội,7720401,Dinh dưỡng,24.65,B00,TTNV<=2,432
+2021,Đại học Y Hà Nội,7720699,Khúc xạ nhãn khoa,26.2,B00,TTNV<=2,432
+2021,Đại học Y Hà Nội,7720601,Kỹ thuật xét nghiệm y học,26.2,B00,TTNV<=4,432
+2021,Đại học Y Hà Nội,7720501,Răng- Hàm -Mặt,28.45,B00,TTNV<=1,432
+2021,Đại học Y Hà Nội,7720101,Y khoa,28.85,B00,TTNV<=1,432
+2021,Đại học Y Hà Nội,7720110,Y học dự phòng,24.85,B00,TTNV<=4,432
+2021,Đại học Y Hà Nội,7720115,Y học cổ truyền,26.2,B00,TTNV<=1,432
+2021,Đại học Y Hà Nội,7720101_YHT,Y Đa khoa phân hiệu Thanh Hóa,27.75,B00,TTNV<=1,432
+2021,Đại học Y Hà Nội,7720101_AP,Y khoa (kết hợp chứng chỉ Ngoại ngữ quốc tế),27.5,B00,TTNV<=1,432
+2021,Đại học Y Hà Nội,7720701,Y tế công cộng,23.8,B00,TTNV<=3,432
+2022,Đại học Y Hà Nội,7720301YHT,Điều dưỡng phân hiệu Thanh Hóa,19.0,B00,,432
+2022,Đại học Y Hà Nội,7720301,Điều dưỡng,24.7,B00,,432
+2022,Đại học Y Hà Nội,7720401,Dinh dưỡng,23.25,B00,,432
+2022,Đại học Y Hà Nội,7720699,Khúc xạ nhãn khoa,25.8,B00,,432
+2022,Đại học Y Hà Nội,7720601,Kỹ thuật xét nghiệm y học,25.55,B00,,432
+2022,Đại học Y Hà Nội,7720501,Răng- Hàm -Mặt,27.7,B00,,432
+2022,Đại học Y Hà Nội,7720101YHT_AP,Y khoa phân hiệu Thanh Hóa kết hợp chứng chỉ quốc tế,24.1,B00,,432
+2022,Đại học Y Hà Nội,7720110,Y học dự phòng,23.15,B00,,432
+2022,Đại học Y Hà Nội,7720101YHT,Y khoa phân hiệu Thanh Hóa,26.8,B00,,432
+2022,Đại học Y Hà Nội,7720115,Y học cổ truyền,25.25,B00,,432
+2022,Đại học Y Hà Nội,7720101_AP,Y khoa (kết hợp chứng chỉ Ngoại ngữ quốc tế),26.25,B00,,432
+2022,Đại học Y Hà Nội,7720701,Y tế công cộng,21.5,B00,,432
+2022,Đại học Y Hà Nội,7720101,Y khoa,28.15,B00,,432
+2023,Đại học Y Hà Nội,7720301,Điều dưỡng,24.0,B00,,432
+2023,Đại học Y Hà Nội,7720301_AP,Điều dưỡng chương trình tiên tiến &lpar;kết hợp chứng chỉ ngoại ngữ quốc tế&rpar;,21.0,B00,,432
+2023,Đại học Y Hà Nội,7720301YHT,Điều dưỡng phân hiệu Thanh Hóa,19.0,B00,,432
+2023,Đại học Y Hà Nội,7720401,Dinh dưỡng,23.19,B00,,432
+2023,Đại học Y Hà Nội,7720699,Khúc xạ nhãn khoa,25.4,B00,,432
+2023,Đại học Y Hà Nội,7720603,Kỹ thuật phục hồi chức năng,22.7,B00,,432
+2023,Đại học Y Hà Nội,7720601,Kỹ thuật xét nghiệm y học,24.85,B00,,432
+2023,Đại học Y Hà Nội,7720501_AP,Răng - Hàm - Mặt &lpar;kết hợp chứng chỉ ngoại ngữ quốc tế&rpar;,25.5,B00,,432
+2023,Đại học Y Hà Nội,7720501,Răng- Hàm -Mặt,27.5,B00,,432
+2023,Đại học Y Hà Nội,7720101YHT,Y khoa phân hiệu Thanh Hóa,26.39,B00,,432
+2023,Đại học Y Hà Nội,7720101_AP,Y khoa (kết hợp chứng chỉ Ngoại ngữ quốc tế),26.0,B00,,432
+2023,Đại học Y Hà Nội,7720110,Y học dự phòng,22.3,B00,,432
+2023,Đại học Y Hà Nội,7720101YHT_AP,Y khoa phân hiệu Thanh Hóa kết hợp chứng chỉ quốc tế,24.25,B00,,432
+2023,Đại học Y Hà Nội,7720115,Y học cổ truyền,24.77,B00,,432
+2023,Đại học Y Hà Nội,7720701,Y tế công cộng,20.7,B00,,432
+2023,Đại học Y Hà Nội,7720101,Y khoa,27.73,B00,,432
+2024,Đại học Y Hà Nội,7720301YHT,Điều dưỡng phân hiệu Thanh Hóa,20.25,B00,,432
+2024,Đại học Y Hà Nội,7720301,Điều dưỡng,24.59,B00,,432
+2024,Đại học Y Hà Nội,7720401,Dinh dưỡng,23.33,B00,,432
+2024,Đại học Y Hà Nội,7720302,Hộ sinh,22.95,B00,,432
+2024,Đại học Y Hà Nội,7720699,Khúc xạ nhãn khoa,25.38,B00,,432
+2024,Đại học Y Hà Nội,7720603YHT,Kỹ thuật phục hồi chức năng &lpar;Phân hiệu Thanh Hóa&rpar;,19.0,B00,,432
+2024,Đại học Y Hà Nội,7720502,Kỹ thuật phục hình răng,24.15,B00,,432
+2024,Đại học Y Hà Nội,7720601YHT,Kỹ thuật Xét nghiệm y học &lpar;Phân hiệu Thanh Hóa&rpar;,19.0,B00,,432
+2024,Đại học Y Hà Nội,7720603,Kỹ thuật phục hồi chức năng,24.07,B00,,432
+2024,Đại học Y Hà Nội,7720601,Kỹ thuật xét nghiệm y học,25.35,B00,,432
+2024,Đại học Y Hà Nội,7720501,Răng- Hàm -Mặt,27.67,B00,,432
+2024,Đại học Y Hà Nội,7310401,Tâm lý học,28.83,C00,,432
+2024,Đại học Y Hà Nội,7310401,Tâm lý học,25.46,B00,,432
+2024,Đại học Y Hà Nội,7310401,Tâm lý học,26.86,"B00, C00, D01",,432
+2024,Đại học Y Hà Nội,7720110,Y học dự phòng,22.94,B00,,432
+2024,Đại học Y Hà Nội,7720701,Y tế công cộng,22.85,B00,,432
+2024,Đại học Y Hà Nội,7720101YHT,Y khoa phân hiệu Thanh Hóa,26.67,B00,,432
+2024,Đại học Y Hà Nội,7720101,Y khoa,28.27,B00,,432
+2024,Đại học Y Hà Nội,7720701,Y tế công cộng,22.35,B08,,432
+2024,Đại học Y Hà Nội,7720701,Y tế công cộng,24.3,"B00, B08, D01",,432
+2024,Đại học Y Hà Nội,7720115,Y học cổ truyền,25.29,B00,,432
+2025,Đại học Y Hà Nội,7760101,Công tác xã hội,17.0,"A00, B00, B08",,432
+2025,Đại học Y Hà Nội,7720301,Điều dưỡng,22.25,"A00, B00",,432
+2025,Đại học Y Hà Nội,7720301YHT,Điều dưỡng phân hiệu Thanh Hóa,17.0,"A00, B00",,432
+2025,Đại học Y Hà Nội,7720401,Dinh dưỡng,18.75,"A00, B00",,432
+2025,Đại học Y Hà Nội,7720302,Hộ sinh,20.35,"A00, B00",,432
+2025,Đại học Y Hà Nội,7720699,Khúc xạ nhãn khoa,23.23,"A00, B00",,432
+2025,Đại học Y Hà Nội,7720601YHT,Kỹ thuật Xét nghiệm y học &lpar;Phân hiệu Thanh Hóa&rpar;,18.35,"A00, B00",,432
+2025,Đại học Y Hà Nội,7720601,Kỹ thuật xét nghiệm y học,23.72,"A00, B00",,432
+2025,Đại học Y Hà Nội,7720602,Kỹ thuật hình ảnh y học,23.57,"A00, B00",,432
+2025,Đại học Y Hà Nội,7720502,Kỹ thuật phục hình răng,21.85,"A00, B00",,432
+2025,Đại học Y Hà Nội,7720603,Kỹ thuật phục hồi chức năng,22.5,"A00, B00",,432
+2025,Đại học Y Hà Nội,7720603YHT,Kỹ thuật phục hồi chức năng &lpar;Phân hiệu Thanh Hóa&rpar;,17.3,"A00, B00",,432
+2025,Đại học Y Hà Nội,7720501,Răng- Hàm -Mặt,27.34,B00,,432
+2025,Đại học Y Hà Nội,7310401,Tâm lý học,28.7,C00,,432
+2025,Đại học Y Hà Nội,7310401,Tâm lý học,23.7,"B00, C00, D01",,432
+2025,Đại học Y Hà Nội,7310401,Tâm lý học,26.7,D01,,432
+2025,Đại học Y Hà Nội,7720101YHT,Y khoa phân hiệu Thanh Hóa,25.8,B00,,432
+2025,Đại học Y Hà Nội,7720115,Y học cổ truyền,23.5,B00,,432
+2025,Đại học Y Hà Nội,7720701,Y tế công cộng,18.2,"B00, B08",,432
+2025,Đại học Y Hà Nội,7720101,Y khoa,28.13,B00,,432
+2025,Đại học Y Hà Nội,7720110,Y học dự phòng,17.0,B00,,432
+2025,Đại học Y Hà Nội,7720701,Y tế công cộng,21.2,"B00, B08, D01",,432
+2018,Đại học Y Khoa Vinh,7720201,Dược học,16.75,B00,,247
+2018,Đại học Y Khoa Vinh,7720601,Kỹ thuật xét nghiệm y học,18.0,B00,,247
+2018,Đại học Y Khoa Vinh,7720110,Y học dự phòng,16.0,B00,,247
+2018,Đại học Y Khoa Vinh,7720101,Y khoa,20.75,B00,,247
+2018,Đại học Y Khoa Vinh,7720701,Y tế công cộng,18.5,B00,,247
+2019,Đại học Y Khoa Vinh,7720301,Điều dưỡng,18.0,B00,"Đã tính điểm ưu tiên đối tượng, ưu tiên khu vực",247
+2019,Đại học Y Khoa Vinh,7720201,Dược học,21.0,"A00, B00","Đã tính điểm ưu tiên đối tượng, ưu tiên khu vực",247
+2019,Đại học Y Khoa Vinh,7720601,Kỹ thuật xét nghiệm y học,18.0,B00,"Đã tính điểm ưu tiên đối tượng, ưu tiên khu vực",247
+2019,Đại học Y Khoa Vinh,7720101,Y khoa,22.4,B00,"Đã tính điểm ưu tiên đối tượng, ưu tiên khu vực",247
+2019,Đại học Y Khoa Vinh,7720101|001,Y khoa (BSĐK liên thông),23.55,B00,"Đã tính điểm ưu tiên đối tượng, ưu tiên khu vực; môn Sinh hệ số 2",247
+2019,Đại học Y Khoa Vinh,7720110,Y học dự phòng,18.0,B00,"Đã tính điểm ưu tiên đối tượng, ưu tiên khu vực",247
+2020,Đại học Y Khoa Vinh,7720301,Điều dưỡng,19.0,B00,,247
+2020,Đại học Y Khoa Vinh,7720201,Dược học,23.5,"A00, B00",,247
+2020,Đại học Y Khoa Vinh,7720601,Kỹ thuật xét nghiệm y học,21.0,B00,,247
+2020,Đại học Y Khoa Vinh,7720110,Y học dự phòng,19.0,B00,,247
+2020,Đại học Y Khoa Vinh,7720101,Y khoa,25.4,B00,,247
+2020,Đại học Y Khoa Vinh,7720101,Y khoa,22.0,B00,,247
+2020,Đại học Y Khoa Vinh,7720701,Y tế công cộng,19.0,B00,,247
+2021,Đại học Y Khoa Vinh,7720301,Điều dưỡng,19.0,B00,,247
+2021,Đại học Y Khoa Vinh,7720201,Dược học,24.0,"A00, B00",,247
+2021,Đại học Y Khoa Vinh,7720601,Kỹ thuật xét nghiệm y học,22.5,B00,,247
+2021,Đại học Y Khoa Vinh,7720110,Y học dự phòng,19.0,B00,,247
+2021,Đại học Y Khoa Vinh,7720101,Y khoa,25.7,B00,,247
+2021,Đại học Y Khoa Vinh,7720801,Y tế công cộng,19.0,B00,,247
+2022,Đại học Y Khoa Vinh,7720301,Điều dưỡng,19.0,B00,,247
+2022,Đại học Y Khoa Vinh,7720201,Dược học,23.5,"A00, B00",,247
+2022,Đại học Y Khoa Vinh,7720601,Kỹ thuật xét nghiệm y học,20.5,B00,,247
+2022,Đại học Y Khoa Vinh,7720110,Y học dự phòng,19.0,B00,,247
+2022,Đại học Y Khoa Vinh,7720101,Y khoa,24.75,B00,,247
+2022,Đại học Y Khoa Vinh,7720801,Y tế công cộng,15.5,B00,,247
+2023,Đại học Y Khoa Vinh,7720301,Điều dưỡng,19.0,B00,,247
+2023,Đại học Y Khoa Vinh,7720201,Dược học,22.5,"A00, B00",,247
+2023,Đại học Y Khoa Vinh,7720601,Kỹ thuật xét nghiệm y học,19.0,B00,,247
+2023,Đại học Y Khoa Vinh,7720110,Y học dự phòng,19.0,B00,,247
+2023,Đại học Y Khoa Vinh,7720101,Y khoa,24.0,B00,,247
+2024,Đại học Y Khoa Vinh,7720301,Điều dưỡng,19.0,B00,,247
+2024,Đại học Y Khoa Vinh,7720201,Dược học,23.0,A00,,247
+2024,Đại học Y Khoa Vinh,7720601,Kỹ thuật xét nghiệm y học,19.0,B00,,247
+2024,Đại học Y Khoa Vinh,7720101,Y khoa,24.85,B00,,247
+2024,Đại học Y Khoa Vinh,7720110,Y học dự phòng,19.0,B00,,247
+2025,Đại học Y Khoa Vinh,7720301,Điều dưỡng,17.5,"A00, B00, D07",,247
+2025,Đại học Y Khoa Vinh,7720201,Dược học,19.0,"A00, B00, D07",,247
+2025,Đại học Y Khoa Vinh,7720601,Kỹ thuật xét nghiệm y học,20.0,"A00, B00, D07",,247
+2025,Đại học Y Khoa Vinh,7720101,Y khoa,22.1,"A00, B00",,247
+2025,Đại học Y Khoa Vinh,7720110,Y học dự phòng,17.25,"A00, B00, D07",,247
+2018,Đại học Y tế Công cộng,7760101,Công tác xã hội,17.0,"B00, C03, C04, D01",Xét tuyển dựa vào kết quả học tập ở cấp THPT,431
+2018,Đại học Y tế Công cộng,7720401,Dinh dưỡng,22.0,"B00, D01, D08",Xét tuyển dựa vào kết quả học tập ở cấp THPT,431
+2018,Đại học Y tế Công cộng,7720601,Kỹ thuật xét nghiệm y học,17.7,"A00, A02, B00",Xét tuyển dựa vào kết quả thi THPT quốc gia; Điểm trung bình môn toán >= 6.2 00099,431
+2018,Đại học Y tế Công cộng,7720701,Y tế công cộng,16.0,"A00, B00, D01, D08",Xét tuyển dựa vào kết quả thi THPT quốc gia,431
+2019,Đại học Y tế Công cộng,7760101,Công tác xã hội,15.0,"B00, C03, C04, D01",,431
+2019,Đại học Y tế Công cộng,7720401,Dinh dưỡng,18.0,"B00, D01, D08",,431
+2019,Đại học Y tế Công cộng,7720601,Kỹ thuật xét nghiệm y học,18.5,"A00, A02, B00",,431
+2019,Đại học Y tế Công cộng,7720701,Y tế công cộng,16.5,"A00, B00, D01, D08",,431
+2020,Đại học Y tế Công cộng,7760101,Công tác xã hội,14.0,"C00, D01, D14, D15",,431
+2020,Đại học Y tế Công cộng,7510406,Công nghệ kỹ thuật Môi trường,14.0,"A00, A01, B00, D07",,431
+2020,Đại học Y tế Công cộng,7720401,Dinh dưỡng,15.5,"B00, B08, D01, D07",,431
+2020,Đại học Y tế Công cộng,7720603,Kỹ thuật phục hồi chức năng,19.0,"A00, A01, B00, D01",,431
+2020,Đại học Y tế Công cộng,7720601,Kỹ thuật xét nghiệm y học,19.0,"A01, B00, B08, D07",,431
+2020,Đại học Y tế Công cộng,7720701,Y tế công cộng,15.5,"B00, B05, D01, D13",,431
+2021,Đại học Y tế Công cộng,7760101,Công tác xã hội,15.0,"B00, C00, D01, D66",,431
+2021,Đại học Y tế Công cộng,7510406,Công nghệ kỹ thuật Môi trường,15.0,"A00, A01, B00, D07",,431
+2021,Đại học Y tế Công cộng,7720401,Dinh dưỡng,16.0,"B00, B08, D01, D07",,431
+2021,Đại học Y tế Công cộng,7720601,Kỹ thuật xét nghiệm y học,22.5,"A01, B00, B08, D07",,431
+2021,Đại học Y tế Công cộng,7720603,Kỹ thuật phục hồi chức năng,22.75,"A00, A01, B00, D01",,431
+2021,Đại học Y tế Công cộng,7720701,Y tế công cộng,15.0,"B00, B08, D01, D13",,431
+2022,Đại học Y tế Công cộng,7510406,Công nghệ kỹ thuật Môi trường,15.0,"A00, A01, B00, D07",,431
+2022,Đại học Y tế Công cộng,7760101,Công tác xã hội,15.15,"B00, C00, D01, D66",,431
+2022,Đại học Y tế Công cộng,7720401,Dinh dưỡng,16.5,"B00, B08, D01, D07",,431
+2022,Đại học Y tế Công cộng,7480109,Khoa học Dữ liệu,17.0,"A00, A01, B00, D01",,431
+2022,Đại học Y tế Công cộng,7720603,Kỹ thuật phục hồi chức năng,21.5,"A00, A01, B00, D01",,431
+2022,Đại học Y tế Công cộng,7720601,Kỹ thuật xét nghiệm y học,20.5,"A01, B00, B08, D07",,431
+2022,Đại học Y tế Công cộng,7720701,Y tế công cộng,16.0,"B00, B08, D01, D13",,431
+2023,Đại học Y tế Công cộng,7760101,Công tác xã hội,19.0,"B00, C00, D01, D66",,431
+2023,Đại học Y tế Công cộng,7510406,Công nghệ kỹ thuật Môi trường,16.0,"A00, B00, D01, D07",,431
+2023,Đại học Y tế Công cộng,7720401,Dinh dưỡng,19.5,"B00, B08, D01, D07",,431
+2023,Đại học Y tế Công cộng,7480109,Khoa học Dữ liệu,16.45,"A00, A01, B00, D01",,431
+2023,Đại học Y tế Công cộng,7720601,Kỹ thuật xét nghiệm y học,20.0,"A01, B00, B08, D07",,431
+2023,Đại học Y tế Công cộng,7720603,Kỹ thuật phục hồi chức năng,21.8,"A00, A01, B00, D01",,431
+2023,Đại học Y tế Công cộng,7720701,Y tế công cộng,16.15,"B00, B08, D01, D13",,431
+2024,Đại học Y tế Công cộng,7760101,Công tác xã hội,21.5,"B00, C00, D01, D66",,431
+2024,Đại học Y tế Công cộng,7720401,Dinh dưỡng,20.4,"B00, B08, D07",,431
+2024,Đại học Y tế Công cộng,7480109,Khoa học Dữ liệu,16.1,"A00, A01, B00, D01",,431
+2024,Đại học Y tế Công cộng,7720601,Kỹ thuật xét nghiệm y học,20.15,"A01, B00, B08, D07",,431
+2024,Đại học Y tế Công cộng,7720603,Kỹ thuật phục hồi chức năng,22.95,"A00, A01, B00, D01",,431
+2024,Đại học Y tế Công cộng,7720701,Y tế công cộng,17.5,"B00, B08, D01, D13",,431
+2025,Đại học Y tế Công cộng,7760101,Công tác xã hội,23.5,"C00, C20, D01, D14, D15, D66, X74, X78",,431
+2025,Đại học Y tế Công cộng,7720401,Dinh dưỡng,22.1,"B00, B03, B08, C02, D01, D07",,431
+2025,Đại học Y tế Công cộng,7460108,Khoa học dữ liệu (Data Science),19.0,"A00, A01, B00, D01, D07, X26",,431
+2025,Đại học Y tế Công cộng,7720601,Kỹ thuật xét nghiệm y học,18.3,"A00, A01, B00, B08, D01, D07",,431
+2025,Đại học Y tế Công cộng,7720603,Kỹ thuật phục hồi chức năng,20.25,"A00, A01, B00, B08, C01, D01",,431
+2025,Đại học Y tế Công cộng,7720701,Y tế công cộng,20.5,"B00, B03, B08, C02, D01, D13",,431
+2018,Đại học Y Dược Thái Bình,7720301,Điều dưỡng,20.35,B00,,239
+2018,Đại học Y Dược Thái Bình,7720201,Dược học,21.55,A00,,239
+2018,Đại học Y Dược Thái Bình,7720701,Y tế công cộng,15.75,B00,,239
+2018,Đại học Y Dược Thái Bình,7720101,Y khoa,22.7,B00,,239
+2018,Đại học Y Dược Thái Bình,7720115,Y học cổ truyền,20.6,B00,,239
+2019,Đại học Y Dược Thái Bình,7720301,Điều dưỡng,21.25,B00,,239
+2019,Đại học Y Dược Thái Bình,7720201,Dược học,21.7,"A00, B00",,239
+2019,Đại học Y Dược Thái Bình,7720101,Y khoa,24.6,B00,,239
+2019,Đại học Y Dược Thái Bình,7720701,Y tế công cộng,18.0,B00,,239
+2019,Đại học Y Dược Thái Bình,7720115,Y học cổ truyền,22.75,B00,,239
+2020,Đại học Y Dược Thái Bình,7720301,Điều dưỡng,24.4,B00,,239
+2020,Đại học Y Dược Thái Bình,7720201,Dược học,25.75,A00,,239
+2020,Đại học Y Dược Thái Bình,7720101,Y khoa,27.15,B00,,239
+2020,Đại học Y Dược Thái Bình,7720701,Y tế công cộng,16.0,"A00, B00",,239
+2020,Đại học Y Dược Thái Bình,7720110,Y học dự phòng,19.75,B00,,239
+2021,Đại học Y Dược Thái Bình,7720301,Điều dưỡng,24.2,B00,TTNV <=4,239
+2021,Đại học Y Dược Thái Bình,7720201,Dược học,24.9,A00,TTNV <=8,239
+2021,Đại học Y Dược Thái Bình,7720115,Y học cổ truyền,24.35,B00,TTNV <=3,239
+2021,Đại học Y Dược Thái Bình,7720101,Y khoa,26.9,B00,TTNV <=1,239
+2021,Đại học Y Dược Thái Bình,7720110,Y học dự phòng,22.1,B00,TTNV <=3,239
+2022,Đại học Y Dược Thái Bình,7720301,Điều dưỡng,21.3,"B00, D08",,239
+2022,Đại học Y Dược Thái Bình,7720201,Dược học,25.0,"A00, A01, D07",,239
+2022,Đại học Y Dược Thái Bình,7720601,Kỹ thuật xét nghiệm y học,24.15,"A00, B00",,239
+2022,Đại học Y Dược Thái Bình,7720115,Y học cổ truyền,23.55,"B00, D08",,239
+2022,Đại học Y Dược Thái Bình,7720101,Y khoa,26.3,"B00, D07, D08","NV1, điểm Toán >=7.8",239
+2022,Đại học Y Dược Thái Bình,7720110,Y học dự phòng,19.0,"B00, D08",,239
+2023,Đại học Y Dược Thái Bình,7720301,Điều dưỡng,22.1,"B00, D08",,239
+2023,Đại học Y Dược Thái Bình,7720201,Dược học,23.14,"A00, A01, D07",,239
+2023,Đại học Y Dược Thái Bình,7720601,Kỹ thuật xét nghiệm y học,23.7,"A00, B00",,239
+2023,Đại học Y Dược Thái Bình,7720110,Y học dự phòng,19.0,"B00, D08",,239
+2023,Đại học Y Dược Thái Bình,7720115,Y học cổ truyền,23.25,"B00, D08",,239
+2023,Đại học Y Dược Thái Bình,7720701,Y tế công cộng,15.0,"A00, B00",,239
+2023,Đại học Y Dược Thái Bình,7720101,Y khoa,25.8,"B00, D07, D08",,239
+2024,Đại học Y Dược Thái Bình,7720301,Điều dưỡng,20.0,"B00, D08",,239
+2024,Đại học Y Dược Thái Bình,7720201,Dược học,24.0,"A00, A01, D07",,239
+2024,Đại học Y Dược Thái Bình,7720601,Kỹ thuật xét nghiệm y học,23.05,"A00, B00",,239
+2024,Đại học Y Dược Thái Bình,7720101,Y khoa,26.17,"B00, D07, D08",,239
+2024,Đại học Y Dược Thái Bình,7720115,Y học cổ truyền,23.0,"B00, D08",,239
+2024,Đại học Y Dược Thái Bình,7720110,Y học dự phòng,19.15,"B00, D08",,239
+2025,Đại học Y Dược Thái Bình,7720301,Điều dưỡng,17.0,"B00, D08",,239
+2025,Đại học Y Dược Thái Bình,7720201,Dược học,19.5,"A00, A01, D07",,239
+2025,Đại học Y Dược Thái Bình,7720601,Kỹ thuật xét nghiệm y học,19.5,"A00, B00",,239
+2025,Đại học Y Dược Thái Bình,7720110,Y học dự phòng,17.0,"B00, D08",,239
+2025,Đại học Y Dược Thái Bình,7720115,Y học cổ truyền,19.0,"B00, D08",,239
+2025,Đại học Y Dược Thái Bình,7720101,Y khoa,24.6,"B00, D07, D08",,239
+2018,Đại học Y Dược - Đại học Huế,7720301,Điều dưỡng,18.15,B00,,215
+2018,Đại học Y Dược - Đại học Huế,7720201,Dược học,20.75,A00,,215
+2018,Đại học Y Dược - Đại học Huế,7720601,Kỹ thuật xét nghiệm y học,19.25,B00,,215
+2018,Đại học Y Dược - Đại học Huế,7720602,Kỹ thuật hình ảnh y học,18.5,B00,,215
+2018,Đại học Y Dược - Đại học Huế,7720501,Răng- Hàm -Mặt,22.75,B00,,215
+2018,Đại học Y Dược - Đại học Huế,7720701,Y tế công cộng,16.15,B00,,215
+2018,Đại học Y Dược - Đại học Huế,7720101,Y khoa,23.25,B00,,215
+2018,Đại học Y Dược - Đại học Huế,7720115,Y học cổ truyền,20.25,B00,,215
+2018,Đại học Y Dược - Đại học Huế,7720110,Y học dự phòng,18.15,B00,,215
+2019,Đại học Y Dược - Đại học Huế,7720301,Điều dưỡng,19.25,B00,,215
+2019,Đại học Y Dược - Đại học Huế,7720201,Dược học,22.75,A00,,215
+2019,Đại học Y Dược - Đại học Huế,7720602,Kỹ thuật hình ảnh y học,20.25,B00,,215
+2019,Đại học Y Dược - Đại học Huế,7720601,Kỹ thuật xét nghiệm y học,21.25,B00,,215
+2019,Đại học Y Dược - Đại học Huế,7720501,Răng- Hàm -Mặt,24.7,B00,,215
+2019,Đại học Y Dược - Đại học Huế,7720110,Y học dự phòng,18.25,B00,,215
+2019,Đại học Y Dược - Đại học Huế,7720115,Y học cổ truyền,21.75,B00,,215
+2019,Đại học Y Dược - Đại học Huế,7720101,Y khoa,25.0,B00,,215
+2019,Đại học Y Dược - Đại học Huế,7720701,Y tế công cộng,16.5,B00,,215
+2020,Đại học Y Dược - Đại học Huế,7720301,Điều dưỡng,19.15,B00,,215
+2020,Đại học Y Dược - Đại học Huế,7720201,Dược học,25.6,A00,,215
+2020,Đại học Y Dược - Đại học Huế,7720302,Hộ sinh,22.5,B00,,215
+2020,Đại học Y Dược - Đại học Huế,7720602,Kỹ thuật hình ảnh y học,23.45,B00,,215
+2020,Đại học Y Dược - Đại học Huế,7720601,Kỹ thuật xét nghiệm y học,24.4,B00,,215
+2020,Đại học Y Dược - Đại học Huế,7720501,Răng- Hàm -Mặt,27.25,B00,,215
+2020,Đại học Y Dược - Đại học Huế,7720115,Y học cổ truyền,24.8,B00,,215
+2020,Đại học Y Dược - Đại học Huế,7720101,Y khoa,27.55,B00,,215
+2020,Đại học Y Dược - Đại học Huế,7720110,Y học dự phòng,19.75,B00,,215
+2020,Đại học Y Dược - Đại học Huế,7720701,Y tế công cộng,17.15,B00,,215
+2021,Đại học Y Dược - Đại học Huế,7720301,Điều dưỡng,21.9,B00,,215
+2021,Đại học Y Dược - Đại học Huế,7720201,Dược học,24.9,A00,,215
+2021,Đại học Y Dược - Đại học Huế,7720302,Hộ sinh,19.05,B00,,215
+2021,Đại học Y Dược - Đại học Huế,7720601,Kỹ thuật xét nghiệm y học,24.5,B00,,215
+2021,Đại học Y Dược - Đại học Huế,7720602,Kỹ thuật hình ảnh y học,23.5,B00,,215
+2021,Đại học Y Dược - Đại học Huế,7720501,Răng- Hàm -Mặt,26.85,B00,,215
+2021,Đại học Y Dược - Đại học Huế,7720101,Y khoa,27.25,B00,,215
+2021,Đại học Y Dược - Đại học Huế,7720110,Y học dự phòng,19.5,B00,,215
+2021,Đại học Y Dược - Đại học Huế,7720701,Y tế công cộng,16.0,B00,,215
+2021,Đại học Y Dược - Đại học Huế,7720115,Y học cổ truyền,24.9,B00,,215
+2022,Đại học Y Dược - Đại học Huế,7720301,Điều dưỡng,19.0,B00,,215
+2022,Đại học Y Dược - Đại học Huế,7720201,Dược học,25.1,"A00, B00",,215
+2022,Đại học Y Dược - Đại học Huế,7720302,Hộ sinh,19.0,B01,,215
+2022,Đại học Y Dược - Đại học Huế,7720601,Kỹ thuật xét nghiệm y học,19.5,B02,,215
+2022,Đại học Y Dược - Đại học Huế,7720602,Kỹ thuật hình ảnh y học,19.0,B03,,215
+2022,Đại học Y Dược - Đại học Huế,7720501,Răng- Hàm -Mặt,26.2,B00,,215
+2022,Đại học Y Dược - Đại học Huế,7720101_02,Y khoa (có CC Tiếng Anh),24.4,B00,,215
+2022,Đại học Y Dược - Đại học Huế,7720101,Y khoa,26.4,B00,,215
+2022,Đại học Y Dược - Đại học Huế,7720101_02,Y khoa (có CC Tiếng Anh),24.4,B00,,215
+2022,Đại học Y Dược - Đại học Huế,7720701,Y tế công cộng,16.0,B04,,215
+2022,Đại học Y Dược - Đại học Huế,7720110,Y học dự phòng,19.0,B00,,215
+2022,Đại học Y Dược - Đại học Huế,7720115,Y học cổ truyền,21.0,B00,,215
+2023,Đại học Y Dược - Đại học Huế,7720301,Điều dưỡng,19.05,"B00, B08",,215
+2023,Đại học Y Dược - Đại học Huế,7720201,Dược học,24.7,"A00, B00",,215
+2023,Đại học Y Dược - Đại học Huế,7720302,Hộ sinh,19.0,B00,,215
+2023,Đại học Y Dược - Đại học Huế,7720601,Kỹ thuật xét nghiệm y học,20.7,B00,,215
+2023,Đại học Y Dược - Đại học Huế,7720602,Kỹ thuật hình ảnh y học,19.05,"A00, B00",,215
+2023,Đại học Y Dược - Đại học Huế,7720501,Răng- Hàm -Mặt,25.8,B00,,215
+2023,Đại học Y Dược - Đại học Huế,7720701,Y tế công cộng,16.0,"B00, B08",,215
+2023,Đại học Y Dược - Đại học Huế,7720115,Y học cổ truyền,22.7,B00,,215
+2023,Đại học Y Dược - Đại học Huế,7720101,Y khoa,26.0,B00,,215
+2023,Đại học Y Dược - Đại học Huế,7720110,Y học dự phòng,19.05,B00,,215
+2024,Đại học Y Dược - Đại học Huế,7720301,Điều dưỡng,19.9,"B00, B08",,215
+2024,Đại học Y Dược - Đại học Huế,7720401,Dinh dưỡng,15.0,"B00, B08",,215
+2024,Đại học Y Dược - Đại học Huế,7720201,Dược học,24.55,"A00, B00",,215
+2024,Đại học Y Dược - Đại học Huế,7720302,Hộ sinh,29.0,"B00, B08",,215
+2024,Đại học Y Dược - Đại học Huế,7720602,Kỹ thuật hình ảnh y học,19.8,"A00, B00",,215
+2024,Đại học Y Dược - Đại học Huế,7720601,Kỹ thuật xét nghiệm y học,21.7,"B00, B08",,215
+2024,Đại học Y Dược - Đại học Huế,7720501,Răng- Hàm -Mặt,25.95,B00,,215
+2024,Đại học Y Dược - Đại học Huế,7720701,Y tế công cộng,15.0,"B00, B08",,215
+2024,Đại học Y Dược - Đại học Huế,7720115,Y học cổ truyền,23.5,B00,,215
+2024,Đại học Y Dược - Đại học Huế,7720110,Y học dự phòng,19.0,"B00, B08",,215
+2024,Đại học Y Dược - Đại học Huế,7720101,Y khoa,26.3,B00,,215
+2025,Đại học Y Dược - Đại học Huế,7720301,Điều dưỡng,17.0,"B00, B08, D07",,215
+2025,Đại học Y Dược - Đại học Huế,7720401,Dinh dưỡng,17.0,"B00, B08, D07",,215
+2025,Đại học Y Dược - Đại học Huế,7720201,Dược học,21.25,"A00, B00, D07",,215
+2025,Đại học Y Dược - Đại học Huế,7720302,Hộ sinh,17.0,"B00, B08, D07",,215
+2025,Đại học Y Dược - Đại học Huế,7720601,Kỹ thuật xét nghiệm y học,17.25,"B00, B08, D07",,215
+2025,Đại học Y Dược - Đại học Huế,7720602,Kỹ thuật hình ảnh y học,19.0,"A00, B00, B08, D07",,215
+2025,Đại học Y Dược - Đại học Huế,7720501,Răng- Hàm -Mặt,24.4,"B00, B08, D07",,215
+2025,Đại học Y Dược - Đại học Huế,7720101,Y khoa,25.17,"B00, B08, D07",,215
+2025,Đại học Y Dược - Đại học Huế,7720110,Y học dự phòng,17.0,"B00, B08, D07",,215
+2025,Đại học Y Dược - Đại học Huế,7720701,Y tế công cộng,17.0,"B00, B08, D07",,215
+2025,Đại học Y Dược - Đại học Huế,7720115,Y học cổ truyền,19.6,"B00, B08, D07",,215
+2018,Học viện Quân Y - Hệ Quân sự,7720101,Y khoa,20.05,"A00, B00",,430
+2019,Học viện Quân Y - Hệ Quân sự,7720101|22B00,Y khoa (Nam - Miền Nam),22.1,B00,Nam - phía Nam - B00,430
+2019,Học viện Quân Y - Hệ Quân sự,7720101|12A00,Y khoa (Nữ - Miền Nam),23.65,A00,Nữ - phía Nam - A00,430
+2019,Học viện Quân Y - Hệ Quân sự,7720101,Y khoa,26.15,"A00, B00",Nữ - phía Bắc - A00,430
+2019,Học viện Quân Y - Hệ Quân sự,7720101|22A00,Y khoa (Nam - Miền Nam),23.7,A00,Nam - phía Nam - A00,430
+2019,Học viện Quân Y - Hệ Quân sự,7720101|11B00,Y khoa (Nữ - Miền Bắc),26.65,B00,Nữ - phía Bắc - B00,430
+2019,Học viện Quân Y - Hệ Quân sự,7720101|21A00,Y khoa (Nam - Miền Bắc),25.25,A00,Nam - phía Bắc - A00,430
+2019,Học viện Quân Y - Hệ Quân sự,7720101|12B00,Y khoa (Nữ - Miền Nam),25.35,B00,Nữ - phía Nam - B00,430
+2019,Học viện Quân Y - Hệ Quân sự,7720101|21B00,Y khoa (Nam - Miền Bắc),23.55,B00,Nam - phía Bắc - B00,430
+2020,Học viện Quân Y - Hệ Quân sự,7720101|11A00,Y khoa (Nữ - Miền Bắc),28.65,A00,"Thí sinh mức 28.65, tiêu chí phụ 1: Điểm môn Toán >= 9.4 (A00); Điểm môn Sinh >= 8.5 (B00)",430
+2020,Học viện Quân Y - Hệ Quân sự,7720101|21A00,Y khoa (Nam - Miền Bắc),26.5,A00,Thí sinh đạt 26.5 điểm; tiêu chí phụ: Điểm môn Toán >= 9 (A00); Điểm môn Sinh >= 9 (B00),430
+2020,Học viện Quân Y - Hệ Quân sự,7720101|11B00,Y khoa (Nữ - Miền Bắc),28.65,B00,"Thí sinh mức 28.65, tiêu chí phụ 1: Điểm môn Toán >= 9.4 (A00); Điểm môn Sinh >= 8.5 (B00)",430
+2020,Học viện Quân Y - Hệ Quân sự,7720101|12B00,Y khoa (Nữ - Miền Nam),28.3,B00,,430
+2020,Học viện Quân Y - Hệ Quân sự,7720101|12A00,Y khoa (Nữ - Miền Nam),28.3,A00,,430
+2020,Học viện Quân Y - Hệ Quân sự,7720101|22A00,Y khoa (Nam - Miền Nam),25.5,A00,,430
+2020,Học viện Quân Y - Hệ Quân sự,7720101|21B00,Y khoa (Nam - Miền Bắc),26.5,B00,Thí sinh đạt 26.5 điểm; tiêu chí phụ: Điểm môn Toán >= 9 (A00); Điểm môn Sinh >= 9 (B00),430
+2020,Học viện Quân Y - Hệ Quân sự,7720101|22B00,Y khoa (Nam - Miền Nam),25.5,B00,,430
+2021,Học viện Quân Y - Hệ Quân sự,52720101|12,Y đa khoa (Nữ - phía Nam),27.9,"A00, B00",,430
+2021,Học viện Quân Y - Hệ Quân sự,52720101|11,Y đa khoa (Nữ - phía Bắc),28.5,"A00, B00",,430
+2021,Học viện Quân Y - Hệ Quân sự,52720101|21,Y đa khoa (Nam - phía Bắc),26.45,"A00, B00",Toán >=8.2 Hoá >=9.25,430
+2021,Học viện Quân Y - Hệ Quân sự,52720101|22,Y đa khoa (Nam - phía Nam),25.55,"A00, B00",Toán >=8.8 Hoá >=8,430
+2022,Học viện Quân Y - Hệ Quân sự,7720101|12A00,Y khoa (Nữ - Miền Nam),27.4,A00,,430
+2022,Học viện Quân Y - Hệ Quân sự,7720101|21B00,Y khoa (Nam - Miền Bắc),26.1,B00,,430
+2022,Học viện Quân Y - Hệ Quân sự,7720101|22A00,Y khoa (Nam - Miền Nam),25.5,A00,,430
+2022,Học viện Quân Y - Hệ Quân sự,7720101|21A00,Y khoa (Nam - Miền Bắc),26.1,A00,,430
+2022,Học viện Quân Y - Hệ Quân sự,7720110|21B00,Y học dự phòng (Nam - Miền Bắc),23.55,B00,,430
+2022,Học viện Quân Y - Hệ Quân sự,7720101|11B00,Y khoa (Nữ - Miền Bắc),28.3,B00,,430
+2022,Học viện Quân Y - Hệ Quân sự,7720110|22B00,Y học dự phòng (Nam - Miền Nam),24.2,B00,,430
+2022,Học viện Quân Y - Hệ Quân sự,7720101|12B00,Y khoa (Nữ - Miền Nam),27.4,B00,,430
+2022,Học viện Quân Y - Hệ Quân sự,7720101|11A00,Y khoa (Nữ - Miền Bắc),28.3,A00,,430
+2022,Học viện Quân Y - Hệ Quân sự,7720101|22B00,Y khoa (Nam - Miền Nam),25.5,B00,,430
+2023,Học viện Quân Y - Hệ Quân sự,7720201|22A00,Dược học - Nam thí sinh phía Nam,23.2,A00,,430
+2023,Học viện Quân Y - Hệ Quân sự,7720201|21A00,Dược học - Nam thí sinh phía Bắc,23.19,A00,,430
+2023,Học viện Quân Y - Hệ Quân sự,7720201|12A00,Dược học - Nữ thí sinh phía Nam,25.43,A00,,430
+2023,Học viện Quân Y - Hệ Quân sự,7720101|12B00,Y khoa (Nữ - Miền Nam),27.1,B00,,430
+2023,Học viện Quân Y - Hệ Quân sự,7720101|21A00,Y khoa (Nam - Miền Bắc),25.15,A00,,430
+2023,Học viện Quân Y - Hệ Quân sự,7720101|11A00,Y khoa (Nữ - Miền Bắc),27.17,A00,,430
+2023,Học viện Quân Y - Hệ Quân sự,7720101|12A00,Y khoa (Nữ - Miền Nam),27.1,A00,,430
+2023,Học viện Quân Y - Hệ Quân sự,7720101|21B00,Y khoa (Nam - Miền Bắc),25.15,B00,,430
+2023,Học viện Quân Y - Hệ Quân sự,7720110|21B00,Y học dự phòng (Nam - Miền Bắc),25.5,B00,,430
+2023,Học viện Quân Y - Hệ Quân sự,7720101|22B00,Y khoa (Nam - Miền Nam),24.91,B00,,430
+2023,Học viện Quân Y - Hệ Quân sự,7720101|11B00,Y khoa (Nữ - Miền Bắc),27.17,B00,,430
+2023,Học viện Quân Y - Hệ Quân sự,7720110|22B00,Y học dự phòng (Nam - Miền Nam),24.6,B00,,430
+2023,Học viện Quân Y - Hệ Quân sự,7720101|22A00,Y khoa (Nam - Miền Nam),24.91,A00,,430
+2024,Học viện Quân Y - Hệ Quân sự,7720201|21A00,Dược học - Nam thí sinh phía Bắc,25.19,A00,,430
+2024,Học viện Quân Y - Hệ Quân sự,7720201|12A00,Dược học - Nữ thí sinh phía Nam,26.26,A00,,430
+2024,Học viện Quân Y - Hệ Quân sự,7720201|11A00,Dược học - Nữ thí sinh phía Bắc,27.28,A00,,430
+2024,Học viện Quân Y - Hệ Quân sự,7720201|22A00,Dược học - Nam thí sinh phía Nam,24.56,A00,,430
+2024,Học viện Quân Y - Hệ Quân sự,7720101|11B00,Y khoa (Nữ - Miền Bắc),27.49,B00,,430
+2024,Học viện Quân Y - Hệ Quân sự,7720101|12B00,Y khoa (Nữ - Miền Nam),27.34,B00,,430
+2024,Học viện Quân Y - Hệ Quân sự,7720101|21A00,Y khoa (Nam - Miền Bắc),26.13,A00,,430
+2024,Học viện Quân Y - Hệ Quân sự,7720101|11A00,Y khoa (Nữ - Miền Bắc),27.49,A00,,430
+2024,Học viện Quân Y - Hệ Quân sự,7720110|21B00,Y học dự phòng (Nam - Miền Bắc),24.35,B00,,430
+2024,Học viện Quân Y - Hệ Quân sự,7720101|22A00,Y khoa (Nam - Miền Nam),25.75,A00,,430
+2024,Học viện Quân Y - Hệ Quân sự,7720101|22B00,Y khoa (Nam - Miền Nam),25.75,B00,,430
+2024,Học viện Quân Y - Hệ Quân sự,7720110|22B00,Y học dự phòng (Nam - Miền Nam),24.12,B00,,430
+2024,Học viện Quân Y - Hệ Quân sự,7720101|12A00,Y khoa (Nữ - Miền Nam),27.34,A00,,430
+2024,Học viện Quân Y - Hệ Quân sự,7720101|21B00,Y khoa (Nam - Miền Bắc),26.13,B00,,430
+2025,Học viện Quân Y - Hệ Quân sự,7720201|11A00,Dược học - Nữ thí sinh phía Bắc,28.37,A00,,430
+2025,Học viện Quân Y - Hệ Quân sự,7720201|22A00,Dược học - Nam thí sinh phía Nam,24.81,A00,,430
+2025,Học viện Quân Y - Hệ Quân sự,7720201|12A00,Dược học - Nữ thí sinh phía Nam,28.12,A00,,430
+2025,Học viện Quân Y - Hệ Quân sự,7720201|21A00,Dược học - Nam thí sinh phía Bắc,25.41,A00,,430
+2025,Học viện Quân Y - Hệ Quân sự,7720101|22A00,Y khoa (Nam - Miền Nam),27.71,A00,,430
+2025,Học viện Quân Y - Hệ Quân sự,7720101|21A00,Y khoa (Nam - Miền Bắc),27.94,A00,,430
+2025,Học viện Quân Y - Hệ Quân sự,7720101|22B00,Y khoa (Nam - Miền Nam),27.71,B00,,430
+2025,Học viện Quân Y - Hệ Quân sự,7720101|12B00,Y khoa (Nữ - Miền Nam),29.03,B00,,430
+2025,Học viện Quân Y - Hệ Quân sự,7720101|11A00,Y khoa (Nữ - Miền Bắc),30.0,A00,,430
+2025,Học viện Quân Y - Hệ Quân sự,7720101|12A00,Y khoa (Nữ - Miền Nam),29.03,A00,,430
+2025,Học viện Quân Y - Hệ Quân sự,7720101|21B00,Y khoa (Nam - Miền Bắc),27.94,B00,,430
+2025,Học viện Quân Y - Hệ Quân sự,7720101|11B00,Y khoa (Nữ - Miền Bắc),30.0,B00,,430
+2018,Đại học Y Dược Hải Phòng,7720301B,Điều dưỡng nha khoa,19.9,B00,"DS>=16, Tiêu chí phụ: TO+HO+SI; SI; HO; TO: 19.9000; 7.2500; 6.2500; 6.4000 98",321
+2018,Đại học Y Dược Hải Phòng,7720201A,Dược học (tổ hợp A00),21.6,A00,"DS>=18, Tiêu chí phụ: TO+HO+LI; HO; TO; LI: 21.3500; 6.7500; 6.6000; 8.0000 99",321
+2018,Đại học Y Dược Hải Phòng,7720201B,Dược học (tổ hợp B00),21.65,A00,"DS>=18, Tiêu chí phụ: TO+HO+SI; SI; HO; TO: 21.1500; 7.2500; 6.5000; 7.4000 95",321
+2018,Đại học Y Dược Hải Phòng,7720601,Kỹ thuật xét nghiệm y học,20.25,B00,"DS>=16, Tiêu chí phụ: TO+HO+SI; SI; HO; TO: 19.5000; 5.5000; 6.0000; 8.0000 94",321
+2018,Đại học Y Dược Hải Phòng,7720501,Răng- Hàm -Mặt,21.85,B00,"DS>=18, Tiêu chí phụ: TO+HO+SI; SI; HO; TO: 21.6000; 7.5000; 6.5000; 7.6000 97",321
+2018,Đại học Y Dược Hải Phòng,7720115,Y học cổ truyền,19.95,B00,"DS>=16, Tiêu chí phụ: TO+HO+SI; SI; HO; TO: 19.9500; 7.7500; 6.0000; 6.2000 98",321
+2018,Đại học Y Dược Hải Phòng,7720101B,Y khoa (B),22.0,B00,"DS>=18, Tiêu chí phụ: TO+HO+SI; SI; HO; TO: 21.5000; 7.5000; 7.0000; 7.0000 99",321
+2018,Đại học Y Dược Hải Phòng,7720110B,Y học dự phòng B00,18.5,B00,"DS>=16, Tiêu chí phụ: TO+HO+SI; SI; HO; TO: 18.5000; 6.2500; 6.2500; 6.0000 98",321
+2019,Đại học Y Dược Hải Phòng,7720301B8,Điều dưỡng (B8),18.0,B08,"Tiêu chí phụ: Tổng điểm 3 môn chưa tròn >= 17.5, Sinh học >= 4.5, Toán >= 6.2, Tiếng Anh >= 6.8",321
+2019,Đại học Y Dược Hải Phòng,7720301B,Điều dưỡng nha khoa,20.35,B00,"Tiêu chí phụ: Tổng điểm 3 môn chưa tròn >= 19.85, Sinh học >= 6, Hoá học >= 6.25, Toán >= 7.6",321
+2019,Đại học Y Dược Hải Phòng,7720201B,Dược học (tổ hợp B00),23.15,"A00, B00","Tiêu chí phụ: Tổng điểm 3 môn chưa tròn >= 22.65, Sinh học >= 6.75, Hoá học >= 7.5, Toán >= 8.4",321
+2019,Đại học Y Dược Hải Phòng,7720201A,Dược học (tổ hợp A00),22.95,A00,"Tiêu chí phụ: Tổng điểm 3 môn chưa tròn >= 22.95, Hoá học >= 6.75, Toán >= 8.20, Vật lý >= 8",321
+2019,Đại học Y Dược Hải Phòng,7720201D,Dược học (D),20.5,D07,"Tiêu chí phụ: Tổng điểm 3 môn chưa tròn >= 19.8, Hoá học >= 7, Toán >= 7.2, Tiếng Anh >= 5.6",321
+2019,Đại học Y Dược Hải Phòng,7720601,Kỹ thuật xét nghiệm y học,20.8,B00,"Tiêu chí phụ: Tổng điểm 3 môn chưa tròn >= 20.8, Sinh học >= 7, Hoá học >= 7, Toán >= 6.8",321
+2019,Đại học Y Dược Hải Phòng,7720501,Răng- Hàm -Mặt,23.5,B00,"Tiêu chí phụ: Tổng điểm 3 môn chưa tròn >= 23.25, Sinh học >= 8.75, Hoá học >= 6.5, Toán >= 8",321
+2019,Đại học Y Dược Hải Phòng,7720115,Y học cổ truyền,20.1,B00,"Tiêu chí phụ: Tổng điểm 3 môn chưa tròn >= 19.35, Sinh học >= 6, Hoá học >= 5.75, Toán >= 7.6",321
+2019,Đại học Y Dược Hải Phòng,7720110B,Y học dự phòng B00,18.05,B00,"Tiêu chí phụ: Tổng điểm 3 môn chưa tròn >= 17.8, Sinh học >= 4.5, Hoá học >= 6.5, Toán >= 6.8",321
+2019,Đại học Y Dược Hải Phòng,7720101B,Y khoa (B),23.85,B00,"Tiêu chí phụ: Tổng điểm 3 môn chưa tròn >= 23.6, Sinh học >= 7.25, Hoá học >= 7.75, Toán >= 8.6",321
+2019,Đại học Y Dược Hải Phòng,7720110B8,Y học dự phòng B08,20.6,B08,"Tiêu chí phụ: Tổng điểm 3 môn chưa tròn >= 20.6, Sinh học >= 6, Toán >= 7, Tiếng Anh >= 7.6",321
+2019,Đại học Y Dược Hải Phòng,7720101A,Y khoa (A),23.2,A00,"Tiêu chí phụ: Tổng điểm 3 môn chưa tròn >=22.70, Hoá học >= 7.25, Toán >= 8.20, Vật lý >= 7.25",321
+2020,Đại học Y Dược Hải Phòng,7720301,Điều dưỡng,22.85,B00,,321
+2020,Đại học Y Dược Hải Phòng,7720201D,Dược học (D),23.85,D07,,321
+2020,Đại học Y Dược Hải Phòng,7720201A,Dược học (tổ hợp A00),25.65,A00,,321
+2020,Đại học Y Dược Hải Phòng,7720201B,Dược học (tổ hợp B00),26.0,B00,,321
+2020,Đại học Y Dược Hải Phòng,7720601,Kỹ thuật xét nghiệm y học,24.6,B00,,321
+2020,Đại học Y Dược Hải Phòng,7720501,Răng- Hàm -Mặt,26.8,B00,,321
+2020,Đại học Y Dược Hải Phòng,7720101A,Y khoa (A),26.0,A00,,321
+2020,Đại học Y Dược Hải Phòng,7720110,Y học dự phòng,21.4,B00,,321
+2020,Đại học Y Dược Hải Phòng,7720101B,Y khoa (B),27.0,B00,,321
+2020,Đại học Y Dược Hải Phòng,7720115,Y học cổ truyền,23.9,B00,,321
+2021,Đại học Y Dược Hải Phòng,7720201D,Dược học (D),26.05,D07,Môn 1>=8. Môn 2>=8.4 Môn 3>=9.4,321
+2022,Đại học Y Dược Hải Phòng,7720301,Điều dưỡng,19.05,B00,,321
+2022,Đại học Y Dược Hải Phòng,7720201D,Dược học (D),24.3,D07,,321
+2022,Đại học Y Dược Hải Phòng,7720201A,Dược học (tổ hợp A00),25.1,A00,,321
+2022,Đại học Y Dược Hải Phòng,7720201B,Dược học (tổ hợp B00),25.3,B00,,321
+2022,Đại học Y Dược Hải Phòng,7720601,Kỹ thuật xét nghiệm y học,23.45,B00,,321
+2022,Đại học Y Dược Hải Phòng,7720501,Răng- Hàm -Mặt,26.0,B00,,321
+2022,Đại học Y Dược Hải Phòng,7720101B,Y khoa (B),26.2,B00,,321
+2022,Đại học Y Dược Hải Phòng,7720101A,Y khoa (A),25.6,A00,,321
+2022,Đại học Y Dược Hải Phòng,7720115,Y học cổ truyền,21.0,B00,,321
+2022,Đại học Y Dược Hải Phòng,7720110,Y học dự phòng,19.1,B00,,321
+2023,Đại học Y Dược Hải Phòng,7720301,Điều dưỡng,20.25,B00,,321
+2023,Đại học Y Dược Hải Phòng,7720201D,Dược học (D),23.4,D07,,321
+2023,Đại học Y Dược Hải Phòng,7720201B,Dược học (tổ hợp B00),24.41,B00,,321
+2023,Đại học Y Dược Hải Phòng,7720201A,Dược học (tổ hợp A00),23.43,A00,,321
+2023,Đại học Y Dược Hải Phòng,7720601,Kỹ thuật xét nghiệm y học,22.75,B00,,321
+2023,Đại học Y Dược Hải Phòng,7720501,Răng- Hàm -Mặt,25.4,B00,,321
+2023,Đại học Y Dược Hải Phòng,7720101A,Y khoa (A),24.63,A00,,321
+2023,Đại học Y Dược Hải Phòng,7720110,Y học dự phòng,19.0,B00,,321
+2023,Đại học Y Dược Hải Phòng,7720101B,Y khoa (B),25.35,B00,,321
+2023,Đại học Y Dược Hải Phòng,7720115,Y học cổ truyền,21.8,B00,,321
+2024,Đại học Y Dược Hải Phòng,7720301,Điều dưỡng,20.55,B00,,321
+2024,Đại học Y Dược Hải Phòng,7720201B,Dược học (tổ hợp B00),24.59,B00,,321
+2024,Đại học Y Dược Hải Phòng,7720201A,Dược học (tổ hợp A00),24.35,A00,,321
+2024,Đại học Y Dược Hải Phòng,7720201D,Dược học (D),23.0,D07,,321
+2024,Đại học Y Dược Hải Phòng,7720601,Kỹ thuật xét nghiệm y học,22.5,B00,,321
+2024,Đại học Y Dược Hải Phòng,7720501,Răng- Hàm -Mặt,25.85,B00,,321
+2024,Đại học Y Dược Hải Phòng,7720115,Y học cổ truyền,22.5,B00,,321
+2024,Đại học Y Dược Hải Phòng,7720110,Y học dự phòng,19.0,B00,,321
+2024,Đại học Y Dược Hải Phòng,7720101A,Y khoa (A),25.57,A00,,321
+2024,Đại học Y Dược Hải Phòng,7720101B,Y khoa (B),26.0,B00,,321
+2025,Đại học Y Dược Hải Phòng,7720301,Điều dưỡng,22.22,"A00, B00",,321
+2025,Đại học Y Dược Hải Phòng,7720201,Dược học,20.0,"A00, B00, D07",,321
+2025,Đại học Y Dược Hải Phòng,7720601,Kỹ thuật xét nghiệm y học,23.23,"A00, B00",,321
+2025,Đại học Y Dược Hải Phòng,7720501,Răng- Hàm -Mặt,24.63,"A00, B00",,321
+2025,Đại học Y Dược Hải Phòng,7720115,Y học cổ truyền,24.03,"A00, B00",,321
+2025,Đại học Y Dược Hải Phòng,7720101,Y khoa,25.33,"A00, B00",,321
+2025,Đại học Y Dược Hải Phòng,7720110,Y học dự phòng,19.35,"A00, B00",,321
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720301,Điều dưỡng,19.2,B00,,301
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720301TP,Điều dưỡng,19.6,B00,Thí sinh có hộ khẩu tại TPHCM,301
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720201,Dược học,22.2,B00,,301
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720201TP,Dược học,21.9,B00,Thí sinh có hộ khẩu tại TPHCM,301
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720699TP,Khúc xạ nhãn khoa,20.75,B00,Thí sinh có hộ khẩu tại TPHCM,301
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720699,Khúc xạ nhãn khoa,19.8,B00,,301
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720601TP,Kỹ thuật xét nghiệm y học,21.1,B00,Thí sinh có hộ khẩu tại TPHCM,301
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720601,Kỹ thuật xét nghiệm y học,21.2,B00,,301
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720602TP,Kỹ thuật hình ảnh y học,20.35,B00,Thí sinh có hộ khẩu tại TPHCM,301
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720602,Kỹ thuật hình ảnh y học,20.1,B00,,301
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720501,Răng- Hàm -Mặt,23.3,B00,,301
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720501TP,Răng - Hàm - Mặt,22.5,B00,Thí sinh có hộ khẩu tại TPHCM,301
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720701,Y tế công cộng,16.85,B00,,301
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720101TP,Y khoa,22.0,B00,Thí sinh có hộ khẩu tại TPHCM,301
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720701TP,Y tế công cộng,18.5,B00,Thí sinh có hộ khẩu tại TPHCM,301
+2018,Đại học Y khoa Phạm Ngọc Thạch,7720101,Y khoa,22.7,B00,,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720301TP,Điều dưỡng,20.6,B00,NN >= 7.2; ĐTB12 >= 8.6; VA >= 6.5; TTNV <= 5; mã ngành TP dành cho thí sinh có HK tại TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720301,Điều dưỡng,20.6,B00,NN >= 0; ĐTB12 >= 0; VA >= 0; TTNV <= 2; mã ngành TQ dành cho thí sinh có HK ngoài TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720401TQ,Dinh dưỡng,20.35,B00,NN >= 3; ĐTB12 >= 7; VA >= 4.5; TTNV <= 4; mã ngành TQ dành cho thí sinh có HK ngoài TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720401TP,Dinh dưỡng,20.15,B00,NN >= 4.4; ĐTB12 >= 0; VA >= 0; TTNV <= 7; mã ngành TP dành cho thí sinh có HK tại TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720201TP,Dược học,23.35,B00,NN >= 7.2; ĐTB12 >= 9.1; VA >= 6.75; TTNV <= 1; mã ngành TP dành cho thí sinh có HK tại TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720201,Dược học,23.55,B00,NN >= 7.4; ĐTB12 >= 8.5; VA >= 6.25; TTNV <= 4; mã ngành TQ dành cho thí sinh có HK ngoài TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720699,Khúc xạ nhãn khoa,21.75,B00,N1 >= 10; ĐTB12 >= 8.9; VA >= 6.25; TTNV <= 4; mã ngành TQ dành cho thí sinh có HK ngoài TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720699TP,Khúc xạ nhãn khoa,21.55,B00,N1 >= 9; ĐTB12 >= 0; VA >= 0; TTNV <= 3; mã ngành TP dành cho thí sinh có HK tại TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720601,Kỹ thuật xét nghiệm y học,22.6,B00,NN >= 5; ĐTB12 >= 8.8; VA >= 6; TTNV <= 2; mã ngành TQ dành cho thí sinh có HK ngoài TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720602,Kỹ thuật hình ảnh y học,21.45,B00,NN >= 6.6; ĐTB12 >= 8.2; VA >= 4.25; TTNV <= 4; mã ngành TQ dành cho thí sinh có HK ngoài TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720601TP,Kỹ thuật xét nghiệm y học,22.75,B00,NN >= 8.4; ĐTB12 >= 8.4; VA >= 6; TTNV <= 5; mã ngành TP dành cho thí sinh có HK tại TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720602TP,Kỹ thuật hình ảnh y học,21.9,B00,NN >= 6.2; ĐTB12 >= 8.9; VA >= 4.5; TTNV <= 6; mã ngành TP dành cho thí sinh có HK tại TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720501TP,Răng - Hàm - Mặt,24.5,B00,NN >= 9.2; ĐTB12 >= 9; VA >= 7.25; TTNV <= 2; mã ngành TP dành cho thí sinh có HK tại TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720501,Răng- Hàm -Mặt,25.15,B00,NN >= 7.6; ĐTB12 >= 8.9; VA >= 7.08; TTNV <= 2; mã ngành TQ dành cho thí sinh có HK ngoài TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720101TP,Y khoa,23.5,B00,NN >= 8.6; ĐTB12 >= 9.6; VA >= 7.75; TTNV <= 2; mã ngành TP dành cho thí sinh có HK tại TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720701TP,Y tế công cộng,18.3,B00,NN >= 4.4; ĐTB12 >= 8.2; VA >= 5; TTNV <= 2; mã ngành TP dành cho thí sinh có HK tại TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720101,Y khoa,24.65,B00,NN >= 5.6; ĐTB12 >= 8.3; VA >= 5; TTNV <= 1; mã ngành TQ dành cho thí sinh có HK ngoài TP HCM,301
+2019,Đại học Y khoa Phạm Ngọc Thạch,7720701,Y tế công cộng,18.05,B00,NN >= 7; ĐTB12 >= 8; VA >= 4.75; TTNV <= 2; mã ngành TQ dành cho thí sinh có HK ngoài TP HCM,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720301TP,Điều dưỡng,23.7,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720301TQ,Điều dưỡng,23.45,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720401TP,Dinh dưỡng,23.0,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720401TQ,Dinh dưỡng,22.45,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720201TQ,Dược học,26.6,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720201TP,Dược học,26.05,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720699TQ,Khúc xạ nhãn khoa,21.15,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720699TP,Khúc xạ nhãn khoa,24.5,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720601TQ,Kỹ thuật xét nghiệm y học,25.5,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720602TQ,Kỹ thuật hình ảnh Y học,24.75,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720601TP,Kỹ thuật xét nghiệm y học,25.6,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720602TP,Kỹ thuật hình ảnh y học,24.65,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720501TQ,Răng - Hàm - Mặt,27.55,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720501TP,Răng - Hàm - Mặt,26.5,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720701TP,Y tế công cộng,20.4,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720101TQ,Y khoa,27.5,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720701TQ,Y tế công cộng,19.0,B00,,301
+2020,Đại học Y khoa Phạm Ngọc Thạch,7720101TP,Y khoa,26.35,B00,,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720301TP,Điều dưỡng,24.25,B00,NN>=9;DTB12 >=9.7;VA >=8;TTNV <=4,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720301TQ,Điều dưỡng,24.0,B00,NN>=8.6;DTB12 >=8.6;VA >=7.5;TTNV <=5,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720401TP,Dinh dưỡng,23.8,B00,NN>=0;DTB12 >=0;VA >=0;TTNV <=7,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720401TQ,Dinh dưỡng,23.45,B00,NN>=0;DTB12 >=0;VA >=0;TTNV <=8,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720201TQ,Dược học,26.35,B00,NN>=7;DTB12 >=9;VA >=6.75;TTNV <=1,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720201TP,Dược học,26.15,B00,NN>=8.2;DTB12 >=8.8;VA >=6.5;TTNV <=2,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720699TQ,Khúc xạ nhãn khoa,24.7,B00,NN>=8.8;DTB12 >=8.6;VA >=7;TTNV <=5,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720699TQ,Khúc xạ nhãn khoa,24.9,B00,NN>=9.6;DTB12 >=8.7;VA >=7;TTNV <=6,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720602TP,Kỹ thuật hình ảnh y học,24.85,B00,NN>=8.4;DTB12 >=9.6;VA >=7.75;TTNV <=1,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720601TQ,Kỹ thuật xét nghiệm y học,25.7,B00,NN>=6;DTB12 >=8.2;VA >=5.75;TTNV <=7,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720602TQ,Kỹ thuật hình ảnh Y học,24.7,B00,NN>=7.8;DTB12 >=8.9;VA >=4.5;TTNV <=8,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720601TP,Kỹ thuật xét nghiệm y học,25.6,B00,NN>=8.6;DTB12 >=9.2;VA >=5.25;TTNV <=1,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720501TQ,Răng - Hàm - Mặt,27.35,B00,NN>=9;DTB12 >=8.9;VA >=6.5;TTNV <=4,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720501TP,Răng - Hàm - Mặt,26.6,B00,NN>=6;DTB12 >=7.8;VA >=5.5;TTNV <=1,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720701TQ,Y tế công cộng,21.35,B00,NN>=6.2;DTB12 >=7.7;VA >=7.5;TTNV <=1,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720701TP,Y tế công cộng,23.15,B00,NN>=7.4;DTB12 >=8.6;VA >=7;TTNV <=3,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720101TQ,Y khoa,27.35,B00,NN>=9.4;DTB12 >=8.7;VA >=6.5;TTNV <=2,301
+2021,Đại học Y khoa Phạm Ngọc Thạch,7720101TP,Y khoa,26.35,B00,NN>=10;DTB12 >=9.3;VA >=7.75;TTNV <=2,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720301TQ,Điều dưỡng,19.05,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720301TP,Điều dưỡng,19.0,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720401TQ,Dinh dưỡng,19.1,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720401TP,Dinh dưỡng,18.1,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720201TQ,Dược học,25.45,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720201TP,Dược học,25.45,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720699TQ,Khúc xạ nhãn khoa,22.8,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720699TP,Khúc xạ nhãn khoa,24.5,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720601TP,Kỹ thuật xét nghiệm y học,24.85,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720603TP,Kỹ thuật phục hồi chức năng,19.0,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720602TP,Kỹ thuật hình ảnh y học,23.6,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720601TQ,Kỹ thuật xét nghiệm y học,24.2,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720603TQ,Kỹ thuật phục hồi chức năng,19.2,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720602TQ,Kỹ thuật hình ảnh Y học,21.7,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720501TQ,Răng - Hàm - Mặt,26.65,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720501TP,Răng - Hàm - Mặt,26.1,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720701TQ,Y tế công cộng,18.8,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720101TP,Y khoa,25.85,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720701TP,Y tế công cộng,18.35,B00,,301
+2022,Đại học Y khoa Phạm Ngọc Thạch,7720101TQ,Y khoa,26.65,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720301TP,Điều dưỡng,22.4,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720301TQ,Điều dưỡng,22.4,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720401TQ,Dinh dưỡng,21.8,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720401TP,Dinh dưỡng,22.25,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720201TP,Dược học,25.8,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720201TQ,Dược học,25.25,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720699TP,Khúc xạ nhãn khoa,23.75,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720699TQ,Khúc xạ nhãn khoa,23.57,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720603TP,Kỹ thuật phục hồi chức năng,23.13,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720601TQ,Kỹ thuật xét nghiệm y học,24.47,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720602TQ,Kỹ thuật hình ảnh Y học,23.61,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720603TQ,Kỹ thuật phục hồi chức năng,23.09,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720601TP,Kỹ thuật xét nghiệm y học,24.54,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720602TP,Kỹ thuật hình ảnh y học,23.45,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720501TQ,Răng - Hàm - Mặt,26.28,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720501TP,Răng - Hàm - Mặt,26.0,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720701TQ,Y tế công cộng,18.35,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720101TP,Y khoa,25.9,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720701TP,Y tế công cộng,18.85,B00,,301
+2023,Đại học Y khoa Phạm Ngọc Thạch,7720101TQ,Y khoa,26.31,B00,,301
+2024,Đại học Y khoa Phạm Ngọc Thạch,7720301,Điều dưỡng,23.57,"B00, B03",,301
+2024,Đại học Y khoa Phạm Ngọc Thạch,7720401,Dinh dưỡng,23.2,B00,,301
+2024,Đại học Y khoa Phạm Ngọc Thạch,7720201,Dược học,25.51,B00,,301
+2024,Đại học Y khoa Phạm Ngọc Thạch,7720302,Hộ sinh,22.4,B00,,301
+2024,Đại học Y khoa Phạm Ngọc Thạch,7720699,Khúc xạ nhãn khoa,24.06,"A00, B00",,301
+2024,Đại học Y khoa Phạm Ngọc Thạch,7720601,Kỹ thuật xét nghiệm y học,24.9,B00,,301
+2024,Đại học Y khoa Phạm Ngọc Thạch,7720603,Kỹ thuật phục hồi chức năng,24.01,B00,,301
+2024,Đại học Y khoa Phạm Ngọc Thạch,7720602,Kỹ thuật hình ảnh y học,24.1,"A00, B00",,301
+2024,Đại học Y khoa Phạm Ngọc Thạch,7720501,Răng- Hàm -Mặt,26.49,B00,,301
+2024,Đại học Y khoa Phạm Ngọc Thạch,7720101,Y khoa,26.57,B00,,301
+2024,Đại học Y khoa Phạm Ngọc Thạch,7720115,Y học cổ truyền,24.6,B00,,301
+2024,Đại học Y khoa Phạm Ngọc Thạch,7720701,Y tế công cộng,21.35,"A00, B00, B03",,301
+2025,Đại học Y khoa Phạm Ngọc Thạch,7720301,Điều dưỡng,19.6,"B00, B03, B08",,301
+2025,Đại học Y khoa Phạm Ngọc Thạch,7720401,Dinh dưỡng,18.0,"A00, B00",,301
+2025,Đại học Y khoa Phạm Ngọc Thạch,7720201,Dược học,22.0,B00,,301
+2025,Đại học Y khoa Phạm Ngọc Thạch,7720302,Hộ sinh,19.6,"B00, B03, B08",,301
+2025,Đại học Y khoa Phạm Ngọc Thạch,7720699,Khúc xạ nhãn khoa,21.0,"A00, A01, B00",,301
+2025,Đại học Y khoa Phạm Ngọc Thạch,7720601,Kỹ thuật xét nghiệm y học,21.5,B00,,301
+2025,Đại học Y khoa Phạm Ngọc Thạch,7720603,Kỹ thuật phục hồi chức năng,21.25,"A00, A01, B00",,301
+2025,Đại học Y khoa Phạm Ngọc Thạch,7720602,Kỹ thuật hình ảnh y học,20.55,"A00, B00",,301
+2025,Đại học Y khoa Phạm Ngọc Thạch,7720501,Răng- Hàm -Mặt,25.26,B00,,301
+2025,Đại học Y khoa Phạm Ngọc Thạch,7720101,Y khoa,25.55,B00,,301
+2025,Đại học Y khoa Phạm Ngọc Thạch,7720701,Y tế công cộng,18.0,"A00, B00, B03, B08",,301
+2025,Đại học Y khoa Phạm Ngọc Thạch,7720115,Y học cổ truyền,21.1,B00,,301
+2018,Đại học Y Dược TP HCM,7720301_02,Điều dưỡng chuyên ngành Hộ sinh,19.0,B00,,298
+2018,Đại học Y Dược TP HCM,7720301,Điều dưỡng,20.15,B00,,298
+2018,Đại học Y Dược TP HCM,7720301_03,Điều dưỡng chuyên ngành Gây mê hồi sức,20.0,B00,,298
+2018,Đại học Y Dược TP HCM,7720401,Dinh dưỡng,20.25,B00,,298
+2018,Đại học Y Dược TP HCM,7720201,Dược học,22.3,B00,,298
+2018,Đại học Y Dược TP HCM,7720603,Kỹ thuật phục hồi chức năng,19.75,B00,,298
+2018,Đại học Y Dược TP HCM,7720602,Kỹ thuật hình ảnh y học,20.25,B00,,298
+2018,Đại học Y Dược TP HCM,7720502,Kỹ thuật phục hình răng,21.25,B00,,298
+2018,Đại học Y Dược TP HCM,7720601,Kỹ thuật xét nghiệm y học,21.5,B00,,298
+2018,Đại học Y Dược TP HCM,7720501,Răng- Hàm -Mặt,24.45,B00,,298
+2018,Đại học Y Dược TP HCM,7720101,Y khoa,24.95,B00,,298
+2018,Đại học Y Dược TP HCM,7720115,Y học cổ truyền,20.95,B00,,298
+2018,Đại học Y Dược TP HCM,7720701,Y tế công cộng,18.0,B00,,298
+2018,Đại học Y Dược TP HCM,7720110,Y học dự phòng,19.0,B00,,298
+2019,Đại học Y Dược TP HCM,7720301,Điều dưỡng,21.5,B00,"Điểm trúng tuyển đã cộng điểm ưu tiên về khu vực, đối tượng",298
+2019,Đại học Y Dược TP HCM,7720301_03,Điều dưỡng chuyên ngành Gây mê hồi sức,21.25,B00,"Điểm trúng tuyển đã cộng điểm ưu tiên về khu vực, đối tượng",298
+2019,Đại học Y Dược TP HCM,7720301_02,Điều dưỡng chuyên ngành Hộ sinh,20.0,B00,"Điểm trúng tuyển đã cộng điểm ưu tiên về khu vực, đối tượng",298
+2019,Đại học Y Dược TP HCM,7720401,Dinh dưỡng,21.7,B00,"Điểm trúng tuyển đã cộng điểm ưu tiên về khu vực, đối tượng",298
+2019,Đại học Y Dược TP HCM,7720201,Dược học,23.85,B00,"Điểm trúng tuyển đã cộng điểm ưu tiên về khu vực, đối tượng",298
+2019,Đại học Y Dược TP HCM,7720502,Kỹ thuật phục hình răng,22.55,B00,"Điểm trúng tuyển đã cộng điểm ưu tiên về khu vực, đối tượng",298
+2019,Đại học Y Dược TP HCM,7720602,Kỹ thuật hình ảnh y học,22.0,B00,"Điểm trúng tuyển đã cộng điểm ưu tiên về khu vực, đối tượng",298
+2019,Đại học Y Dược TP HCM,7720601,Kỹ thuật xét nghiệm y học,23.0,B00,"Điểm trúng tuyển đã cộng điểm ưu tiên về khu vực, đối tượng",298
+2019,Đại học Y Dược TP HCM,7720603,Kỹ thuật phục hồi chức năng,21.1,B00,"Điểm trúng tuyển đã cộng điểm ưu tiên về khu vực, đối tượng",298
+2019,Đại học Y Dược TP HCM,7720501,Răng- Hàm -Mặt,26.1,B00,"Điểm trúng tuyển đã cộng điểm ưu tiên về khu vực, đối tượng",298
+2019,Đại học Y Dược TP HCM,7720115,Y học cổ truyền,22.4,B00,"Điểm trúng tuyển đã cộng điểm ưu tiên về khu vực, đối tượng",298
+2019,Đại học Y Dược TP HCM,7720110,Y học dự phòng,20.5,B00,"Điểm trúng tuyển đã cộng điểm ưu tiên về khu vực, đối tượng",298
+2019,Đại học Y Dược TP HCM,7720701,Y tế công cộng,18.5,B00,"Điểm trúng tuyển đã cộng điểm ưu tiên về khu vực, đối tượng",298
+2019,Đại học Y Dược TP HCM,7720101,Y khoa,26.7,B00,"Điểm trúng tuyển đã cộng điểm ưu tiên về khu vực, đối tượng",298
+2020,Đại học Y Dược TP HCM,7720301_02,Điều dưỡng chuyên ngành Hộ sinh,22.5,B00,,298
+2020,Đại học Y Dược TP HCM,2023&rpar;,Điều dưỡng chuyên ngành Hộ sinh &lpar;Chỉ tuyển nữ&rpar;  7720501_02 &lpar;trước,27.1,B00,,298
+2020,Đại học Y Dược TP HCM,7720301_04,Điều dưỡng (Kết hợp chứng chỉ tiếng Anh quốc tế),21.65,B00,,298
+2020,Đại học Y Dược TP HCM,7720301_03,Điều dưỡng chuyên ngành Gây mê hồi sức,23.5,B00,,298
+2020,Đại học Y Dược TP HCM,7720301,Điều dưỡng,23.65,B00,,298
+2020,Đại học Y Dược TP HCM,7720401,Dinh dưỡng,23.4,B00,,298
+2020,Đại học Y Dược TP HCM,7720201_02,Dược học (Kết hợp chứng chỉ tiếng Anh quốc tế),24.2,"A00, B00",,298
+2020,Đại học Y Dược TP HCM,7720201,Dược học,26.2,"A00, B00",,298
+2020,Đại học Y Dược TP HCM,7720602,Kỹ thuật hình ảnh y học,24.45,B00,,298
+2020,Đại học Y Dược TP HCM,7720601,Kỹ thuật xét nghiệm y học,25.35,B00,,298
+2020,Đại học Y Dược TP HCM,7720603,Kỹ thuật phục hồi chức năng,23.5,B00,,298
+2020,Đại học Y Dược TP HCM,7720502,Kỹ thuật phục hình răng,24.85,B00,,298
+2020,Đại học Y Dược TP HCM,7720501,Răng- Hàm -Mặt,28.0,B00,,298
+2020,Đại học Y Dược TP HCM,7720101,Y khoa,28.45,B00,,298
+2020,Đại học Y Dược TP HCM,7720115,Y học cổ truyền,25.0,B00,,298
+2020,Đại học Y Dược TP HCM,7720701,Y tế công cộng,19.0,B00,,298
+2020,Đại học Y Dược TP HCM,7720110,Y học dự phòng,21.95,B00,,298
+2020,Đại học Y Dược TP HCM,7720101_02,Y khoa (có CC Tiếng Anh),27.7,B00,,298
+2021,Đại học Y Dược TP HCM,2023&rpar;,Điều dưỡng chuyên ngành Hộ sinh &lpar;Chỉ tuyển nữ&rpar;  7720501_02 &lpar;trước,27.4,B00,,298
+2021,Đại học Y Dược TP HCM,7720301_04,Điều dưỡng (Kết hợp chứng chỉ tiếng Anh quốc tế),22.8,B00,,298
+2021,Đại học Y Dược TP HCM,7720301,Điều dưỡng,24.1,B00,,298
+2021,Đại học Y Dược TP HCM,7720301_03,Điều dưỡng chuyên ngành Gây mê hồi sức,24.15,B00,,298
+2021,Đại học Y Dược TP HCM,7720401,Dinh dưỡng,24.0,B00,,298
+2021,Đại học Y Dược TP HCM,7720201_02,Dược học (Kết hợp chứng chỉ tiếng Anh quốc tế),24.5,"A00, B00",,298
+2021,Đại học Y Dược TP HCM,7720201,Dược học,26.25,"A00, B00",,298
+2021,Đại học Y Dược TP HCM,7720302,Hộ sinh,23.25,B00,,298
+2021,Đại học Y Dược TP HCM,7720603,Kỹ thuật phục hồi chức năng,24.1,B00,,298
+2021,Đại học Y Dược TP HCM,7720601,Kỹ thuật xét nghiệm y học,25.45,B00,,298
+2021,Đại học Y Dược TP HCM,7720502,Kỹ thuật phục hình răng,25.0,B00,,298
+2021,Đại học Y Dược TP HCM,7720602,Kỹ thuật hình ảnh y học,24.8,B00,,298
+2021,Đại học Y Dược TP HCM,7720501,Răng- Hàm -Mặt,27.65,B00,,298
+2021,Đại học Y Dược TP HCM,7720701,Y tế công cộng,22.0,B00,,298
+2021,Đại học Y Dược TP HCM,7720101,Y khoa,28.2,B00,,298
+2021,Đại học Y Dược TP HCM,7720110,Y học dự phòng,23.9,B00,,298
+2021,Đại học Y Dược TP HCM,7720101_02,Y khoa (có CC Tiếng Anh),27.65,B00,,298
+2021,Đại học Y Dược TP HCM,7720115,Y học cổ truyền,25.2,B00,,298
+2022,Đại học Y Dược TP HCM,2023&rpar;,Điều dưỡng chuyên ngành Hộ sinh &lpar;Chỉ tuyển nữ&rpar;  7720501_02 &lpar;trước,26.25,B00,,298
+2022,Đại học Y Dược TP HCM,7720301_04,Điều dưỡng (Kết hợp chứng chỉ tiếng Anh quốc tế),20.3,B00,,298
+2022,Đại học Y Dược TP HCM,7720301,Điều dưỡng,20.3,B00,,298
+2022,Đại học Y Dược TP HCM,7720301_03,Điều dưỡng chuyên ngành Gây mê hồi sức,23.25,B00,,298
+2022,Đại học Y Dược TP HCM,7720401,Dinh dưỡng,20.35,B00,,298
+2022,Đại học Y Dược TP HCM,7720401_02,Dinh dưỡng (kết hợp sơ tuyển chứng chỉ tiếng Anh quốc tế),22.5,B05,,298
+2022,Đại học Y Dược TP HCM,7720401_02,Dinh dưỡng (kết hợp sơ tuyển chứng chỉ tiếng Anh quốc tế),20.95,B00,,298
+2022,Đại học Y Dược TP HCM,7720201_02,Dược học (Kết hợp chứng chỉ tiếng Anh quốc tế),23.85,"A00, B00",,298
+2022,Đại học Y Dược TP HCM,7720201,Dược học,25.5,"A00, B00",,298
+2022,Đại học Y Dược TP HCM,7720302,Hộ sinh,19.05,B00,,298
+2022,Đại học Y Dược TP HCM,7720603,Kỹ thuật phục hồi chức năng,20.6,B00,,298
+2022,Đại học Y Dược TP HCM,7720502_02,Kỹ thuật phục hình răng (kết hợp sơ tuyển chứng chỉ tiếng Anh quốc tế),23.45,B00,,298
+2022,Đại học Y Dược TP HCM,7720601,Kỹ thuật xét nghiệm y học,24.5,B00,,298
+2022,Đại học Y Dược TP HCM,7720502,Kỹ thuật phục hình răng,24.3,B00,,298
+2022,Đại học Y Dược TP HCM,7720502_02,Kỹ thuật phục hình răng (kết hợp sơ tuyển chứng chỉ tiếng Anh quốc tế),20.95,B00,,298
+2022,Đại học Y Dược TP HCM,7720602,Kỹ thuật hình ảnh y học,23.0,B00,,298
+2022,Đại học Y Dược TP HCM,7720501,Răng- Hàm -Mặt,27.0,B00,,298
+2022,Đại học Y Dược TP HCM,7720115_02,Y học cổ truyền (kết hợp sơ tuyển chứng chỉ tiếng Anh quốc tế),22.5,B05,,298
+2022,Đại học Y Dược TP HCM,7720101_02,Y khoa (có CC Tiếng Anh),26.6,B01,,298
+2022,Đại học Y Dược TP HCM,7720701,Y tế công cộng,19.1,B00,,298
+2022,Đại học Y Dược TP HCM,7720110_02,Y học dự phòng (kết hợp sơ tuyển chứng chỉ tiếng Anh quốc tế),23.35,B03,,298
+2022,Đại học Y Dược TP HCM,7720110,Y học dự phòng,21.0,B02,,298
+2022,Đại học Y Dược TP HCM,7720115_02,Y học cổ truyền (kết hợp sơ tuyển chứng chỉ tiếng Anh quốc tế),23.35,B03,,298
+2022,Đại học Y Dược TP HCM,7720101_02,Y khoa (có CC Tiếng Anh),26.6,B01,,298
+2022,Đại học Y Dược TP HCM,7720701_02,Y tế công cộng (kết hợp sơ tuyển chứng chỉ tiếng Anh quốc tế),22.25,B00,,298
+2022,Đại học Y Dược TP HCM,7720115,Y học cổ truyền,24.2,B04,,298
+2022,Đại học Y Dược TP HCM,7720101,Y khoa,27.55,B00,,298
+2023,Đại học Y Dược TP HCM,2023&rpar;,Điều dưỡng chuyên ngành Hộ sinh &lpar;Chỉ tuyển nữ&rpar;  7720501_02 &lpar;trước,26.75,B00,Sửa tên: Ngành Răng - Hàm - Mặt kết hợp chứng chỉ tiếng Anh quốc tế,298
+2023,Đại học Y Dược TP HCM,7720301_04,Điều dưỡng (Kết hợp chứng chỉ tiếng Anh quốc tế),21.6,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,2023&rpar;,Điều dưỡng chuyên ngành Hộ sinh &lpar;Chỉ tuyển nữ&rpar;  7720501_02 &lpar;trước,26.96,B00,,298
+2023,Đại học Y Dược TP HCM,7720301,Điều dưỡng,23.15,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720301_03,Điều dưỡng chuyên ngành Gây mê hồi sức,23.88,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720401_02,Dinh dưỡng (kết hợp sơ tuyển chứng chỉ tiếng Anh quốc tế),21.45,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720401,Dinh dưỡng,23.4,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720201,Dược học,25.5,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720201_02,Dược học (Kết hợp chứng chỉ tiếng Anh quốc tế),24.0,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720302,Hộ sinh,21.35,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720302_02,Hộ sinh &lpar;Kết hợp sơ tuyển chứng chỉ tiếng Anh quốc tế&rpar;,23.0,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720502,Kỹ thuật phục hình răng,24.54,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720603,Kỹ thuật phục hồi chức năng,23.35,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720601,Kỹ thuật xét nghiệm y học,24.59,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720502_02,Kỹ thuật phục hình răng (kết hợp sơ tuyển chứng chỉ tiếng Anh quốc tế),22.55,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720602,Kỹ thuật hình ảnh y học,23.85,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720501,Răng- Hàm -Mặt,26.96,B00,,298
+2023,Đại học Y Dược TP HCM,7720701,Y tế công cộng,19.0,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720110,Y học dự phòng,22.65,B00,,298
+2023,Đại học Y Dược TP HCM,7720115,Y học cổ truyền,24.54,B00,,298
+2023,Đại học Y Dược TP HCM,7720101_02,Y khoa (có CC Tiếng Anh),27.1,B00,,298
+2023,Đại học Y Dược TP HCM,7720110_02,Y học dự phòng (kết hợp sơ tuyển chứng chỉ tiếng Anh quốc tế),23.45,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720701_02,Y tế công cộng (kết hợp sơ tuyển chứng chỉ tiếng Anh quốc tế),19.0,"A00, B00",,298
+2023,Đại học Y Dược TP HCM,7720115_02,Y học cổ truyền (kết hợp sơ tuyển chứng chỉ tiếng Anh quốc tế),23.5,B00,,298
+2023,Đại học Y Dược TP HCM,7720101,Y khoa,27.34,B00,,298
+2024,Đại học Y Dược TP HCM,7720301,Điều dưỡng,24.03,"A00, B00",,298
+2024,Đại học Y Dược TP HCM,7720301_03,Điều dưỡng chuyên ngành Gây mê hồi sức,24.5,"A00, B00",,298
+2024,Đại học Y Dược TP HCM,7720401,Dinh dưỡng,24.1,"A00, B00",,298
+2024,Đại học Y Dược TP HCM,7720201,Dược học,25.72,"A00, B00",,298
+2024,Đại học Y Dược TP HCM,7720302,Hộ sinh,22.8,"A00, B00",,298
+2024,Đại học Y Dược TP HCM,7720502,Kỹ thuật phục hình răng,24.8,"A00, B00",,298
+2024,Đại học Y Dược TP HCM,7720602,Kỹ thuật hình ảnh y học,24.35,"A00, B00",,298
+2024,Đại học Y Dược TP HCM,7720601,Kỹ thuật xét nghiệm y học,25.02,"A00, B00",,298
+2024,Đại học Y Dược TP HCM,7720603,Kỹ thuật phục hồi chức năng,24.04,"A00, B00",,298
+2024,Đại học Y Dược TP HCM,7720501,Răng- Hàm -Mặt,27.35,B00,,298
+2024,Đại học Y Dược TP HCM,7720115,Y học cổ truyền,24.8,B00,,298
+2024,Đại học Y Dược TP HCM,7720110,Y học dự phòng,23.25,"A00, B00",,298
+2024,Đại học Y Dược TP HCM,7720701,Y tế công cộng,21.45,"A00, B00",,298
+2024,Đại học Y Dược TP HCM,7720101,Y khoa,27.8,B00,,298
+2025,Đại học Y Dược TP HCM,7760101,Công tác xã hội,17.25,"A00, B00, B03, B08",,298
+2025,Đại học Y Dược TP HCM,7720301_03,Điều dưỡng chuyên ngành Gây mê hồi sức,21.1,"A00, B00",,298
+2025,Đại học Y Dược TP HCM,7720301,Điều dưỡng,20.15,"A00, B00",,298
+2025,Đại học Y Dược TP HCM,7720201,Dược học,22.85,"A00, B00",,298
+2025,Đại học Y Dược TP HCM,7720302,Hộ sinh,18.0,"A00, B00",,298
+2025,Đại học Y Dược TP HCM,7720203,Hoá dược,23.65,"A00, B00",,298
+2025,Đại học Y Dược TP HCM,7720602,Kỹ thuật hình ảnh y học,21.0,"A00, B00",,298
+2025,Đại học Y Dược TP HCM,7720502,Kỹ thuật phục hình răng,21.5,"A00, B00",,298
+2025,Đại học Y Dược TP HCM,7720601,Kỹ thuật xét nghiệm y học,22.05,"A00, B00",,298
+2025,Đại học Y Dược TP HCM,7720603,Kỹ thuật phục hồi chức năng,21.0,"A00, B00",,298
+2025,Đại học Y Dược TP HCM,7720501,Răng- Hàm -Mặt,26.45,B00,,298
+2025,Đại học Y Dược TP HCM,7720101,Y khoa,27.34,B00,,298
+2025,Đại học Y Dược TP HCM,7720115,Y học cổ truyền,21.5,B00,,298
+2025,Đại học Y Dược TP HCM,7720701,Y tế công cộng,17.0,"A00, B00",,298
+2025,Đại học Y Dược TP HCM,7720110,Y học dự phòng,19.0,"A00, B00",,298
+2018,Khoa Y Dược - Đại học Đà Nẵng,7720301,Điều dưỡng,18.15,B00,TO >= 6.4;SI >= 6.5;HO >= 4.5; TTNV <= 2,312
+2018,Khoa Y Dược - Đại học Đà Nẵng,7720201A,Dược học (tổ hợp A00),21.8,A00,TO >= 7.8;HO >= 6.75;LI >= 6.5; TTNV <= 3,312
+2018,Khoa Y Dược - Đại học Đà Nẵng,7720201B,Dược học (tổ hợp B00),21.45,B00,TO >= 6.2;SI >= 7.75;HO >= 7.25; TTNV <= 1,312
+2018,Khoa Y Dược - Đại học Đà Nẵng,7720501,Răng- Hàm -Mặt,22.05,B00,TO >= 7.8;SI >= 6.75;HO >= 7.25; TTNV <= 4,312
+2018,Khoa Y Dược - Đại học Đà Nẵng,7720101,Y khoa,22.15,B00,TO >= 6.4;SI >= 7.75;HO >= 7.25; TTNV <= 3,312
+2019,Khoa Y Dược - Đại học Đà Nẵng,7720301,Điều dưỡng,18.0,B00,"Điều kiện phụ: TO >= 6, SI >= 4, HO >= 5.25, TTNV <= 2",312
+2019,Khoa Y Dược - Đại học Đà Nẵng,7720201A,Dược học (tổ hợp A00),22.55,A00,"Điều kiện phụ: TO >= 7.8, SI >= 6.5, LI >= 8.25, TTNV <= 2",312
+2019,Khoa Y Dược - Đại học Đà Nẵng,7720201B,Dược học (tổ hợp B00),22.75,B00,"Điều kiện phụ: TO >= 8, SI >= 7.25, HO >= 7.25, TTNV <= 3",312
+2019,Khoa Y Dược - Đại học Đà Nẵng,7720501,Răng- Hàm -Mặt,23.65,B00,"Điều kiện phụ: TO >= 7.4, SI >= 7.5, HO >= 8, TTNV <= 4",312
+2019,Khoa Y Dược - Đại học Đà Nẵng,7720101,Y khoa,23.8,B00,"Điều kiện phụ: TO >= 7.8, SI >= 7.75, HO >= 7.5, TTNV <= 3",312
+2020,Khoa Y Dược - Đại học Đà Nẵng,7720301,Điều dưỡng,19.7,B00,,312
+2020,Khoa Y Dược - Đại học Đà Nẵng,7720201A,Dược học (tổ hợp A00),25.35,A00,,312
+2020,Khoa Y Dược - Đại học Đà Nẵng,7720201B,Dược học (tổ hợp B00),25.75,B00,,312
+2020,Khoa Y Dược - Đại học Đà Nẵng,7720501,Răng- Hàm -Mặt,26.45,B00,,312
+2020,Khoa Y Dược - Đại học Đà Nẵng,7720101,Y khoa,26.5,B00,,312
+2021,Khoa Y Dược - Đại học Đà Nẵng,7720301,Điều dưỡng,20.65,"B00, B08",TO>=7.8; SI >=5.5;TTNV <=7,312
+2021,Khoa Y Dược - Đại học Đà Nẵng,7720201,Dược học,25.95,"A00, B00, D07",TO>=8.2; HO >=8.25;TTNV <=2,312
+2021,Khoa Y Dược - Đại học Đà Nẵng,7720501,Răng- Hàm -Mặt,26.55,"B00, B08",TO>=8.8; SI >=9;TTNV <=2,312
+2021,Khoa Y Dược - Đại học Đà Nẵng,7720101,Y khoa,26.55,"B00, B08",TO>=9; SI >=8;TTNV <=3,312
+2022,Khoa Y Dược - Đại học Đà Nẵng,7720301,Điều dưỡng,19.1,B00,,312
+2022,Khoa Y Dược - Đại học Đà Nẵng,7720201,Dược học,24.75,"A00, B00",,312
+2022,Khoa Y Dược - Đại học Đà Nẵng,7720501,Răng- Hàm -Mặt,25.7,B00,,312
+2022,Khoa Y Dược - Đại học Đà Nẵng,7720101,Y khoa,25.45,B00,,312
+2023,Khoa Y Dược - Đại học Đà Nẵng,7720301,Điều dưỡng,20.95,"B00, B08",,312
+2023,Khoa Y Dược - Đại học Đà Nẵng,7720201,Dược học,24.56,"A00, B00, D07",,312
+2023,Khoa Y Dược - Đại học Đà Nẵng,7720601,Kỹ thuật xét nghiệm y học,19.05,"B00, B08",,312
+2023,Khoa Y Dược - Đại học Đà Nẵng,7720501,Răng- Hàm -Mặt,25.52,"B00, B08",,312
+2023,Khoa Y Dược - Đại học Đà Nẵng,7720101,Y khoa,25.05,"B00, B08",,312
+2024,Khoa Y Dược - Đại học Đà Nẵng,7720301,Điều dưỡng,22.65,"B00, B08",,312
+2024,Khoa Y Dược - Đại học Đà Nẵng,7720201,Dược học,24.45,"A00, B00, D07",,312
+2024,Khoa Y Dược - Đại học Đà Nẵng,7720601,Kỹ thuật xét nghiệm y học,22.35,"B00, B08",,312
+2024,Khoa Y Dược - Đại học Đà Nẵng,7720501,Răng- Hàm -Mặt,25.57,"B00, B08",,312
+2024,Khoa Y Dược - Đại học Đà Nẵng,7720101,Y khoa,25.55,"B00, B08",,312
+2025,Khoa Y Dược - Đại học Đà Nẵng,7720301,Điều dưỡng,28.8,"A00, B00, B08, D07",,312
+2025,Khoa Y Dược - Đại học Đà Nẵng,7720201,Dược học,19.5,"A00, B00, D07",,312
+2025,Khoa Y Dược - Đại học Đà Nẵng,7720203,Hoá dược,16.5,"A00, A01, B00, D07",,312
+2025,Khoa Y Dược - Đại học Đà Nẵng,7720601,Kỹ thuật xét nghiệm y học,19.85,"A00, B00, B08, D07",,312
+2025,Khoa Y Dược - Đại học Đà Nẵng,7720501,Răng- Hàm -Mặt,23.23,"B00, B08",,312
+2025,Khoa Y Dược - Đại học Đà Nẵng,7310401,Tâm lý học,17.7,"B00, B03, B08, D01",,312
+2025,Khoa Y Dược - Đại học Đà Nẵng,7720101,Y khoa,23.0,"B00, B08",,312
+2018,Đại học Y Dược Cần Thơ,7720301,Điều dưỡng,19.5,B00,,235
+2018,Đại học Y Dược Cần Thơ,7720201,Dược học,22.0,B00,,235
+2018,Đại học Y Dược Cần Thơ,7720601,Kỹ thuật xét nghiệm y học,20.5,B00,,235
+2018,Đại học Y Dược Cần Thơ,7720501,Răng- Hàm -Mặt,22.5,B00,,235
+2018,Đại học Y Dược Cần Thơ,7720101,Y khoa,22.75,B00,,235
+2018,Đại học Y Dược Cần Thơ,7720115,Y học cổ truyền,21.0,B00,,235
+2018,Đại học Y Dược Cần Thơ,7720701,Y tế công cộng,17.0,B00,,235
+2018,Đại học Y Dược Cần Thơ,7720110,Y học dự phòng,19.5,B00,,235
+2019,Đại học Y Dược Cần Thơ,7720301,Điều dưỡng,21.25,B00,,235
+2019,Đại học Y Dược Cần Thơ,7720201,Dược học,23.55,B00,,235
+2019,Đại học Y Dược Cần Thơ,7720601,Kỹ thuật xét nghiệm y học,22.5,B00,,235
+2019,Đại học Y Dược Cần Thơ,7720501,Răng- Hàm -Mặt,24.15,B00,,235
+2019,Đại học Y Dược Cần Thơ,7720115,Y học cổ truyền,22.25,B00,,235
+2019,Đại học Y Dược Cần Thơ,7720701,Y tế công cộng,18.0,B00,,235
+2019,Đại học Y Dược Cần Thơ,7720101,Y khoa,24.3,B00,,235
+2019,Đại học Y Dược Cần Thơ,7720110,Y học dự phòng,20.25,B00,,235
+2020,Đại học Y Dược Cần Thơ,7720301,Điều dưỡng,23.3,B00,Ngưỡng điểm trúng tuyển theo nhu cầu xã hội,235
+2020,Đại học Y Dược Cần Thơ,7720301,Điều dưỡng,24.3,B00,Điểm trúng tuyển đại trà,235
+2020,Đại học Y Dược Cần Thơ,7720201,Dược học,26.1,B00,Điểm trúng tuyển đại trà,235
+2020,Đại học Y Dược Cần Thơ,7720201,Dược học,25.1,B00,Ngưỡng điểm trúng tuyển theo nhu cầu xã hội,235
+2020,Đại học Y Dược Cần Thơ,7720302,Hộ sinh,22.0,B00,Điểm trúng tuyển đại trà,235
+2020,Đại học Y Dược Cần Thơ,7720302,Hộ sinh,21.0,B00,Ngưỡng điểm trúng tuyển theo nhu cầu xã hội,235
+2020,Đại học Y Dược Cần Thơ,7720601,Kỹ thuật xét nghiệm y học,25.2,B00,Điểm trúng tuyển đại trà,235
+2020,Đại học Y Dược Cần Thơ,7720601,Kỹ thuật xét nghiệm y học,24.2,B00,Ngưỡng điểm trúng tuyển theo nhu cầu xã hội,235
+2020,Đại học Y Dược Cần Thơ,7720501,Răng- Hàm -Mặt,26.75,B00,Điểm trúng tuyển đại trà,235
+2020,Đại học Y Dược Cần Thơ,7720501,Răng- Hàm -Mặt,25.75,B00,Ngưỡng điểm trúng tuyển theo nhu cầu xã hội,235
+2020,Đại học Y Dược Cần Thơ,7720110,Y học dự phòng,23.4,B00,Điểm trúng tuyển đại trà,235
+2020,Đại học Y Dược Cần Thơ,7720115,Y học cổ truyền,24.2,B00,Ngưỡng điểm trúng tuyển theo nhu cầu xã hội,235
+2020,Đại học Y Dược Cần Thơ,7720101H,Y khoa phục vụ ngành hiếm,24.0,B00,Ngưỡng điểm trúng tuyển theo nhu cầu xã hội,235
+2020,Đại học Y Dược Cần Thơ,7720101,Y khoa,25.95,B00,Ngưỡng điểm trúng tuyển theo nhu cầu xã hội,235
+2020,Đại học Y Dược Cần Thơ,7720101,Y khoa,26.95,B00,Điểm trúng tuyển đại trà,235
+2020,Đại học Y Dược Cần Thơ,7720110,Y học dự phòng,22.4,B00,Ngưỡng điểm trúng tuyển theo nhu cầu xã hội,235
+2020,Đại học Y Dược Cần Thơ,7720701,Y tế công cộng,19.0,B00,Điểm trúng tuyển đại trà,235
+2020,Đại học Y Dược Cần Thơ,7720115,Y học cổ truyền,25.2,B00,Điểm trúng tuyển đại trà,235
+2021,Đại học Y Dược Cần Thơ,7720301,Điều dưỡng,24.9,B00,Ngưỡng điểm trúng tuyển xét theo nhu cầu xã hội giảm 1 điểm,235
+2021,Đại học Y Dược Cần Thơ,7720201,Dược học,26.0,B00,Ngưỡng điểm trúng tuyển xét theo nhu cầu xã hội giảm 1 điểm,235
+2021,Đại học Y Dược Cần Thơ,7720302,Hộ sinh,23.7,B00,Ngưỡng điểm trúng tuyển xét theo nhu cầu xã hội giảm 1 điểm,235
+2021,Đại học Y Dược Cần Thơ,7720601,Kỹ thuật xét nghiệm y học,25.5,B00,Ngưỡng điểm trúng tuyển xét theo nhu cầu xã hội giảm 1 điểm,235
+2021,Đại học Y Dược Cần Thơ,7720602,Kỹ thuật hình ảnh y học,24.7,B00,Ngưỡng điểm trúng tuyển xét theo nhu cầu xã hội giảm 1 điểm,235
+2021,Đại học Y Dược Cần Thơ,7720501,Răng- Hàm -Mặt,26.75,B00,Ngưỡng điểm trúng tuyển xét theo nhu cầu xã hội giảm 1 điểm,235
+2021,Đại học Y Dược Cần Thơ,7720101,Y khoa,27.0,B00,Ngưỡng điểm trúng tuyển xét theo nhu cầu xã hội giảm 1 điểm,235
+2021,Đại học Y Dược Cần Thơ,7720115,Y học cổ truyền,25.65,B00,Ngưỡng điểm trúng tuyển xét theo nhu cầu xã hội giảm 1 điểm,235
+2021,Đại học Y Dược Cần Thơ,7720101H,Y khoa phục vụ ngành hiếm,25.0,B00,,235
+2021,Đại học Y Dược Cần Thơ,7720110,Y học dự phòng,24.95,B00,Ngưỡng điểm trúng tuyển xét theo nhu cầu xã hội giảm 1 điểm,235
+2021,Đại học Y Dược Cần Thơ,7720701,Y tế công cộng,20.0,B00,Ngưỡng điểm trúng tuyển xét theo nhu cầu xã hội giảm 1 điểm,235
+2022,Đại học Y Dược Cần Thơ,7720301,Điều dưỡng,21.75,B00,,235
+2022,Đại học Y Dược Cần Thơ,7720201,Dược học,24.6,B00,,235
+2022,Đại học Y Dược Cần Thơ,7720302,Hộ sinh,20.2,B00,,235
+2022,Đại học Y Dược Cần Thơ,7720602,Kỹ thuật hình ảnh y học,23.0,B00,,235
+2022,Đại học Y Dược Cần Thơ,7720601,Kỹ thuật xét nghiệm y học,23.75,B00,,235
+2022,Đại học Y Dược Cần Thơ,7720501,Răng- Hàm -Mặt,25.45,B00,,235
+2022,Đại học Y Dược Cần Thơ,7720110,Y học dự phòng,21.05,B00,,235
+2022,Đại học Y Dược Cần Thơ,7720115,Y học cổ truyền,23.3,B00,,235
+2022,Đại học Y Dược Cần Thơ,7720701,Y tế công cộng,20.0,B00,,235
+2022,Đại học Y Dược Cần Thơ,7720101,Y khoa,25.6,B00,,235
+2023,Đại học Y Dược Cần Thơ,7720301,Điều dưỡng,23.2,B00,,235
+2023,Đại học Y Dược Cần Thơ,7720201,Dược học,24.7,B00,,235
+2023,Đại học Y Dược Cần Thơ,7720302,Hộ sinh,22.25,B00,,235
+2023,Đại học Y Dược Cần Thơ,7720602,Kỹ thuật hình ảnh y học,23.5,B00,,235
+2023,Đại học Y Dược Cần Thơ,7720601,Kỹ thuật xét nghiệm y học,24.05,B00,,235
+2023,Đại học Y Dược Cần Thơ,7720501,Răng- Hàm -Mặt,25.4,B00,,235
+2023,Đại học Y Dược Cần Thơ,7720701,Y tế công cộng,20.0,B00,,235
+2023,Đại học Y Dược Cần Thơ,7720115,Y học cổ truyền,23.9,B00,,235
+2023,Đại học Y Dược Cần Thơ,7720110,Y học dự phòng,22.35,B00,,235
+2023,Đại học Y Dược Cần Thơ,7720101,Y khoa,25.52,B00,,235
+2024,Đại học Y Dược Cần Thơ,7720301,Điều dưỡng,23.45,B00,,235
+2024,Đại học Y Dược Cần Thơ,7720201,Dược học,24.78,B00,,235
+2024,Đại học Y Dược Cần Thơ,7720302,Hộ sinh,22.35,B00,,235
+2024,Đại học Y Dược Cần Thơ,7720601,Kỹ thuật xét nghiệm y học,24.38,B00,,235
+2024,Đại học Y Dược Cần Thơ,7720602,Kỹ thuật hình ảnh y học,23.75,B00,,235
+2024,Đại học Y Dược Cần Thơ,7720501,Răng- Hàm -Mặt,25.65,B00,,235
+2024,Đại học Y Dược Cần Thơ,7720701,Y tế công cộng,19.2,B00,,235
+2024,Đại học Y Dược Cần Thơ,7720101,Y khoa,25.7,B00,,235
+2024,Đại học Y Dược Cần Thơ,7720110,Y học dự phòng,22.7,B00,,235
+2024,Đại học Y Dược Cần Thơ,7720115,Y học cổ truyền,24.48,B00,,235
+2025,Đại học Y Dược Cần Thơ,7720301,Điều dưỡng,18.6,B00,,235
+2025,Đại học Y Dược Cần Thơ,7720201,Dược học,20.8,"A00, B00",,235
+2025,Đại học Y Dược Cần Thơ,7720302,Hộ sinh,17.0,B00,,235
+2025,Đại học Y Dược Cần Thơ,7720602,Kỹ thuật hình ảnh y học,18.88,"A00, B00, X06",,235
+2025,Đại học Y Dược Cần Thơ,7720601,Kỹ thuật xét nghiệm y học,19.4,B00,,235
+2025,Đại học Y Dược Cần Thơ,7720501,Răng- Hàm -Mặt,23.35,B00,,235
+2025,Đại học Y Dược Cần Thơ,7720101,Y khoa,23.88,B00,,235
+2025,Đại học Y Dược Cần Thơ,7720701,Y tế công cộng,17.0,B00,,235
+2025,Đại học Y Dược Cần Thơ,7720115,Y học cổ truyền,19.5,B00,,235
+2025,Đại học Y Dược Cần Thơ,7720110,Y học dự phòng,17.0,B00,,235
+2018,Đại học Kỹ thuật Y tế Hải Dương,7720301,Điều dưỡng,18.0,B00,,335
+2018,Đại học Kỹ thuật Y tế Hải Dương,7720602,Kỹ thuật hình ảnh y học,18.0,B00,,335
+2018,Đại học Kỹ thuật Y tế Hải Dương,7720601,Kỹ thuật xét nghiệm y học,19.35,B00,,335
+2018,Đại học Kỹ thuật Y tế Hải Dương,7720603,Kỹ thuật phục hồi chức năng,17.0,B00,,335
+2018,Đại học Kỹ thuật Y tế Hải Dương,7720101,Y khoa,21.9,B00,,335
+2019,Đại học Kỹ thuật Y tế Hải Dương,7720301,Điều dưỡng,18.0,B00,,335
+2019,Đại học Kỹ thuật Y tế Hải Dương,7720603,Kỹ thuật phục hồi chức năng,18.0,B00,,335
+2019,Đại học Kỹ thuật Y tế Hải Dương,7720602,Kỹ thuật hình ảnh y học,18.0,B00,,335
+2019,Đại học Kỹ thuật Y tế Hải Dương,7720601,Kỹ thuật xét nghiệm y học,19.35,B00,,335
+2019,Đại học Kỹ thuật Y tế Hải Dương,7720101,Y khoa,23.25,B00,,335
+2020,Đại học Kỹ thuật Y tế Hải Dương,7720301B,Điều dưỡng nha khoa,19.0,B00,,335
+2020,Đại học Kỹ thuật Y tế Hải Dương,7720301A,Điều dưỡng đa khoa,19.0,B08,,335
+2020,Đại học Kỹ thuật Y tế Hải Dương,7720602B,Kỹ thuật Hình ảnh y học,19.0,B00,,335
+2020,Đại học Kỹ thuật Y tế Hải Dương,7720602A,Kỹ thuật Hình ảnh y học,19.0,A00,,335
+2020,Đại học Kỹ thuật Y tế Hải Dương,7720603B,Kỹ thuật Phục hồi chức năng,19.0,B00,,335
+2020,Đại học Kỹ thuật Y tế Hải Dương,7720601A,Kỹ thuật Xét nghiệm y học,21.5,A00,,335
+2020,Đại học Kỹ thuật Y tế Hải Dương,7720603A,Kỹ thuật Phục hồi chức năng,19.0,A00,,335
+2020,Đại học Kỹ thuật Y tế Hải Dương,7720601B,Kỹ thuật Xét nghiệm y học,21.5,B00,,335
+2020,Đại học Kỹ thuật Y tế Hải Dương,7720101,Y khoa,26.1,B00,,335
+2021,Đại học Kỹ thuật Y tế Hải Dương,7720601,Kỹ thuật xét nghiệm y học,23.9,B00,,335
+2021,Đại học Kỹ thuật Y tế Hải Dương,7720602,Kỹ thuật hình ảnh y học,22.6,B00,,335
+2022,Đại học Kỹ thuật Y tế Hải Dương,7720301,Điều dưỡng,19.0,"A00, B04","Điểm học bạ 21.00, Tiếng Anh 6.0",335
+2022,Đại học Kỹ thuật Y tế Hải Dương,7720602,Kỹ thuật hình ảnh y học,21.0,"A00, B02",Tiếng Anh 6.0,335
+2022,Đại học Kỹ thuật Y tế Hải Dương,7720601,Kỹ thuật xét nghiệm y học,22.0,"A00, B01",Tiếng Anh 6.0,335
+2022,Đại học Kỹ thuật Y tế Hải Dương,7720603,Kỹ thuật phục hồi chức năng,19.0,"A00, B03",Tiếng Anh 6.0,335
+2022,Đại học Kỹ thuật Y tế Hải Dương,7720101,Y khoa,25.4,"A00, B00",Tiếng Anh 7.0,335
+2023,Đại học Kỹ thuật Y tế Hải Dương,7720301,Điều dưỡng,19.0,B00,,335
+2023,Đại học Kỹ thuật Y tế Hải Dương,7720603,Kỹ thuật phục hồi chức năng,19.0,B00,,335
+2023,Đại học Kỹ thuật Y tế Hải Dương,7720602,Kỹ thuật hình ảnh y học,19.0,"A00, B00",,335
+2023,Đại học Kỹ thuật Y tế Hải Dương,7720601,Kỹ thuật xét nghiệm y học,19.0,"A00, B00",,335
+2023,Đại học Kỹ thuật Y tế Hải Dương,7720101,Y khoa,24.5,B00,,335
+2024,Đại học Kỹ thuật Y tế Hải Dương,7720301,Điều dưỡng,19.0,B00,,335
+2024,Đại học Kỹ thuật Y tế Hải Dương,7720601,Kỹ thuật xét nghiệm y học,20.0,B00,,335
+2024,Đại học Kỹ thuật Y tế Hải Dương,7720603,Kỹ thuật phục hồi chức năng,20.5,B00,,335
+2024,Đại học Kỹ thuật Y tế Hải Dương,7720602,Kỹ thuật hình ảnh y học,20.0,B00,,335
+2024,Đại học Kỹ thuật Y tế Hải Dương,7720101,Y khoa,25.4,B00,,335
+2025,Đại học Kỹ thuật Y tế Hải Dương,7720301,Điều dưỡng,21.0,"A00, B00, B08, D07, D08",,335
+2025,Đại học Kỹ thuật Y tế Hải Dương,7720602,Kỹ thuật hình ảnh y học,22.5,"A00, B00, B08, D07, D08",,335
+2025,Đại học Kỹ thuật Y tế Hải Dương,7720601,Kỹ thuật xét nghiệm y học,22.6,"A00, B00, B08, D07, D08",,335
+2025,Đại học Kỹ thuật Y tế Hải Dương,7720603,Kỹ thuật phục hồi chức năng,23.0,"A00, B00, B08, D07, D08",,335
+2025,Đại học Kỹ thuật Y tế Hải Dương,7720101,Y khoa,23.8,"A00, B00, B08, D07, D08",,335
+2018,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301D,Điều dưỡng phụ sản,17.5,B00,SI >= 5;TTNV <= 4,315
+2018,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301C,Điều dưỡng gây mê hồi sức,17.8,B00,SI >= 4.5;TTNV <= 1,315
+2018,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301A,Điều dưỡng đa khoa,18.5,B00,SI >= 5;TTNV <= 1,315
+2018,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301B,Điều dưỡng nha khoa,18.5,B00,SI >= 6;TTNV <= 1,315
+2018,Đại học Kỹ thuật Y Dược Đà Nẵng,7720201,Dược học,21.15,B00,HO >= 6.25;TTNV <= 3,315
+2018,Đại học Kỹ thuật Y Dược Đà Nẵng,7720602,Kỹ thuật hình ảnh y học,19.5,B00,SI >= 5.5;TTNV <= 9,315
+2018,Đại học Kỹ thuật Y Dược Đà Nẵng,7720601,Kỹ thuật xét nghiệm y học,20.25,B00,SI >= 6.75;TTNV <= 3,315
+2018,Đại học Kỹ thuật Y Dược Đà Nẵng,7720603,Kỹ thuật phục hồi chức năng,19.0,B00,SI >= 5.5;TTNV <= 4,315
+2018,Đại học Kỹ thuật Y Dược Đà Nẵng,7720701,Y tế công cộng,16.0,B00,SI >= 5.25;TTNV <= 3,315
+2018,Đại học Kỹ thuật Y Dược Đà Nẵng,7720101,Y khoa,22.65,B00,SI >= 6.25;TTNV <= 9,315
+2019,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301D,Điều dưỡng phụ sản,18.0,B00,Tiêu chí phụ: SI >= 5.75; TTNV <= 4,315
+2019,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301B,Điều dưỡng nha khoa,18.0,B00,Tiêu chí phụ: SI >= 5.25; TTNV <= 3,315
+2019,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301A,Điều dưỡng đa khoa,18.0,B00,Tiêu chí phụ: SI >= 4.25; TTNV <=3,315
+2019,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301C,Điều dưỡng gây mê hồi sức,18.0,B00,Tiêu chí phụ: SI >= 4.25; TTNV <= 6,315
+2019,Đại học Kỹ thuật Y Dược Đà Nẵng,7720201,Dược học,22.6,B00,Tiêu chí phụ: H0 >=6; TTNV <=8,315
+2019,Đại học Kỹ thuật Y Dược Đà Nẵng,7720601,Kỹ thuật xét nghiệm y học,21.0,B00,Tiêu chí phụ: SI >= 6.5; TTNV <=13,315
+2019,Đại học Kỹ thuật Y Dược Đà Nẵng,7720603,Kỹ thuật phục hồi chức năng,19.8,B00,Tiêu chí phụ: SI >= 5.75; TTNV <= 3,315
+2019,Đại học Kỹ thuật Y Dược Đà Nẵng,7720602,Kỹ thuật hình ảnh y học,19.0,B00,Tiêu chí phụ: SI >=5.25; TTNV <= 3,315
+2019,Đại học Kỹ thuật Y Dược Đà Nẵng,7720101,Y khoa,24.4,B00,Tiêu chí phụ: SI >= 7; TTNV <= 3,315
+2019,Đại học Kỹ thuật Y Dược Đà Nẵng,7720701,Y tế công cộng,15.6,B00,Tiêu chí phụ: SI >= 4.5; TTNV <= 3,315
+2020,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301B,Điều dưỡng nha khoa,19.2,B00,,315
+2020,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301D,Điều dưỡng phụ sản,19.0,B00,,315
+2020,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301A,Điều dưỡng đa khoa,19.0,B00,,315
+2020,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301C,Điều dưỡng gây mê hồi sức,19.2,B00,,315
+2020,Đại học Kỹ thuật Y Dược Đà Nẵng,7720201,Dược học,25.6,B00,,315
+2020,Đại học Kỹ thuật Y Dược Đà Nẵng,7720603,Kỹ thuật phục hồi chức năng,23.0,B00,,315
+2020,Đại học Kỹ thuật Y Dược Đà Nẵng,7720602,Kỹ thuật hình ảnh y học,22.2,B00,,315
+2020,Đại học Kỹ thuật Y Dược Đà Nẵng,7720601,Kỹ thuật xét nghiệm y học,24.3,B00,,315
+2020,Đại học Kỹ thuật Y Dược Đà Nẵng,7720101,Y khoa,26.8,B00,,315
+2021,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301A,Điều dưỡng đa khoa,19.0,B00,SI>=6.25; TTNV <=1,315
+2021,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301C,Điều dưỡng gây mê hồi sức,19.0,B00,SI>=4.75; TTNV <=2,315
+2021,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301B,Điều dưỡng nha khoa,19.0,B00,SI>=7.25; TTNV <=1,315
+2021,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301D,Điều dưỡng phụ sản,19.0,B00,SI>=6.5; TTNV <=6,315
+2021,Đại học Kỹ thuật Y Dược Đà Nẵng,7720201,Dược học,25.0,B00,HO>=7.25; TTNV <=11,315
+2021,Đại học Kỹ thuật Y Dược Đà Nẵng,7720602,Kỹ thuật hình ảnh y học,22.5,B00,SI>=5.75; TTNV <=2,315
+2021,Đại học Kỹ thuật Y Dược Đà Nẵng,7720601,Kỹ thuật xét nghiệm y học,24.3,B00,SI>=7.5; TTNV <=2,315
+2021,Đại học Kỹ thuật Y Dược Đà Nẵng,7720603,Kỹ thuật phục hồi chức năng,22.0,B00,SI>=6.5; TTNV <=1,315
+2021,Đại học Kỹ thuật Y Dược Đà Nẵng,7720101,Y khoa,26.6,B00,SI>=8.25; TTNV <=7,315
+2021,Đại học Kỹ thuật Y Dược Đà Nẵng,7720701,Y tế công cộng,15.0,B00,SI>=4.5; TTNV <=7,315
+2022,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301,Điều dưỡng,19.0,B00,,315
+2022,Đại học Kỹ thuật Y Dược Đà Nẵng,7720201,Dược học,23.7,B00,,315
+2022,Đại học Kỹ thuật Y Dược Đà Nẵng,7720603,Kỹ thuật phục hồi chức năng,19.05,B00,,315
+2022,Đại học Kỹ thuật Y Dược Đà Nẵng,7720602,Kỹ thuật hình ảnh y học,19.0,B00,,315
+2022,Đại học Kỹ thuật Y Dược Đà Nẵng,7720601,Kỹ thuật xét nghiệm y học,19.2,B00,,315
+2022,Đại học Kỹ thuật Y Dược Đà Nẵng,7720101,Y khoa,25.55,B00,,315
+2023,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301,Điều dưỡng,20.0,"B00, D07, D08",,315
+2023,Đại học Kỹ thuật Y Dược Đà Nẵng,7720201,Dược học,24.7,"A00, B00, D07",,315
+2023,Đại học Kỹ thuật Y Dược Đà Nẵng,7720302,Hộ sinh,19.0,"B00, D07, D08",,315
+2023,Đại học Kỹ thuật Y Dược Đà Nẵng,7720601,Kỹ thuật xét nghiệm y học,24.25,"B00, D07, D08",,315
+2023,Đại học Kỹ thuật Y Dược Đà Nẵng,7720501,Răng- Hàm -Mặt,26.25,"B00, D07, D08",,315
+2023,Đại học Kỹ thuật Y Dược Đà Nẵng,7720110,Y học dự phòng,21.25,"B00, D07, D08",,315
+2023,Đại học Kỹ thuật Y Dược Đà Nẵng,7720101,Y khoa,26.0,"B00, D07, D08",,315
+2024,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301C,Điều dưỡng gây mê hồi sức,20.0,B00,,315
+2024,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301A,Điều dưỡng đa khoa,20.9,B00,,315
+2024,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301B,Điều dưỡng nha khoa,20.6,B00,,315
+2024,Đại học Kỹ thuật Y Dược Đà Nẵng,7720201,Dược học,23.6,B00,,315
+2024,Đại học Kỹ thuật Y Dược Đà Nẵng,7720602,Kỹ thuật hình ảnh y học,19.0,B00,,315
+2024,Đại học Kỹ thuật Y Dược Đà Nẵng,7720601,Kỹ thuật xét nghiệm y học,20.6,B00,,315
+2024,Đại học Kỹ thuật Y Dược Đà Nẵng,7720603,Kỹ thuật phục hồi chức năng,21.0,B00,,315
+2024,Đại học Kỹ thuật Y Dược Đà Nẵng,7720101,Y khoa,25.47,B00,,315
+2025,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301A,Điều dưỡng đa khoa,20.5,"A00, B00, B08, D07",,315
+2025,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301C,Điều dưỡng gây mê hồi sức,20.7,"A00, B00, B08, D07",,315
+2025,Đại học Kỹ thuật Y Dược Đà Nẵng,7720301B,Điều dưỡng nha khoa,20.5,"A00, B00, B08, D07",,315
+2025,Đại học Kỹ thuật Y Dược Đà Nẵng,7720201,Dược học,19.0,"A00, B00, B08, D07",,315
+2025,Đại học Kỹ thuật Y Dược Đà Nẵng,7720603,Kỹ thuật phục hồi chức năng,21.2,"A00, B00, B08, D07",,315
+2025,Đại học Kỹ thuật Y Dược Đà Nẵng,7720602,Kỹ thuật hình ảnh y học,20.2,"A00, B00, B08, D07",,315
+2025,Đại học Kỹ thuật Y Dược Đà Nẵng,7720601,Kỹ thuật xét nghiệm y học,20.85,"A00, B00, B08, D07",,315
+2025,Đại học Kỹ thuật Y Dược Đà Nẵng,7720101,Y khoa,22.85,"A00, B00, B08, D07",,315
+2025,Đại học Kỹ thuật Y Dược Đà Nẵng,7720701,Y tế công cộng,15.0,"A00, B00, B08, D07",,315
+2018,Học viện Y Dược học cổ truyền Việt Nam,7720201,Dược học,20.9,A00,"Tiêu chí phụ ưu tiên 1 điểm môn Hóa 6 điểm, ưu tiên 2 điểm môn Toán 6.4 điểm, ưu tiên 3 nguyện vọng <=1",390
+2018,Học viện Y Dược học cổ truyền Việt Nam,7720115,Y học cổ truyền,19.5,B00,"Tiêu chí phụ ưu tiên 1 điểm môn Sinh 5.5 điểm, ưu tiên 2 điểm môn Toán 6 điểm, ưu tiên 3 nguyện vọng <=1",390
+2018,Học viện Y Dược học cổ truyền Việt Nam,7720101,Y khoa,21.85,B00,"Tiêu chí phụ ưu tiên 1 điểm môn Sinh 7 điểm, ưu tiên 2 điểm môn Toán 7.6 điểm, ưu tiên 3 nguyện vọng <=3",390
+2019,Học viện Y Dược học cổ truyền Việt Nam,7720201,Dược học,21.9,A00,"Hóa: 7.25, Toán: 7.4, TTNV <= 2",390
+2019,Học viện Y Dược học cổ truyền Việt Nam,7720115,Y học cổ truyền,20.55,B00,"Sinh: 6, Toán: 7.8, TTNV <=1",390
+2019,Học viện Y Dược học cổ truyền Việt Nam,7720101,Y khoa,23.25,B00,"Sinh: 8.5, Toán: 8, TTNV<=2",390
+2020,Học viện Y Dược học cổ truyền Việt Nam,7720201,Dược học,25.0,A00,"Hoá học 8,0, Toán 9,0, nguyện vọng 2",390
+2020,Học viện Y Dược học cổ truyền Việt Nam,7720101,Y khoa,26.1,B00,"Sinh 8,5, Toán 7,6, nguyện vọng 7",390
+2020,Học viện Y Dược học cổ truyền Việt Nam,7720115,Y học cổ truyền,24.15,B00,"Sinh học 8,0, Toán 8,4, nguyện vọng 3",390
+2021,Học viện Y Dược học cổ truyền Việt Nam,7720201,Dược học,24.95,A00,,390
+2021,Học viện Y Dược học cổ truyền Việt Nam,7720115,Y học cổ truyền,24.5,B00,,390
+2021,Học viện Y Dược học cổ truyền Việt Nam,7720101,Y khoa,26.3,B00,,390
+2022,Học viện Y Dược học cổ truyền Việt Nam,7720201,Dược học,24.4,A00,,390
+2022,Học viện Y Dược học cổ truyền Việt Nam,7720201,Dược học,25.55,B00,,390
+2022,Học viện Y Dược học cổ truyền Việt Nam,7720115,Y học cổ truyền,21.0,B00,,390
+2023,Học viện Y Dược học cổ truyền Việt Nam,7720201,Dược học,22.7,A00,,390
+2023,Học viện Y Dược học cổ truyền Việt Nam,7720115,Y học cổ truyền,21.5,B00,,390
+2023,Học viện Y Dược học cổ truyền Việt Nam,7720101,Y khoa,23.57,B00,,390
+2024,Học viện Y Dược học cổ truyền Việt Nam,7720201,Dược học,23.52,A00,,390
+2024,Học viện Y Dược học cổ truyền Việt Nam,7720101,Y khoa,25.57,B00,,390
+2024,Học viện Y Dược học cổ truyền Việt Nam,7720115,Y học cổ truyền,22.75,B00,,390
+2025,Học viện Y Dược học cổ truyền Việt Nam,7720201,Dược học,21.35,"A00, B00, C02, D07, X10",,390
+2025,Học viện Y Dược học cổ truyền Việt Nam,7720115,Y học cổ truyền,21.0,"A02, B00, B03, D08, X14",,390
+2025,Học viện Y Dược học cổ truyền Việt Nam,7720101,Y khoa,24.25,"A02, B00, B03, D08, X14",,390
+2019,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720201,Dược học,24.2,A00,,421
+2019,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720602,Kỹ thuật hình ảnh y học,21.0,B00,,421
+2019,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720601,Kỹ thuật xét nghiệm y học,22.2,B00,,421
+2019,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720501,Răng- Hàm -Mặt,23.6,B00,Tiếng Anh >= 4,421
+2019,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720101,Y khoa,25.6,B00,,421
+2020,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720301,Điều dưỡng,24.9,B00,,421
+2020,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720201,Dược học,26.7,A00,,421
+2020,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720602,Kỹ thuật hình ảnh y học,25.15,B00,,421
+2020,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720601,Kỹ thuật xét nghiệm y học,25.55,B00,,421
+2020,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720501,Răng- Hàm -Mặt,27.2,B00,Điểm tiếng anh >=4,421
+2020,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720101,Y khoa,28.35,B00,,421
+2021,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720301,Điều dưỡng,25.35,B00,,421
+2021,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720201,Dược học,28.115,B00,,421
+2021,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720201,Dược học,26.05,A00,,421
+2021,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720602,Kỹ thuật hình ảnh y học,25.4,B00,,421
+2021,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720601,Kỹ thuật xét nghiệm y học,25.85,B00,,421
+2021,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720501,Răng- Hàm -Mặt,27.5,B00,,421
+2022,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720301,Điều dưỡng,24.25,B00,,421
+2022,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720201,Dược học,25.7,A00,,421
+2022,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720602,Kỹ thuật hình ảnh y học,24.55,B00,,421
+2022,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720601,Kỹ thuật xét nghiệm y học,25.15,B00,,421
+2022,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720501,Răng- Hàm -Mặt,26.4,B00,,421
+2022,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720101,Y khoa,27.3,B00,,421
+2023,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720301,Điều dưỡng,23.85,B00,,421
+2023,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720201,Dược học,24.35,B00,,421
+2023,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720601,Kỹ thuật xét nghiệm y học,23.95,B00,,421
+2023,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720602,Kỹ thuật hình ảnh y học,23.55,B00,,421
+2023,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720501,Răng- Hàm -Mặt,26.8,B00,,421
+2023,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720101,Y khoa,26.75,B00,,421
+2024,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720301,Điều dưỡng,24.49,B00,,421
+2024,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720201,Dược học,25.1,A00,,421
+2024,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720601,Kỹ thuật xét nghiệm y học,24.83,B00,,421
+2024,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720602,Kỹ thuật hình ảnh y học,24.49,B00,,421
+2024,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720501,Răng- Hàm -Mặt,27.0,B00,,421
+2024,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720101,Y khoa,27.15,B00,,421
+2025,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720301,Điều dưỡng,19.0,"B00, D08",,421
+2025,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720201,Dược học,23.09,"A00, D07",,421
+2025,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720601,Kỹ thuật xét nghiệm y học,21.75,"B00, D08",,421
+2025,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720602,Kỹ thuật hình ảnh y học,20.35,"B00, D08",,421
+2025,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720501,Răng- Hàm -Mặt,26.99,"B00, D08",,421
+2025,Đại học Y Dược - Đại học Quốc Gia Hà Nội,7720101,Y khoa,27.43,"B00, D08",,421
+2018,Khoa Y - Đại học Quốc Gia TP HCM,7720201,Dược học,22.0,B00,,300
+2018,Khoa Y - Đại học Quốc Gia TP HCM,7720101_CLC,Y đa khoa chất lượng cao,22.1,B00,,300
+2019,Khoa Y - Đại học Quốc Gia TP HCM,7720201_CLC,Dược học Chất lượng cao,22.85,B00,,300
+2019,Khoa Y - Đại học Quốc Gia TP HCM,7720501_CLC,Răng-Hàm-Mặt Chất lượng cao,23.25,B00,,300
+2019,Khoa Y - Đại học Quốc Gia TP HCM,7720101_CLC,Y đa khoa chất lượng cao,23.95,B00,,300
+2020,Khoa Y - Đại học Quốc Gia TP HCM,7720201_CLC,Dược học Chất lượng cao,26.0,B00,,300
+2020,Khoa Y - Đại học Quốc Gia TP HCM,7720501_CLC,Răng-Hàm-Mặt Chất lượng cao,26.7,B00,,300
+2020,Khoa Y - Đại học Quốc Gia TP HCM,7720101_CLC,Y đa khoa chất lượng cao,27.05,B00,,300
+2021,Khoa Y - Đại học Quốc Gia TP HCM,7720201_CLCA,Dược học (CLC; KHCCTA),23.7,A00,,300
+2021,Khoa Y - Đại học Quốc Gia TP HCM,7720201_CLC,Dược học Chất lượng cao,24.9,A00,,300
+2021,Khoa Y - Đại học Quốc Gia TP HCM,7720201_CLC,Dược học Chất lượng cao,26.1,B00,HO>=8.5,300
+2021,Khoa Y - Đại học Quốc Gia TP HCM,7720201_CLCA,Dược học (CLC; KHCCTA),24.65,B00,,300
+2021,Khoa Y - Đại học Quốc Gia TP HCM,7720501_CLC,Răng-Hàm-Mặt Chất lượng cao,26.85,B00,,300
+2021,Khoa Y - Đại học Quốc Gia TP HCM,7720501_CLCA,Răng hàm mặt (CLC; KHCCTA),26.1,B00,,300
+2021,Khoa Y - Đại học Quốc Gia TP HCM,7720101_CLCA,"Y khoa (CLC, KHCCTA)",26.3,B00,,300
+2021,Khoa Y - Đại học Quốc Gia TP HCM,7720101_CLC,Y đa khoa chất lượng cao,27.15,B00,,300
+2022,Khoa Y - Đại học Quốc Gia TP HCM,7720301,Điều dưỡng,19.0,B00,,300
+2022,Khoa Y - Đại học Quốc Gia TP HCM,7720201_CLCA,Dược học (CLC; KHCCTA),25.45,"A00, B00",,300
+2022,Khoa Y - Đại học Quốc Gia TP HCM,7720201_CLC,Dược học Chất lượng cao,25.3,"A00, B00",,300
+2022,Khoa Y - Đại học Quốc Gia TP HCM,7720501_CLC,Răng-Hàm-Mặt Chất lượng cao,26.1,B00,,300
+2022,Khoa Y - Đại học Quốc Gia TP HCM,7720501_CLCA,Răng hàm mặt (CLC; KHCCTA),25.4,B00,,300
+2022,Khoa Y - Đại học Quốc Gia TP HCM,7720115,Y học cổ truyền,21.0,B00,,300
+2022,Khoa Y - Đại học Quốc Gia TP HCM,7720101_CLC,Y đa khoa chất lượng cao,26.45,B00,,300
+2022,Khoa Y - Đại học Quốc Gia TP HCM,7720101_CLCA,"Y khoa (CLC, KHCCTA)",25.6,B00,,300
+2023,Khoa Y - Đại học Quốc Gia TP HCM,7720301,Điều dưỡng,19.65,B00,,300
+2023,Khoa Y - Đại học Quốc Gia TP HCM,7720201,Dược học,25.12,"A00, B00",,300
+2023,Khoa Y - Đại học Quốc Gia TP HCM,7720201_A,Dược học &lpar;kết hợp chứng chỉ quốc tế&rpar;,23.55,A00,,300
+2023,Khoa Y - Đại học Quốc Gia TP HCM,7720501_A,Răng - Hàm - Mặt &lpar;kết hợp chứng chỉ quốc tế&rpar;,25.55,B00,,300
+2023,Khoa Y - Đại học Quốc Gia TP HCM,7720501,Răng- Hàm -Mặt,26.05,B00,,300
+2023,Khoa Y - Đại học Quốc Gia TP HCM,7720115_A,Y học cổ truyền &lpar;kết hợp chứng chỉ quốc tế&rpar;,22.65,B00,,300
+2023,Khoa Y - Đại học Quốc Gia TP HCM,7720101,Y khoa,26.15,B00,,300
+2023,Khoa Y - Đại học Quốc Gia TP HCM,7720115,Y học cổ truyền,23.75,B00,,300
+2023,Khoa Y - Đại học Quốc Gia TP HCM,7720101_A,Y khoa &lpar;kết hợp chứng chỉ quốc tế&rpar;,25.25,B00,,300
+2024,Khoa Y - Đại học Quốc Gia TP HCM,7720301,Điều dưỡng,22.6,B00,,300
+2024,Khoa Y - Đại học Quốc Gia TP HCM,7720201,Dược học,25.31,"A00, B00",,300
+2024,Khoa Y - Đại học Quốc Gia TP HCM,7720501,Răng- Hàm -Mặt,26.33,B00,,300
+2024,Khoa Y - Đại học Quốc Gia TP HCM,7720101,Y khoa,26.4,B00,,300
+2024,Khoa Y - Đại học Quốc Gia TP HCM,7720115,Y học cổ truyền,24.24,B00,,300
+2025,Khoa Y - Đại học Quốc Gia TP HCM,7720301,Điều dưỡng,18.0,B00,,300
+2025,Khoa Y - Đại học Quốc Gia TP HCM,7720501,Răng- Hàm -Mặt,25.0,B00,,300
+2025,Khoa Y - Đại học Quốc Gia TP HCM,7720115,Y học cổ truyền,20.1,B00,,300
+2025,Khoa Y - Đại học Quốc Gia TP HCM,7720101,Y khoa,25.6,B00,,300
+2018,Đại học Y Dược - Đại học Thái Nguyên,7720301,Điều dưỡng,18.5,B00,,228
+2018,Đại học Y Dược - Đại học Thái Nguyên,7720201,Dược học,19.5,A00,,228
+2018,Đại học Y Dược - Đại học Thái Nguyên,7720601,Kỹ thuật xét nghiệm y học,19.75,B00,,228
+2018,Đại học Y Dược - Đại học Thái Nguyên,7720501,Răng- Hàm -Mặt,21.9,B00,,228
+2018,Đại học Y Dược - Đại học Thái Nguyên,7720101,Y khoa,22.25,B00,,228
+2018,Đại học Y Dược - Đại học Thái Nguyên,7720110,Y học dự phòng,16.75,B00,,228
+2019,Đại học Y Dược - Đại học Thái Nguyên,7720301,Điều dưỡng,19.45,B00,,228
+2019,Đại học Y Dược - Đại học Thái Nguyên,7720201LT,Dược học liên thông,20.0,"A00, B00",,228
+2019,Đại học Y Dược - Đại học Thái Nguyên,7720201,Dược học,21.7,"A00, B00",,228
+2019,Đại học Y Dược - Đại học Thái Nguyên,7720601,Kỹ thuật xét nghiệm y học,21.0,B00,,228
+2019,Đại học Y Dược - Đại học Thái Nguyên,7720501,Răng- Hàm -Mặt,23.4,B00,,228
+2019,Đại học Y Dược - Đại học Thái Nguyên,7720101LT,Y khoa liên thông,21.0,B00,,228
+2019,Đại học Y Dược - Đại học Thái Nguyên,7720110,Y học dự phòng,18.0,"B00, D08",,228
+2019,Đại học Y Dược - Đại học Thái Nguyên,7720101,Y khoa,23.6,B00,,228
+2020,Đại học Y Dược - Đại học Thái Nguyên,7720301,Điều dưỡng,21.0,"B00, D07, D08",,228
+2020,Đại học Y Dược - Đại học Thái Nguyên,7720201,Dược học,24.85,"A00, B00, D07",,228
+2020,Đại học Y Dược - Đại học Thái Nguyên,7720601,Kỹ thuật xét nghiệm y học,24.25,"B00, D07, D08",,228
+2020,Đại học Y Dược - Đại học Thái Nguyên,7720501,Răng- Hàm -Mặt,26.25,"B00, D07, D08",,228
+2020,Đại học Y Dược - Đại học Thái Nguyên,7720110,Y học dự phòng,20.9,"B00, D07, D08",,228
+2020,Đại học Y Dược - Đại học Thái Nguyên,7720101,Y khoa,26.4,"B00, D07, D08",,228
+2021,Đại học Y Dược - Đại học Thái Nguyên,7720301,Điều dưỡng,21.5,"B00, D07, D08",,228
+2021,Đại học Y Dược - Đại học Thái Nguyên,7720201,Dược học,25.2,"A00, B00, D07",,228
+2021,Đại học Y Dược - Đại học Thái Nguyên,7720302,Hộ sinh,19.15,"B00, D07, D08",,228
+2021,Đại học Y Dược - Đại học Thái Nguyên,7720601,Kỹ thuật xét nghiệm y học,24.85,"B00, D07, D08",,228
+2021,Đại học Y Dược - Đại học Thái Nguyên,7720501,Răng- Hàm -Mặt,26.25,"B00, D07, D08",,228
+2021,Đại học Y Dược - Đại học Thái Nguyên,7720110,Y học dự phòng,21.8,"B00, D07, D08",,228
+2021,Đại học Y Dược - Đại học Thái Nguyên,7720101,Y khoa,26.2,"B00, D07, D08",,228
+2022,Đại học Y Dược - Đại học Thái Nguyên,7720301,Điều dưỡng,19.0,"B00, D07, D08",,228
+2022,Đại học Y Dược - Đại học Thái Nguyên,7720201,Dược học,24.8,"A00, B00, D07",,228
+2022,Đại học Y Dược - Đại học Thái Nguyên,7720302,Hộ sinh,19.0,"B00, D07, D08",,228
+2022,Đại học Y Dược - Đại học Thái Nguyên,7720601,Kỹ thuật xét nghiệm y học,24.2,"B00, D07, D08",,228
+2022,Đại học Y Dược - Đại học Thái Nguyên,7720501,Răng- Hàm -Mặt,26.75,"B00, D07, D08",,228
+2022,Đại học Y Dược - Đại học Thái Nguyên,7720110,Y học dự phòng,21.8,"B00, D07, D08",,228
+2022,Đại học Y Dược - Đại học Thái Nguyên,7720101,Y khoa,25.75,"B00, D07, D08",,228
+2023,Đại học Y Dược - Đại học Thái Nguyên,7720301,Điều dưỡng,20.0,"B00, D07, D08",,228
+2023,Đại học Y Dược - Đại học Thái Nguyên,7720201,Dược học,24.7,"B00, D07, D08",,228
+2023,Đại học Y Dược - Đại học Thái Nguyên,7720302,Hộ sinh,19.0,"B00, D07, D08",,228
+2023,Đại học Y Dược - Đại học Thái Nguyên,7720601,Kỹ thuật xét nghiệm y học,24.25,"B00, D07, D08",,228
+2023,Đại học Y Dược - Đại học Thái Nguyên,7720501,Răng- Hàm -Mặt,26.25,"B00, D07, D08",,228
+2023,Đại học Y Dược - Đại học Thái Nguyên,7720110,Y học dự phòng,21.25,"B00, D07, D08",,228
+2023,Đại học Y Dược - Đại học Thái Nguyên,7720101,Y khoa,26.0,"B00, D07, D08",,228
+2024,Đại học Y Dược - Đại học Thái Nguyên,7720301,Điều dưỡng,21.8,"B00, D07, D08",,228
+2024,Đại học Y Dược - Đại học Thái Nguyên,7720201,Dược học,24.75,"B00, D07, D08",,228
+2024,Đại học Y Dược - Đại học Thái Nguyên,7720302,Hộ sinh,19.5,"B00, D07, D08",,228
+2024,Đại học Y Dược - Đại học Thái Nguyên,7720602,Kỹ thuật hình ảnh y học,20.0,"B00, D07, D08",,228
+2024,Đại học Y Dược - Đại học Thái Nguyên,7720601,Kỹ thuật xét nghiệm y học,24.0,"B00, D07, D08",,228
+2024,Đại học Y Dược - Đại học Thái Nguyên,7720603,Kỹ thuật phục hồi chức năng,20.0,"B00, D07, D08",,228
+2024,Đại học Y Dược - Đại học Thái Nguyên,7720501,Răng- Hàm -Mặt,26.35,"B00, D07, D08",,228
+2024,Đại học Y Dược - Đại học Thái Nguyên,7720101,Y khoa,26.25,"B00, D07, D08",,228
+2024,Đại học Y Dược - Đại học Thái Nguyên,7720110,Y học dự phòng,21.0,"B00, D07, D08",,228
+2025,Đại học Y Dược - Đại học Thái Nguyên,7720301,Điều dưỡng,20.0,"A00, A02, B00, D01, D07, D08",,228
+2025,Đại học Y Dược - Đại học Thái Nguyên,7720201,Dược học,22.8,"A00, A01, A02, B00, D07, D08",,228
+2025,Đại học Y Dược - Đại học Thái Nguyên,7720302,Hộ sinh,18.75,"A00, A02, B00, D01, D07, D08",,228
+2025,Đại học Y Dược - Đại học Thái Nguyên,7720603,Kỹ thuật phục hồi chức năng,20.5,"A00, A01, A02, B00, D07, D08",,228
+2025,Đại học Y Dược - Đại học Thái Nguyên,7720601,Kỹ thuật xét nghiệm y học,22.5,"A00, A01, A02, B00, D07, D08",,228
+2025,Đại học Y Dược - Đại học Thái Nguyên,7720602,Kỹ thuật hình ảnh y học,21.25,"A00, A01, A02, B00, D07, D08",,228
+2025,Đại học Y Dược - Đại học Thái Nguyên,7720501,Răng- Hàm -Mặt,26.15,"A00, A02, B00, D07, D08",,228
+2025,Đại học Y Dược - Đại học Thái Nguyên,7720110,Y học dự phòng,18.3,"A00, A02, B00, D07, D08",,228
+2025,Đại học Y Dược - Đại học Thái Nguyên,7720101,Y khoa,25.85,"A00, A02, B00, D07, D08",,228
