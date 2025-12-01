@@ -16,7 +16,6 @@ INFO_PATH = 'diem_chuan_cleaned.csv'
 PROB_MODEL_PATH = r'model_artifacts/admission_probability_model.pkl'
 PROB_ENCODERS_PATH = r'model_artifacts/admission_encoders.pkl'
 PROB_SCALER_PATH = r'model_artifacts/admission_scaler.pkl'
-ADVANCED_FEATURES_PATH = r'model_artifacts/advanced_features.pkl'  # NEW: Advanced features data
 
 # Định nghĩa tổ hợp môn Y Dược (không có Sử, Địa)
 BLOCK_MAP = {
@@ -54,25 +53,19 @@ def load_resources():
 
 @st.cache_resource
 def load_probability_model():
-    """Load Admission Probability Model với Advanced Features"""
+    """Load Admission Probability Model"""
     try:
         if os.path.exists(PROB_MODEL_PATH):
             prob_model = joblib.load(PROB_MODEL_PATH)
             prob_encoders = joblib.load(PROB_ENCODERS_PATH)
             prob_scaler = joblib.load(PROB_SCALER_PATH)
-            
-            # Load advanced features nếu có
-            advanced_features = None
-            if os.path.exists(ADVANCED_FEATURES_PATH):
-                advanced_features = joblib.load(ADVANCED_FEATURES_PATH)
-            
-            return prob_model, prob_encoders, prob_scaler, advanced_features
-        return None, None, None, None
+            return prob_model, prob_encoders, prob_scaler
+        return None, None, None
     except Exception as e:
-        return None, None, None, None
+        return None, None, None
 
 model, lookup_2025, school_info, df_benchmark, analytics = load_resources()
-prob_model, prob_encoders, prob_scaler, advanced_features = load_probability_model()
+prob_model, prob_encoders, prob_scaler = load_probability_model()
 
 # Lấy confidence intervals từ analytics
 confidence_intervals = analytics.get('confidence_intervals', {}) if analytics else {}
@@ -120,23 +113,12 @@ def percentile_to_score(percentile, block, lookup_dict):
 
 def predict_admission_probability(diem, block, university_id, ma_nganh, predicted_percentile=None):
     """
-    Tính xác suất đậu với 11 FEATURES (v3 Advanced)
+    Tính xác suất đậu dựa trên PERCENTILE (không dùng ML model bị overfit)
     
-    Nếu có prob_model và advanced_features: dùng ML model
-    Nếu không: fallback về sigmoid function
-    
-    11 Features:
-    1. student_percentile    - Vị trí thí sinh
-    2. percentile_required   - Ngành yêu cầu
-    3. uni_enc               - Encoded trường
-    4. nganh_enc             - Encoded ngành
-    5. block_enc             - Encoded tổ hợp
-    6. gap                   - Khoảng cách (student - required)
-    7. relative_position     - Tỷ lệ vị trí
-    8. trend                 - Xu hướng điểm chuẩn
-    9. volatility            - Độ biến động
-    10. school_prestige      - Độ khó trường
-    11. block_competition    - Cạnh tranh tổ hợp
+    Logic:
+    - So sánh percentile của thí sinh vs percentile yêu cầu của ngành
+    - Nếu student_pct < required_pct (Top nhỏ hơn = điểm cao hơn) → xác suất cao
+    - Dùng sigmoid function để smooth xác suất
     """
     try:
         # Get percentile của thí sinh
@@ -153,60 +135,20 @@ def predict_admission_probability(diem, block, university_id, ma_nganh, predicte
             else:
                 return None
         
-        # === TRY: Dùng ML model với 11 features ===
-        if prob_model is not None and prob_encoders is not None and prob_scaler is not None:
-            try:
-                # Get feature_cols để biết model cần bao nhiêu features
-                feature_cols = prob_encoders.get('feature_cols', [])
-                
-                # Encode features cơ bản
-                le_uni = prob_encoders.get('university')
-                le_nganh = prob_encoders.get('nganh')
-                le_block = prob_encoders.get('block')
-                
-                uni_enc = le_uni.transform([str(university_id)])[0] if str(university_id) in le_uni.classes_ else 0
-                nganh_enc = le_nganh.transform([str(ma_nganh)])[0] if str(ma_nganh) in le_nganh.classes_ else 0
-                block_enc = le_block.transform([block])[0] if block in le_block.classes_ else 0
-                
-                # Tính advanced features
-                gap = student_percentile - predicted_percentile
-                relative_position = student_percentile / (predicted_percentile + 0.01)
-                
-                # Lấy trend, volatility, prestige, competition từ advanced_features
-                if advanced_features is not None:
-                    group_key = (university_id, ma_nganh, block)
-                    trend = advanced_features.get('trend', {}).get(group_key, 0)
-                    volatility = advanced_features.get('volatility', {}).get(group_key, 0)
-                    prestige = advanced_features.get('school_prestige', {}).get(university_id, 25)
-                    competition = advanced_features.get('block_competition', {}).get(block, 10000)
-                else:
-                    # Fallback values
-                    trend, volatility, prestige, competition = 0, 0, 25, 10000
-                
-                # Build feature vector (11 features)
-                if len(feature_cols) == 11:
-                    features = np.array([[
-                        student_percentile, predicted_percentile, uni_enc, nganh_enc, block_enc,
-                        gap, relative_position, trend, volatility, prestige, competition
-                    ]])
-                else:
-                    # Fallback: 5 features (old model)
-                    features = np.array([[
-                        student_percentile, predicted_percentile, uni_enc, nganh_enc, block_enc
-                    ]])
-                
-                features_scaled = prob_scaler.transform(features)
-                probability = prob_model.predict_proba(features_scaled)[0][1] * 100
-                return probability
-                
-            except Exception as e:
-                # Fallback to sigmoid if ML fails
-                pass
-        
-        # === FALLBACK: Sigmoid function ===
+        # Tính khoảng cách percentile
+        # Nếu student_pct < required_pct → dư điểm → gap dương
+        # Nếu student_pct > required_pct → thiếu điểm → gap âm
         gap = predicted_percentile - student_percentile
+        
+        # Sigmoid function để smooth xác suất
+        # gap = 0 → 50%
+        # gap = 5 → ~88%
+        # gap = 10 → ~99%
+        # gap = -5 → ~12%
+        # gap = -10 → ~1%
         import math
         probability = 1 / (1 + math.exp(-gap * 0.5))
+        
         return probability * 100
         
     except Exception as e:
@@ -523,14 +465,6 @@ with st.sidebar:
 # --- MAIN PAGE ---
 st.title("🎓 AI Dự Báo Cơ Hội Đại Học 2026")
 st.markdown("*Phân tích dựa trên dữ liệu điểm chuẩn Y Dược 2018-2025*")
-
-# Hiển thị thông tin về model đang sử dụng
-if prob_model is not None and advanced_features is not None:
-    st.success("🤖 **Model v3 Advanced (11 Features)** - Sử dụng Gradient Boosting với các features nâng cao: trend, volatility, school prestige, block competition")
-elif prob_model is not None:
-    st.info("🤖 **Model v3 Basic (5 Features)** - Sử dụng Gradient Boosting với features cơ bản")
-else:
-    st.warning("⚠️ Sử dụng Sigmoid fallback - Không tìm thấy ML model")
 
 if model is None:
     st.error("❌ Chưa load được Model. Hãy kiểm tra lại file .pkl")
