@@ -231,15 +231,42 @@ print("\n   Feature Importance:")
 for i, col in enumerate(feature_cols):
     print(f"   - {col}: {gb_model.feature_importances_[i]:.4f}")
 
-# ================= STEP 6: TINH PERCENTILE YEU CAU TRUNG BINH CHO MOI NGANH =================
-print("\n[STEP 6] Tinh percentile trung binh cho moi nganh...")
+# ================= STEP 6: LOAD ENSEMBLE MODEL 2026 =================
+print("\n[STEP 6] Loading Ensemble Model 2026 (thay vi trung binh lich su)...")
 
-# Tinh trung binh percentile yeu cau cho moi (university, nganh, block)
-avg_percentile = df_benchmark.groupby(['university_id', 'ma_nganh', 'to_hop_mon']).agg({
-    'percentile_required': 'mean',
-    'diem_chuan': 'mean'
-}).reset_index()
-avg_percentile.columns = ['university_id', 'ma_nganh', 'to_hop_mon', 'avg_percentile_required', 'avg_diem_chuan']
+# Load model_2026 tu file (output cua Ensemble: WA, ETS, ARIMA, LR)
+model_2026_path = os.path.join(OUTPUT_DIR, 'university_ranking_model_2026.pkl')
+if os.path.exists(model_2026_path):
+    model_2026 = joblib.load(model_2026_path)
+    print(f"   -> Loaded {len(model_2026)} du doan tu Ensemble model")
+else:
+    print("   -> WARNING: Khong tim thay model_2026, dung trung binh lich su")
+    model_2026 = None
+
+# Tao lookup table: (university_id, ma_nganh, to_hop_mon) -> predicted_percentile_2026
+if model_2026:
+    # model_2026 co format: {(university_id, ma_nganh, to_hop_mon): predicted_percentile}
+    ensemble_percentile = pd.DataFrame([
+        {'university_id': k[0], 'ma_nganh': k[1], 'to_hop_mon': k[2], 'predicted_percentile_2026': v}
+        for k, v in model_2026.items()
+    ])
+    print(f"   -> Tao duoc {len(ensemble_percentile)} du doan percentile 2026")
+    
+    # Merge voi thong tin diem chuan de co avg_diem_chuan
+    avg_diem = df_benchmark.groupby(['university_id', 'ma_nganh', 'to_hop_mon']).agg({
+        'diem_chuan': 'mean'
+    }).reset_index()
+    avg_diem.columns = ['university_id', 'ma_nganh', 'to_hop_mon', 'avg_diem_chuan']
+    
+    avg_percentile = ensemble_percentile.merge(avg_diem, on=['university_id', 'ma_nganh', 'to_hop_mon'], how='left')
+    avg_percentile.columns = ['university_id', 'ma_nganh', 'to_hop_mon', 'avg_percentile_required', 'avg_diem_chuan']
+else:
+    # Fallback: dung trung binh lich su
+    avg_percentile = df_benchmark.groupby(['university_id', 'ma_nganh', 'to_hop_mon']).agg({
+        'percentile_required': 'mean',
+        'diem_chuan': 'mean'
+    }).reset_index()
+    avg_percentile.columns = ['university_id', 'ma_nganh', 'to_hop_mon', 'avg_percentile_required', 'avg_diem_chuan']
 
 print(f"   -> {len(avg_percentile)} nganh")
 
