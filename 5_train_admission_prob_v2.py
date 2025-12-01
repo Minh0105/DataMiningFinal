@@ -56,8 +56,42 @@ for block, cols in BLOCK_MAP.items():
         score_data[block] = temp[cols].sum(axis=1).values
         print(f"   {block}: {len(score_data[block])} thi sinh")
 
-# ================= STEP 2: CREATE TRAINING DATA =================
-print("\n[STEP 2] Creating training data...")
+# ================= STEP 2: CREATE TRAINING DATA VỚI STRATIFIED SAMPLING =================
+print("\n[STEP 2] Creating training data voi Stratified Sampling...")
+
+def stratified_sample(scores, diem_chuan, total_samples=200):
+    """
+    Stratified Sampling: Lay mau thong minh theo 4 zones
+    - Zone 1 (rot chac): gap < -5     -> 15% samples
+    - Zone 2 (co the rot): -5 <= gap < -1  -> 25% samples
+    - Zone 3 (ranh gioi): -1 <= gap < +3   -> 40% samples
+    - Zone 4 (dau chac): gap >= +3    -> 20% samples
+    """
+    gaps = scores - diem_chuan
+    
+    zone1_mask = gaps < -5
+    zone2_mask = (gaps >= -5) & (gaps < -1)
+    zone3_mask = (gaps >= -1) & (gaps < 3)
+    zone4_mask = gaps >= 3
+    
+    zone_scores = [
+        scores[zone1_mask],
+        scores[zone2_mask],
+        scores[zone3_mask],
+        scores[zone4_mask]
+    ]
+    
+    zone_ratios = [0.15, 0.25, 0.40, 0.20]
+    
+    sampled_all = []
+    for zone_data, ratio in zip(zone_scores, zone_ratios):
+        n_want = int(total_samples * ratio)
+        if len(zone_data) > 0:
+            n_take = min(n_want, len(zone_data))
+            sampled = np.random.choice(zone_data, size=n_take, replace=False)
+            sampled_all.extend(sampled)
+    
+    return np.array(sampled_all)
 
 training_data = []
 sample_per_major = 200  # Giam de nhanh hon
@@ -73,8 +107,8 @@ for _, row in df_benchmark.iterrows():
     nam = row['nam']
     
     scores = score_data[block]
-    n_samples = min(sample_per_major, len(scores))
-    sampled = np.random.choice(scores, size=n_samples, replace=False)
+    # STRATIFIED SAMPLING thay vi random
+    sampled = stratified_sample(scores, diem_chuan, sample_per_major)
     
     for score in sampled:
         label = 1 if score >= diem_chuan else 0

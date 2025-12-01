@@ -106,6 +106,41 @@ def create_training_data(score_folder, benchmark_file, sample_per_major=500):
     
     print(f"   -> Loaded điểm thi cho {len(all_scores)} cặp (năm, tổ hợp)")
     
+    # Hàm Stratified Sampling
+    def stratified_sample(scores, diem_chuan, total_samples):
+        """
+        Stratified Sampling: Lấy mẫu thông minh theo 4 zones
+        - Zone 1 (rớt chắc): gap < -5     -> 15% samples
+        - Zone 2 (có thể rớt): -5 <= gap < -1  -> 25% samples
+        - Zone 3 (ranh giới): -1 <= gap < +3   -> 40% samples
+        - Zone 4 (đậu chắc): gap >= +3    -> 20% samples
+        """
+        gaps = scores - diem_chuan
+        
+        zone1_mask = gaps < -5
+        zone2_mask = (gaps >= -5) & (gaps < -1)
+        zone3_mask = (gaps >= -1) & (gaps < 3)
+        zone4_mask = gaps >= 3
+        
+        zone_scores = [
+            scores[zone1_mask],
+            scores[zone2_mask],
+            scores[zone3_mask],
+            scores[zone4_mask]
+        ]
+        
+        zone_ratios = [0.15, 0.25, 0.40, 0.20]
+        
+        sampled_all = []
+        for zone_data, ratio in zip(zone_scores, zone_ratios):
+            n_want = int(total_samples * ratio)
+            if len(zone_data) > 0:
+                n_take = min(n_want, len(zone_data))
+                sampled = np.random.choice(zone_data, size=n_take, replace=False)
+                sampled_all.extend(sampled)
+        
+        return np.array(sampled_all)
+    
     # Tạo training samples
     training_data = []
     
@@ -125,9 +160,8 @@ def create_training_data(score_folder, benchmark_file, sample_per_major=500):
         
         scores = all_scores[key]
         
-        # Sample điểm ngẫu nhiên
-        n_samples = min(sample_per_major, len(scores))
-        sampled_scores = np.random.choice(scores, size=n_samples, replace=False)
+        # STRATIFIED SAMPLING thay vì random
+        sampled_scores = stratified_sample(scores, diem_chuan, sample_per_major)
         
         for score in sampled_scores:
             # Label: 1 = Đậu, 0 = Trượt
