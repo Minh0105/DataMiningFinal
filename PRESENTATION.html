@@ -253,12 +253,19 @@
 <div class="slide">
     <h1>📋 NỘI DUNG TRÌNH BÀY</h1>
     
-    <div style="font-size: 22px; line-height: 2.5;">
+    <div style="font-size: 18px; line-height: 2.0;">
         <p><strong>1.</strong> 🎯 Giới thiệu đề tài</p>
         <p><strong>2.</strong> 📊 Thu thập dữ liệu</p>
         <p><strong>3.</strong> 🔧 Xử lý và làm sạch dữ liệu</p>
         <p><strong>4.</strong> 📐 Quy đổi Percentile từ THPT</p>
         <p><strong>5.</strong> 🤖 Phương pháp & Mô hình</p>
+        <p style="margin-left: 30px; font-size: 16px;">• Công thức 4 mô hình (WA, ETS, ARIMA, LR)</p>
+        <p style="margin-left: 30px; font-size: 16px;"><span style="color: #764ba2;">📖 Chú giải ký hiệu toán học</span></p>
+        <p style="margin-left: 30px; font-size: 16px;">• Ví dụ chi tiết: ETS, ARIMA, Linear Regression</p>
+        <p style="margin-left: 30px; font-size: 16px;">• Tổng hợp dự báo 4 mô hình</p>
+        <p style="margin-left: 30px; font-size: 16px;">• Ensemble Weighting & Evaluation Metrics</p>
+        <p style="margin-left: 30px; font-size: 16px;">• Stratified Sampling</p>
+        <p style="margin-left: 30px; font-size: 16px;">• Gradient Boosting & Xác suất đậu</p>
         <p><strong>6.</strong> 📈 Kết quả Training</p>
         <p><strong>7.</strong> 💻 Web Application Demo</p>
         <p><strong>8.</strong> ✅ Kết luận</p>
@@ -573,7 +580,745 @@ Top X% = Bạn xếp hạng cao hơn (100-X)% thí sinh cả nước
             <p>Ngoại suy tuyến tính</p>
         </div>
     </div>
-      <div class="page-number">9</div>
+    <div class="page-number">9</div>
+</div>
+
+<!-- SLIDE 9a: Công thức chi tiết 4 mô hình -->
+<div class="slide">
+    <h1>📐 CÔNG THỨC 4 MÔ HÌNH DỰ BÁO</h1>
+    
+    <div class="two-col">
+        <div>
+            <div class="model-card">
+                <h4>1️⃣ Weighted Average (WA)</h4>
+                <div class="code-block" style="font-size: 12px; padding: 12px;">
+<span style="color: #f8f8f2;">// Công thức tổng quát:</span>
+ŷ = Σ(wᵢ × yᵢ) / Σwᵢ
+
+<span style="color: #f8f8f2;">// Trọng số exponential (năm gần = quan trọng hơn):</span>
+wᵢ = e^(α × i / n)   với α = 2.0
+
+<span style="color: #66d9ef;">VÍ DỤ: Dự báo Top% năm 2026 từ 5 năm data</span>
+Năm:  2021  2022  2023  2024  2025 → 2026
+Top%:  5.0   4.5   4.8   4.2   4.0  → ?
+
+i =    1     2     3     4     5
+wᵢ = e^0.4 e^0.8 e^1.2 e^1.6 e^2.0
+   = 1.49  2.23  3.32  4.95  7.39
+
+ŷ = (1.49×5.0 + 2.23×4.5 + 3.32×4.8 
+   + 4.95×4.2 + 7.39×4.0) / (1.49+2.23+3.32+4.95+7.39)
+  = 82.1 / 19.38 = <span style="color: #a6e22e;">4.24%</span>
+
+<span style="color: #66d9ef;">→ Năm 2025 (w=7.39) ảnh hưởng gấp 5x năm 2021 (w=1.49)</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="model-card">
+                <h4>2️⃣ ETS (Exponential Smoothing)</h4>
+                <div class="code-block" style="font-size: 12px; padding: 12px;">
+<span style="color: #f8f8f2;">// Cập nhật Level:</span>
+lₜ = α×yₜ + (1-α)×(lₜ₋₁ + bₜ₋₁)
+
+<span style="color: #f8f8f2;">// Cập nhật Trend:</span>
+bₜ = β×(lₜ - lₜ₋₁) + (1-β)×bₜ₋₁
+
+<span style="color: #f8f8f2;">// Dự báo:</span>  ŷₜ₊₁ = lₜ + bₜ
+
+<span style="color: #66d9ef;">VÍ DỤ: α=0.8, β=0.3</span>
+Data: 5.0→4.5→4.8→4.2→4.0
+l₅=4.08, b₅=-0.18 (xu hướng giảm)
+ŷ₂₀₂₆ = 4.08 + (-0.18) = <span style="color: #a6e22e;">3.90%</span>
+                </div>
+            </div>
+            
+            <div class="model-card">
+                <h4>3️⃣ ARIMA (1,1,1)</h4>
+                <div class="code-block" style="font-size: 12px; padding: 12px;">
+<span style="color: #f8f8f2;">// Công thức đơn giản:</span>
+ŷₜ₊₁ = yₜ + φ×(yₜ - yₜ₋₁) + θ×εₜ
+
+<span style="color: #66d9ef;">VÍ DỤ: φ=0.5, θ=0.3, ε₅=0.1</span>
+y₂₀₂₅=4.0, y₂₀₂₄=4.2
+Δy = 4.0 - 4.2 = -0.2
+
+ŷ₂₀₂₆ = 4.0 + 0.5×(-0.2) + 0.3×0.1
+      = 4.0 - 0.1 + 0.03 = <span style="color: #a6e22e;">3.93%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="page-number">9a</div>
+</div>
+
+<!-- SLIDE 9a-LEGEND: Bảng chú giải ký hiệu toán học -->
+<div class="slide">
+    <h1>📖 CHÚ GIẢI KÝ HIỆU TOÁN HỌC</h1>
+    
+    <div class="two-col">
+        <div>
+            <h3>🔤 Ký hiệu chung</h3>
+            <table style="font-size: 14px;">
+                <tr><th>Ký hiệu</th><th>Ý nghĩa</th></tr>
+                <tr><td><strong>ŷ</strong></td><td>Giá trị dự báo (y-hat)</td></tr>
+                <tr><td><strong>yᵢ</strong></td><td>Giá trị thực tế tại năm/điểm i</td></tr>
+                <tr><td><strong>ȳ</strong></td><td>Giá trị trung bình (y-bar)</td></tr>
+                <tr><td><strong>Σ</strong></td><td>Tổng (sigma - summation)</td></tr>
+                <tr><td><strong>n</strong></td><td>Số lượng quan sát/mẫu</td></tr>
+                <tr><td><strong>i</strong></td><td>Chỉ số (index), i = 1, 2, ..., n</td></tr>
+                <tr><td><strong>t</strong></td><td>Thứ tự thời gian (năm)</td></tr>
+                <tr><td><strong>e</strong></td><td>Hằng số Euler ≈ 2.718</td></tr>
+                <tr><td><strong>√</strong></td><td>Căn bậc hai (square root)</td></tr>
+                <tr><td><strong>|x|</strong></td><td>Giá trị tuyệt đối của x</td></tr>
+                <tr><td><strong>∈</strong></td><td>Thuộc về (belongs to)</td></tr>
+                <tr><td><strong>≥, ≤</strong></td><td>Lớn hơn/nhỏ hơn hoặc bằng</td></tr>
+            </table>
+            
+            <h3 style="margin-top: 20px;">📊 Weighted Average</h3>
+            <table style="font-size: 14px;">
+                <tr><th>Ký hiệu</th><th>Ý nghĩa</th></tr>
+                <tr><td><strong>wᵢ</strong></td><td>Trọng số của năm thứ i</td></tr>
+                <tr><td><strong>α</strong></td><td>Hệ số decay (= 2.0), điều khiển độ chênh trọng số</td></tr>
+                <tr><td><strong>e^x</strong></td><td>Hàm mũ exponential</td></tr>
+            </table>
+        </div>
+        <div>
+            <h3>📈 ETS (Exponential Smoothing)</h3>
+            <table style="font-size: 14px;">
+                <tr><th>Ký hiệu</th><th>Ý nghĩa</th></tr>
+                <tr><td><strong>lₜ</strong></td><td>Level (mức nền) tại thời điểm t</td></tr>
+                <tr><td><strong>bₜ</strong></td><td>Trend (xu hướng) tại thời điểm t</td></tr>
+                <tr><td><strong>α</strong></td><td>Smoothing factor cho level (0-1)</td></tr>
+                <tr><td><strong>β</strong></td><td>Smoothing factor cho trend (0-1)</td></tr>
+            </table>
+            
+            <h3 style="margin-top: 20px;">📉 ARIMA & Linear Regression</h3>
+            <table style="font-size: 14px;">
+                <tr><th>Ký hiệu</th><th>Ý nghĩa</th></tr>
+                <tr><td><strong>φ (phi)</strong></td><td>Hệ số AR (autoregressive)</td></tr>
+                <tr><td><strong>θ (theta)</strong></td><td>Hệ số MA (moving average)</td></tr>
+                <tr><td><strong>B</strong></td><td>Backshift operator: Byₜ = yₜ₋₁</td></tr>
+                <tr><td><strong>εₜ</strong></td><td>Sai số ngẫu nhiên (error/residual)</td></tr>
+                <tr><td><strong>β₀</strong></td><td>Intercept (hệ số chặn)</td></tr>
+                <tr><td><strong>β₁</strong></td><td>Slope (hệ số góc/độ dốc)</td></tr>
+            </table>
+            
+            <h3 style="margin-top: 20px;">🎯 Evaluation Metrics</h3>
+            <table style="font-size: 14px;">
+                <tr><th>Ký hiệu</th><th>Ý nghĩa</th></tr>
+                <tr><td><strong>σ</strong></td><td>Độ lệch chuẩn (standard deviation)</td></tr>
+                <tr><td><strong>CI</strong></td><td>Confidence Interval (khoảng tin cậy)</td></tr>
+                <tr><td><strong>SS_res</strong></td><td>Sum of Squared Residuals</td></tr>
+                <tr><td><strong>SS_tot</strong></td><td>Total Sum of Squares</td></tr>
+                <tr><td><strong>R²</strong></td><td>Hệ số xác định (0-1)</td></tr>
+            </table>
+        </div>
+    </div>
+    
+    <div class="page-number">9a-legend</div>
+</div>
+
+<!-- SLIDE 9a-ETS: Ví dụ chi tiết ETS -->
+<div class="slide">
+    <h1>📈 2️⃣ ETS - VÍ DỤ CHI TIẾT TỪNG BƯỚC</h1>
+    
+    <h2>Dữ liệu: Top% Y khoa ĐH Y Hà Nội (2021-2025)</h2>
+    <div class="two-col">
+        <div>
+            <table>
+                <tr><th>Năm</th><th>t</th><th>Top% (yₜ)</th><th>lₜ</th><th>bₜ</th></tr>
+                <tr><td>2021</td><td>1</td><td>5.0%</td><td>5.00</td><td>0</td></tr>
+                <tr><td>2022</td><td>2</td><td>4.5%</td><td>4.60</td><td>-0.28</td></tr>
+                <tr><td>2023</td><td>3</td><td>4.8%</td><td>4.70</td><td>-0.17</td></tr>
+                <tr><td>2024</td><td>4</td><td>4.2%</td><td>4.30</td><td>-0.24</td></tr>
+                <tr><td>2025</td><td>5</td><td>4.0%</td><td>4.08</td><td>-0.18</td></tr>
+                <tr style="background: #dcfce7;"><td><strong>2026</strong></td><td><strong>6</strong></td><td><strong>?</strong></td><td>-</td><td>-</td></tr>
+            </table>
+        </div>
+        <div>
+            <div class="highlight-box">
+                <h4>Tham số (α=0.8, β=0.3)</h4>
+                <p><strong>α cao (0.8):</strong> Phản ứng nhanh với thay đổi</p>
+                <p><strong>β thấp (0.3):</strong> Trend thay đổi chậm</p>
+            </div>
+        </div>
+    </div>
+    
+    <h2>Tính toán từng bước (năm 2025 → 2026)</h2>
+    <div class="code-block" style="font-size: 14px;">
+<span style="color: #66d9ef;">Bước 1: Cập nhật Level (lₜ)</span>
+l₅ = α×y₅ + (1-α)×(l₄ + b₄)
+l₅ = 0.8×4.0 + 0.2×(4.30 + (-0.24))
+l₅ = 3.2 + 0.2×4.06 = 3.2 + 0.812 = <span style="color: #a6e22e;">4.08</span>
+
+<span style="color: #66d9ef;">Bước 2: Cập nhật Trend (bₜ)</span>
+b₅ = β×(l₅ - l₄) + (1-β)×b₄
+b₅ = 0.3×(4.08 - 4.30) + 0.7×(-0.24)
+b₅ = 0.3×(-0.22) + (-0.168) = -0.066 - 0.168 = <span style="color: #a6e22e;">-0.18</span>
+
+<span style="color: #66d9ef;">Bước 3: Dự báo 2026</span>
+ŷ₂₀₂₆ = l₅ + b₅ = 4.08 + (-0.18) = <span style="color: #a6e22e; font-size: 16px;">3.90%</span>
+    </div>
+    
+    <div class="highlight-box" style="background: #f0f9ff;">
+        <strong>📖 Ý nghĩa:</strong> Trend b₅ = -0.18 cho thấy Top% đang <strong>giảm 0.18%/năm</strong> → Điểm chuẩn ngày càng cao!
+    </div>
+    
+    <div class="page-number">9a-ets</div>
+</div>
+
+<!-- SLIDE 9a-ARIMA: Ví dụ chi tiết ARIMA -->
+<div class="slide">
+    <h1>📉 3️⃣ ARIMA(1,1,1) - VÍ DỤ CHI TIẾT</h1>
+    
+    <h2>Dữ liệu và Sai phân bậc 1</h2>
+    <div class="two-col">
+        <div>
+            <table>
+                <tr><th>Năm</th><th>Top% (yₜ)</th><th>Δyₜ = yₜ - yₜ₋₁</th><th>εₜ (residual)</th></tr>
+                <tr><td>2021</td><td>5.0%</td><td>-</td><td>-</td></tr>
+                <tr><td>2022</td><td>4.5%</td><td>-0.5</td><td>-0.08</td></tr>
+                <tr><td>2023</td><td>4.8%</td><td>+0.3</td><td>+0.15</td></tr>
+                <tr><td>2024</td><td>4.2%</td><td>-0.6</td><td>-0.12</td></tr>
+                <tr><td>2025</td><td>4.0%</td><td>-0.2</td><td>+0.10</td></tr>
+                <tr style="background: #dcfce7;"><td><strong>2026</strong></td><td><strong>?</strong></td><td><strong>?</strong></td><td>-</td></tr>
+            </table>
+        </div>
+        <div>
+            <div class="highlight-box">
+                <h4>ARIMA(p,d,q) = (1,1,1)</h4>
+                <ul style="font-size: 15px;">
+                    <li><strong>p=1:</strong> AR(1) - dùng 1 giá trị lag</li>
+                    <li><strong>d=1:</strong> Sai phân bậc 1</li>
+                    <li><strong>q=1:</strong> MA(1) - dùng 1 error lag</li>
+                </ul>
+                <p style="margin-top: 10px;"><strong>Hệ số ước lượng:</strong><br>φ = 0.5, θ = 0.3</p>
+            </div>
+        </div>
+    </div>
+    
+    <h2>Tính toán dự báo 2026</h2>
+    <div class="code-block" style="font-size: 14px;">
+<span style="color: #66d9ef;">Công thức đơn giản hóa:</span>
+ŷₜ₊₁ = yₜ + φ × (yₜ - yₜ₋₁) + θ × εₜ
+
+<span style="color: #66d9ef;">Thay số:</span>
+yₜ = y₂₀₂₅ = 4.0
+yₜ₋₁ = y₂₀₂₄ = 4.2
+Δy = yₜ - yₜ₋₁ = 4.0 - 4.2 = -0.2 (xu hướng giảm)
+εₜ = ε₂₀₂₅ = 0.10 (sai số năm 2025)
+φ = 0.5, θ = 0.3
+
+<span style="color: #66d9ef;">Tính toán:</span>
+ŷ₂₀₂₆ = 4.0 + 0.5 × (-0.2) + 0.3 × (0.10)
+      = 4.0 - 0.10 + 0.03
+      = <span style="color: #a6e22e; font-size: 16px;">3.93%</span>
+    </div>
+    
+    <div class="highlight-box" style="background: #f0f9ff;">
+        <strong>📖 Giải thích:</strong> ARIMA dự báo xu hướng <strong>tiếp tục giảm</strong> dựa trên pattern năm trước (Δy=-0.2), nhưng điều chỉnh bởi sai số dự báo trước đó.
+    </div>
+    
+    <div class="page-number">9a-arima</div>
+</div>
+
+<!-- SLIDE 9a2: Linear Regression chi tiết -->
+<div class="slide">
+    <h1>📐 4️⃣ LINEAR REGRESSION - VÍ DỤ CHI TIẾT</h1>
+    
+    <h2>Dữ liệu: Top% Y khoa ĐH Y Hà Nội (2021-2025)</h2>
+    <div class="two-col">
+        <div>
+            <table>
+                <tr><th>Năm</th><th>t</th><th>Top% (yₜ)</th><th>t - t̄</th><th>y - ȳ</th><th>(t-t̄)(y-ȳ)</th><th>(t-t̄)²</th></tr>
+                <tr><td>2021</td><td>1</td><td>5.0%</td><td>-2</td><td>+0.5</td><td>-1.0</td><td>4</td></tr>
+                <tr><td>2022</td><td>2</td><td>4.5%</td><td>-1</td><td>0</td><td>0</td><td>1</td></tr>
+                <tr><td>2023</td><td>3</td><td>4.8%</td><td>0</td><td>+0.3</td><td>0</td><td>0</td></tr>
+                <tr><td>2024</td><td>4</td><td>4.2%</td><td>+1</td><td>-0.3</td><td>-0.3</td><td>1</td></tr>
+                <tr><td>2025</td><td>5</td><td>4.0%</td><td>+2</td><td>-0.5</td><td>-1.0</td><td>4</td></tr>
+                <tr style="background: #fef3c7;"><td><strong>Tổng</strong></td><td>15</td><td>22.5%</td><td>0</td><td>0</td><td><strong>-2.3</strong></td><td><strong>10</strong></td></tr>
+            </table>
+            <p style="font-size: 14px; margin-top: 5px;"><strong>t̄</strong> = 15/5 = <strong>3</strong> | <strong>ȳ</strong> = 22.5/5 = <strong>4.5%</strong></p>
+        </div>
+        <div>
+            <div class="code-block" style="font-size: 13px;">
+<span style="color: #66d9ef;">Bước 1: Tính β₁ (slope)</span>
+β₁ = Σ(t-t̄)(y-ȳ) / Σ(t-t̄)²
+β₁ = -2.3 / 10 = <span style="color: #a6e22e;">-0.23</span>
+
+<span style="color: #66d9ef;">Bước 2: Tính β₀ (intercept)</span>
+β₀ = ȳ - β₁×t̄
+β₀ = 4.5 - (-0.23)×3
+β₀ = 4.5 + 0.69 = <span style="color: #a6e22e;">5.19</span>
+
+<span style="color: #66d9ef;">Bước 3: Dự báo 2026 (t=6)</span>
+ŷ = β₀ + β₁×t
+ŷ = 5.19 + (-0.23)×6
+ŷ = 5.19 - 1.38 = <span style="color: #a6e22e; font-size: 16px;">3.81%</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="highlight-box" style="background: #f0f9ff;">
+        <strong>📖 Ý nghĩa:</strong> β₁ = -0.23 → Top% <strong>giảm 0.23%/năm</strong> → Điểm chuẩn tăng dần → Ngành Y khoa ngày càng cạnh tranh!
+    </div>
+    
+    <div class="page-number">9a-lr</div>
+</div>
+
+<!-- SLIDE 9a-SUMMARY: Tổng hợp kết quả 4 mô hình -->
+<div class="slide">
+    <h1>📊 TỔNG HỢP DỰ BÁO 4 MÔ HÌNH</h1>
+    
+    <div class="highlight-box" style="background: #fef3c7; margin-bottom: 15px;">
+        <strong>⚠️ Lưu ý quan trọng:</strong> Slide này so sánh <strong>KẾT QUẢ DỰ BÁO</strong> (output) của 4 model cho 1 ngành cụ thể. 
+        Còn slide "Kết quả Training" so sánh <strong>ĐỘ CHÍNH XÁC</strong> (MAE) trên toàn bộ 329 ngành.
+    </div>
+    
+    <h2>Ví dụ: Dự báo Top% Y khoa ĐH Y Hà Nội năm 2026</h2>
+    <table>
+        <tr>
+            <th>Mô hình</th>
+            <th>Dự báo 2026</th>
+            <th>Phương pháp</th>
+            <th>Đặc điểm</th>
+        </tr>
+        <tr>
+            <td><strong>Weighted Average</strong></td>
+            <td style="color: #667eea; font-weight: bold;">4.24%</td>
+            <td>Trung bình có trọng số</td>
+            <td>Năm gần quan trọng hơn</td>
+        </tr>
+        <tr>
+            <td><strong>ETS</strong></td>
+            <td style="color: #764ba2; font-weight: bold;">3.90%</td>
+            <td>Exponential Smoothing</td>
+            <td>Bắt xu hướng trend</td>
+        </tr>
+        <tr>
+            <td><strong>ARIMA(1,1,1)</strong></td>
+            <td style="color: #667eea; font-weight: bold;">3.93%</td>
+            <td>AutoRegressive</td>
+            <td>Dùng sai phân + error</td>
+        </tr>
+        <tr>
+            <td><strong>Linear Regression</strong></td>
+            <td style="color: #764ba2; font-weight: bold;">3.81%</td>
+            <td>Ngoại suy tuyến tính</td>
+            <td>Dự báo theo đường thẳng</td>
+        </tr>
+        <tr style="background: #dcfce7;">
+            <td><strong>📊 Ensemble (CI-weighted)</strong></td>
+            <td style="color: #22c55e; font-weight: bold; font-size: 18px;">3.97%</td>
+            <td>Kết hợp 4 model</td>
+            <td>Model có CI thấp → trọng số cao</td>
+        </tr>
+    </table>
+    
+    <div class="two-col" style="margin-top: 15px;">
+        <div>
+            <div class="highlight-box">
+                <h4>🎯 Kết luận cho ngành này</h4>
+                <ul style="font-size: 15px;">
+                    <li>4 model đều dự báo <strong>Top% giảm</strong></li>
+                    <li>→ Điểm chuẩn 2026 sẽ <strong>cao hơn 2025</strong></li>
+                    <li>Y khoa ĐH Y Hà Nội: ~Top 4% (rất cạnh tranh)</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="highlight-box" style="background: #fef3c7;">
+                <h4>📈 Chuyển đổi sang điểm</h4>
+                <p>Top 3.97% năm 2025 ≈ <strong>27.5 điểm</strong> (B00)</p>
+                <p>→ Dự báo điểm chuẩn 2026: <strong>~27.5 - 28.0 điểm</strong></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page-number">9a-summary</div>
+</div>
+
+<!-- SLIDE 9b: Công thức Ensemble và Evaluation Metrics -->
+<div class="slide">
+    <h1>📊 ENSEMBLE WEIGHTING & EVALUATION METRICS</h1>
+    
+    <h2>Công thức Ensemble (Weighted by Confidence Interval)</h2>
+    <div class="highlight-box">
+        <div class="code-block" style="font-size: 14px;">
+// Mỗi model cho: (prediction, CI)
+wₘ = 1 / CIₘ    (CI càng nhỏ → trọng số càng cao)
+
+ŷ_ensemble = Σ(wₘ × ŷₘ) / Σwₘ
+CI_ensemble = Σ(wₘ × CIₘ) / Σwₘ
+
+Best Model = argmin(CIₘ)  // Model có CI nhỏ nhất được chọn
+        </div>
+    </div>
+    
+    <h2>Công thức đánh giá mô hình</h2>
+    <div class="two-col">
+        <div>
+            <div class="model-card">
+                <h4>MAE (Mean Absolute Error)</h4>
+                <div class="code-block" style="font-size: 14px; padding: 12px;">
+MAE = (1/n) × Σ|yᵢ - ŷᵢ|
+
+Đơn vị: percentile points
+Ý nghĩa: Sai số trung bình tuyệt đối
+Giá trị tốt: MAE < 10
+                </div>
+            </div>
+            
+            <div class="model-card">
+                <h4>RMSE (Root Mean Square Error)</h4>
+                <div class="code-block" style="font-size: 14px; padding: 12px;">
+RMSE = √[(1/n) × Σ(yᵢ - ŷᵢ)²]
+
+Đơn vị: percentile points
+Ý nghĩa: Phạt nặng sai số lớn
+RMSE ≥ MAE (luôn đúng)
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="model-card">
+                <h4>Confidence Interval (95%)</h4>
+                <div class="code-block" style="font-size: 14px; padding: 12px;">
+CI = 1.96 × σ(residuals)
+
+residuals = y_actual - y_fitted
+
+95% CI: [ŷ - CI, ŷ + CI]
+→ 95% dự báo nằm trong khoảng này
+                </div>
+            </div>
+            
+            <div class="model-card">
+                <h4>R² (Coefficient of Determination)</h4>
+                <div class="code-block" style="font-size: 14px; padding: 12px;">
+R² = 1 - SS_res / SS_tot
+SS_res = Σ(yᵢ - ŷᵢ)²
+SS_tot = Σ(yᵢ - ȳ)²
+
+R² ∈ [0,1]: Càng cao càng tốt
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="highlight-box" style="background: #f0f9ff; padding: 10px; margin-top: 10px;">
+        <strong>📖 Chú giải:</strong> 
+        <span style="font-size: 13px;">
+        <strong>yᵢ</strong>=giá trị thực | <strong>ŷᵢ</strong>=giá trị dự báo | <strong>ȳ</strong>=trung bình | 
+        <strong>σ</strong>=độ lệch chuẩn | <strong>1.96</strong>=z-score cho 95% CI | <strong>wₘ</strong>=trọng số model m | <strong>CIₘ</strong>=khoảng tin cậy model m
+        </span>
+    </div>
+      <div class="page-number">9b</div>
+</div>
+
+<!-- SLIDE 9c: Stratified Sampling -->
+<div class="slide">
+    <h1>🎯 STRATIFIED SAMPLING</h1>
+    
+    <h2>Vấn đề với Random Sampling</h2>
+    <div class="highlight-box" style="background: #fee2e2;">
+        <p>❌ Random sampling có thể lấy quá nhiều mẫu "dễ" (đậu chắc/rớt chắc) và thiếu mẫu ở vùng ranh giới quyết định.</p>
+    </div>
+    
+    <h2>Giải pháp: Stratified Sampling theo 4 Zones</h2>
+    <div class="code-block" style="font-size: 14px;">
+gap = điểm_thí_sinh - điểm_chuẩn
+
+Zone 1 (Rớt chắc):     gap < -5       → 15% samples
+Zone 2 (Có thể rớt):   -5 ≤ gap < -1  → 25% samples  
+Zone 3 (Ranh giới):    -1 ≤ gap < +3  → 40% samples  ← Focus!
+Zone 4 (Đậu chắc):     gap ≥ +3       → 20% samples
+    </div>
+    
+    <div class="two-col" style="margin-top: 20px;">
+        <div>
+            <h3>Phân bố mẫu (300 samples/ngành)</h3>
+            <table>
+                <tr><th>Zone</th><th>Khoảng gap</th><th>Tỷ lệ</th><th>Số mẫu</th></tr>
+                <tr><td>1 - Rớt chắc</td><td>< -5</td><td>15%</td><td>45</td></tr>
+                <tr><td>2 - Có thể rớt</td><td>[-5, -1)</td><td>25%</td><td>75</td></tr>
+                <tr style="background: #dcfce7;"><td><strong>3 - Ranh giới</strong></td><td><strong>[-1, +3)</strong></td><td><strong>40%</strong></td><td><strong>120</strong></td></tr>
+                <tr><td>4 - Đậu chắc</td><td>≥ +3</td><td>20%</td><td>60</td></tr>
+            </table>
+        </div>
+        <div>
+            <h3>Tại sao Zone 3 quan trọng?</h3>
+            <ul>
+                <li>🎯 Vùng <strong>quyết định đậu/rớt</strong></li>
+                <li>📊 Model cần học tốt pattern ở đây</li>
+                <li>⚖️ Gap nhỏ → Xác suất ~50%</li>
+                <li>🔍 Nhiều mẫu → Học chính xác hơn</li>
+            </ul>
+            
+            <div class="highlight-box" style="margin-top: 15px;">
+                <p><strong>Kết quả:</strong> Accuracy tăng ~3-5% ở vùng ranh giới!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="highlight-box" style="background: #f0f9ff; padding: 8px; margin-top: 10px;">
+        <strong>📖 Chú giải:</strong> 
+        <span style="font-size: 13px;">
+        <strong>gap</strong> = điểm_thí_sinh - điểm_chuẩn (đơn vị: điểm) | 
+        <strong>[-5, -1)</strong> = từ -5 đến -1, không bao gồm -1 | 
+        <strong>samples</strong> = mẫu dữ liệu để training
+        </span>
+    </div>
+    
+    <div class="page-number">9c</div>
+</div>
+
+<!-- SLIDE 9d: Công thức tính xác suất đậu -->
+<div class="slide">
+    <h1>🎲 GRADIENT BOOSTING CLASSIFIER</h1>
+    
+    <h2>Tại sao chọn Gradient Boosting?</h2>
+    <div class="two-col">
+        <div>
+            <div class="highlight-box" style="background: #dcfce7;">
+                <h4>✅ Ưu điểm</h4>
+                <ul style="font-size: 16px;">
+                    <li>Xử lý tốt <strong>imbalanced data</strong></li>
+                    <li>Học được <strong>non-linear patterns</strong></li>
+                    <li>Không cần chuẩn hóa dữ liệu nhiều</li>
+                    <li>Output là <strong>probability calibrated</strong></li>
+                    <li>Feature importance tự động</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="highlight-box">
+                <h4>🔧 Hyperparameters</h4>
+                <div class="code-block" style="font-size: 13px; padding: 10px;">
+GradientBoostingClassifier(
+    n_estimators=100,  # Số cây
+    max_depth=5,       # Độ sâu mỗi cây
+    learning_rate=0.1, # Tốc độ học
+    random_state=42
+)
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <h2>Cách Gradient Boosting hoạt động</h2>
+    <div class="code-block" style="font-size: 14px;">
+// Khởi tạo với model đơn giản (log-odds của class distribution)
+F₀(x) = log(P(y=1) / P(y=0))
+
+// Lặp m = 1 to M (100 iterations):
+for m in 1..100:
+    // 1. Tính residuals (gradient của loss function)
+    rᵢₘ = yᵢ - σ(Fₘ₋₁(xᵢ))    // σ = sigmoid function
+    
+    // 2. Fit decision tree để predict residuals
+    hₘ(x) = DecisionTree.fit(X, residuals)
+    
+    // 3. Update model với learning rate
+    Fₘ(x) = Fₘ₋₁(x) + η × hₘ(x)    // η = 0.1
+
+// Final prediction: xác suất đậu
+P(đậu|x) = σ(Fₘ(x)) = 1 / (1 + e^(-Fₘ(x)))
+    </div>
+    
+    <h3>📖 Chú giải ký hiệu</h3>
+    <table style="font-size: 13px; width: 100%;">
+        <tr>
+            <th style="width: 15%;">Ký hiệu</th><th style="width: 35%;">Ý nghĩa</th>
+            <th style="width: 15%;">Ký hiệu</th><th style="width: 35%;">Ý nghĩa</th>
+        </tr>
+        <tr>
+            <td><strong>F₀(x)</strong></td><td>Model khởi tạo (base prediction)</td>
+            <td><strong>Fₘ(x)</strong></td><td>Model sau m iterations</td>
+        </tr>
+        <tr>
+            <td><strong>rᵢₘ</strong></td><td>Residual của sample i tại iteration m</td>
+            <td><strong>hₘ(x)</strong></td><td>Decision tree thứ m</td>
+        </tr>
+        <tr>
+            <td><strong>η (eta)</strong></td><td>Learning rate = 0.1 (tốc độ học)</td>
+            <td><strong>σ (sigma)</strong></td><td>Sigmoid function: σ(z) = 1/(1+e⁻ᶻ)</td>
+        </tr>
+        <tr>
+            <td><strong>P(y=1)</strong></td><td>Xác suất đậu (positive class)</td>
+            <td><strong>log</strong></td><td>Logarithm tự nhiên (ln)</td>
+        </tr>
+    </table>
+    
+    <div class="page-number">9d</div>
+</div>
+
+<!-- SLIDE 9e: Training Pipeline xác suất đậu -->
+<div class="slide">
+    <h1>📊 TRAINING PIPELINE - XÁC SUẤT ĐẬU</h1>
+    
+    <h2>Step 1: Chuẩn bị Training Data</h2>
+    <div class="code-block" style="font-size: 13px;">
+Với mỗi (trường, ngành, tổ hợp, năm):
+    - Lấy 300 samples từ phân phối điểm thi (Stratified Sampling)
+    - Tính student_percentile cho mỗi sample
+    - Gán label: 1 nếu điểm ≥ điểm chuẩn, 0 nếu không
+    
+Tổng: ~150,000 training samples (300 × ~500 nhóm ngành)
+    </div>
+    
+    <h2>Step 2: Feature Engineering</h2>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Mô tả</th>
+            <th>Importance</th>
+        </tr>
+        <tr style="background: #dcfce7;">
+            <td><strong>student_percentile</strong></td>
+            <td>Vị trí của thí sinh (Top X%)</td>
+            <td>~45%</td>
+        </tr>
+        <tr style="background: #dcfce7;">
+            <td><strong>percentile_required</strong></td>
+            <td>Ngành yêu cầu Top Y% (từ Ensemble 2026)</td>
+            <td>~35%</td>
+        </tr>
+        <tr>
+            <td>uni_encoded</td>
+            <td>Mã trường (LabelEncoder)</td>
+            <td>~10%</td>
+        </tr>
+        <tr>
+            <td>nganh_encoded</td>
+            <td>Mã ngành (LabelEncoder)</td>
+            <td>~7%</td>
+        </tr>
+        <tr>
+            <td>block_encoded</td>
+            <td>Tổ hợp môn (LabelEncoder)</td>
+            <td>~3%</td>
+        </tr>
+    </table>
+    
+    <h2>Step 3: Model Evaluation</h2>
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="number">92%</div>
+            <div class="label">Accuracy</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">0.96</div>
+            <div class="label">ROC-AUC</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">5-Fold</div>
+            <div class="label">Cross Validation</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">80/20</div>
+            <div class="label">Train/Test Split</div>
+        </div>
+    </div>
+    
+    <div class="highlight-box" style="background: #f0f9ff; padding: 8px; margin-top: 10px; font-size: 13px;">
+        <strong>📖 Metrics:</strong> 
+        <strong>Accuracy</strong>=tỷ lệ dự đoán đúng | 
+        <strong>ROC-AUC</strong>=Area Under ROC Curve (0.5-1.0, càng cao càng tốt) | 
+        <strong>Cross Validation</strong>=đánh giá trên nhiều fold để tránh overfitting | 
+        <strong>LabelEncoder</strong>=chuyển text→số
+    </div>
+    
+    <div class="page-number">9e</div>
+</div>
+
+<!-- SLIDE 9f: Prediction Flow -->
+<div class="slide">
+    <h1>🔮 PREDICTION FLOW - TÍNH XÁC SUẤT</h1>
+    
+    <h2>Khi thí sinh nhập điểm:</h2>
+    
+    <div class="pipeline">
+        <div class="pipeline-step">Điểm 6 môn</div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">Tính tổ hợp</div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">Tra percentile</div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">Predict</div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">Xác suất</div>
+    </div>
+    
+    <div class="two-col">
+        <div>
+            <h3>Ví dụ cụ thể:</h3>
+            <div class="code-block" style="font-size: 13px; padding: 15px;">
+// Input: Điểm thí sinh
+Toán: 8.5, Hóa: 8.0, Sinh: 7.5
+→ B00 = 24.0 điểm
+→ Tra bảng 2025: Top 8.2%
+
+// Ngành: Y khoa - ĐH Y Dược Huế
+→ Ensemble predict 2026: Top 4.5%
+
+// Tạo feature vector
+X = [8.2,    // student_percentile
+     4.5,    // percentile_required (2026)
+     3,      // uni_encoded (Huế)
+     12,     // nganh_encoded (Y khoa)
+     1]      // block_encoded (B00)
+
+// Chuẩn hóa
+X_scaled = scaler.transform(X)
+
+// Predict
+P(đậu) = model.predict_proba(X_scaled)[1]
+       = 0.23 = 23%
+            </div>
+        </div>
+        <div>
+            <h3>Phân loại kết quả:</h3>
+            <table>
+                <tr><th>Xác suất</th><th>Màu</th><th>Đánh giá</th></tr>
+                <tr style="background: #dcfce7;">
+                    <td>≥ 70%</td>
+                    <td>🟢</td>
+                    <td><strong>Cao</strong> - Khả năng đậu tốt</td>
+                </tr>
+                <tr style="background: #fef9c3;">
+                    <td>50% - 69%</td>
+                    <td>🟡</td>
+                    <td><strong>Trung bình</strong> - Cân nhắc</td>
+                </tr>
+                <tr style="background: #fed7aa;">
+                    <td>30% - 49%</td>
+                    <td>🟠</td>
+                    <td><strong>Thấp</strong> - Rủi ro cao</td>
+                </tr>
+                <tr style="background: #fecaca;">
+                    <td>< 30%</td>
+                    <td>🔴</td>
+                    <td><strong>Rất thấp</strong> - Nên chọn ngành khác</td>
+                </tr>
+            </table>
+            
+            <div class="highlight-box" style="margin-top: 20px;">
+                <h4>💡 Lưu ý quan trọng</h4>
+                <p><strong>percentile_required</strong> được lấy từ <strong>Ensemble Model 2026</strong> (output của WA, ETS, ARIMA, LR) - KHÔNG PHẢI trung bình lịch sử!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="highlight-box" style="background: #f0f9ff; padding: 8px; margin-top: 10px; font-size: 12px;">
+        <strong>📖 Chú giải:</strong> 
+        <strong>percentile</strong>=vị trí Top X% | 
+        <strong>scaler.transform</strong>=chuẩn hóa feature về cùng scale | 
+        <strong>predict_proba[1]</strong>=xác suất của class 1 (đậu) | 
+        <strong>feature vector X</strong>=vector đầu vào của model
+    </div>
+      <div class="page-number">9f</div>
 </div>
 
 <!-- SLIDE 10: Cross Validation -->
@@ -623,19 +1368,24 @@ CI = 1.96 × std(residuals)
 
 <!-- SLIDE 11: Kết quả Training -->
 <div class="slide">
-    <h1>📈 6. KẾT QUẢ TRAINING</h1>
+    <h1>📈 6. KẾT QUẢ TRAINING - ĐÁNH GIÁ ĐỘ CHÍNH XÁC</h1>
+    
+    <div class="highlight-box" style="background: #e0f2fe; margin-bottom: 15px;">
+        <strong>📌 Giải thích:</strong> Đây là kết quả đánh giá <strong>ĐỘ CHÍNH XÁC</strong> của 4 model trên <strong>329 nhóm ngành</strong> bằng Cross-Validation. 
+        <br>Model nào có <strong>MAE thấp nhất</strong> sẽ được chọn làm "Best Model" cho từng ngành.
+    </div>
     
     <div class="two-col">
         <div>
-            <h2>Model Selection</h2>
+            <h2>Model Selection (Best Model cho mỗi ngành)</h2>
             <table>
                 <tr>
                     <th>Model</th>
-                    <th>Số lượng</th>
+                    <th>Số ngành chọn</th>
                     <th>Tỷ lệ</th>
                 </tr>
-                <tr>
-                    <td><strong>WA</strong></td>
+                <tr style="background: #dcfce7;">
+                    <td><strong>WA</strong> 🏆</td>
                     <td>214</td>
                     <td>65.0%</td>
                 </tr>
@@ -650,15 +1400,19 @@ CI = 1.96 × std(residuals)
                     <td>7.6%</td>
                 </tr>
             </table>
+            <p style="font-size: 13px; color: #666; margin-top: 10px;">
+                <strong>Nguồn:</strong> <code>model_analytics.pkl</code> → key <code>statistics</code><br>
+                → WA được chọn làm Best Model cho <strong>214/329 nhóm ngành</strong>
+            </p>
         </div>
         <div>
-            <h2>Cross-Validation Error</h2>
+            <h2>Cross-Validation Error (trung bình)</h2>
             <table>
                 <tr>
                     <th>Model</th>
                     <th>MAE ± Std</th>
                 </tr>
-                <tr style="background: #d4edda;">
+                <tr style="background: #dcfce7;">
                     <td><strong>WA</strong> ✅</td>
                     <td>11.64 ± 9.23</td>
                 </tr>
@@ -671,16 +1425,21 @@ CI = 1.96 × std(residuals)
                     <td>14.96 ± 14.28</td>
                 </tr>
             </table>
+            <p style="font-size: 13px; color: #666; margin-top: 10px;">
+                <strong>Nguồn:</strong> <code>model_analytics.pkl</code> → key <code>cv_errors</code><br>
+                → MAE = sai số trung bình (percentile points)
+            </p>
         </div>
     </div>
     
-    <div class="highlight-box">
-        <h3>📊 Tổng kết</h3>
+    <div class="highlight-box" style="background: #fef3c7;">
+        <h3>❓ Tại sao WA tốt nhất?</h3>
         <ul>
-            <li><strong>329 nhóm ngành</strong> đã được train</li>
-            <li><strong>WA là model tốt nhất</strong> với MAE thấp nhất</li>
-            <li><strong>Mean Confidence Interval:</strong> 11.03 percentile points</li>
-        </ul>    </div>
+            <li><strong>Dữ liệu ngắn (5-8 năm):</strong> Model phức tạp (ETS, ARIMA) dễ overfit</li>
+            <li><strong>WA đơn giản nhưng hiệu quả:</strong> Chỉ dùng trung bình có trọng số, ưu tiên năm gần</li>
+            <li><strong>Điểm chuẩn Y Dược ổn định:</strong> Xu hướng thường không biến động đột ngột</li>
+        </ul>
+    </div>
     
     <div class="page-number">11</div>
 </div>
